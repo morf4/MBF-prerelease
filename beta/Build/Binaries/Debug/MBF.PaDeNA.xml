@@ -1,0 +1,1476 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MBF.PaDeNA</name>
+    </assembly>
+    <members>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.Scaffold.TracePath">
+            <summary>
+            Performs Breadth First Search on Contig Overlap Graph
+            using distance between contigs as constrain.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Scaffold.TracePath._graph">
+            <summary>
+            Contig Overlap Graph
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Scaffold.TracePath._depth">
+            <summary>
+            Depth to which graph is traversed.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Scaffold.TracePath._kmerLength">
+            <summary>
+            Length of Kmer (indicates kmer -1 overlap between contigs).
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.TracePath.FindPaths(MBF.Algorithms.Assembly.Graph.DeBruijnGraph,MBF.Algorithms.Assembly.PaDeNA.Scaffold.ContigMatePairs,System.Int32,System.Int32)">
+            <summary>
+            Performs Breadth First Search to traverse through graph to generate scaffold paths.
+            </summary>
+            <param name="graph">Contig Overlap Graph.</param>
+            <param name="contigPairedReadMaps">InterContig Distances.</param>
+            <param name="kmerLength">Length of Kmer</param>
+            <param name="depth">Depth to which graph is searched.</param>
+            <returns>List of paths/scaffold</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.TracePath.TraverseGraph(MBF.Algorithms.Assembly.Graph.DeBruijnNode,System.Collections.Generic.Dictionary{MBF.ISequence,System.Collections.Generic.IList{MBF.Algorithms.Assembly.PaDeNA.Scaffold.ValidMatePair}})">
+            <summary>
+            Performs Breadth First Search
+            </summary>
+            <param name="node">Start Node</param>
+            <param name="contigPairedReadMap">Map of all contigs having valid 
+            mate pairs with given node contig.</param>
+            <returns>List of paths.</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.TracePath.LeftExtension(System.Collections.Generic.KeyValuePair{MBF.Algorithms.Assembly.Graph.DeBruijnNode,MBF.Algorithms.Assembly.Graph.DeBruijnEdge},System.Collections.Generic.Queue{MBF.Algorithms.Assembly.PaDeNA.Scaffold.Paths},System.Collections.Generic.List{MBF.Algorithms.Assembly.PaDeNA.Scaffold.Paths},MBF.Algorithms.Assembly.PaDeNA.Scaffold.ScaffoldPath,System.Collections.Generic.Dictionary{MBF.ISequence,System.Collections.Generic.IList{MBF.Algorithms.Assembly.PaDeNA.Scaffold.ValidMatePair}})">
+            <summary>
+            Add left extension of the nodes to queue.  
+            </summary>
+            <param name="node">Current node.</param>
+            <param name="search">Queue for BFS.</param>
+            <param name="paths">List of paths</param>
+            <param name="familyTree">nodes visited for construction of paths.</param>
+            <param name="contigPairedReadMap">contig and valid mate pair map.</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.TracePath.RightExtension(System.Collections.Generic.KeyValuePair{MBF.Algorithms.Assembly.Graph.DeBruijnNode,MBF.Algorithms.Assembly.Graph.DeBruijnEdge},System.Collections.Generic.Queue{MBF.Algorithms.Assembly.PaDeNA.Scaffold.Paths},System.Collections.Generic.List{MBF.Algorithms.Assembly.PaDeNA.Scaffold.Paths},MBF.Algorithms.Assembly.PaDeNA.Scaffold.ScaffoldPath,System.Collections.Generic.Dictionary{MBF.ISequence,System.Collections.Generic.IList{MBF.Algorithms.Assembly.PaDeNA.Scaffold.ValidMatePair}})">
+            <summary>
+            Add right extension of the nodes to queue.
+            </summary>
+            <param name="node">Current node.</param>
+            <param name="search">Queue for BFS.</param>
+            <param name="paths">List of paths</param>
+            <param name="familyTree">nodes visited for construction of paths.</param>
+            <param name="contigPairedReadMap">contig and valid mate pair map.</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.TracePath.DistanceConstraint(MBF.Algorithms.Assembly.PaDeNA.Scaffold.Paths,System.Collections.Generic.Dictionary{MBF.ISequence,System.Collections.Generic.IList{MBF.Algorithms.Assembly.PaDeNA.Scaffold.ValidMatePair}})">
+            <summary>
+            Apply Distance constrains on given two nodes.
+            The distances between contigs are calculated using paired read information.
+            </summary>
+            <param name="childPath">Destination node.</param>
+            <param name="contigPairedReadMaps">Map of contigs and paired reads.</param>
+            <returns>Whether Distance between contig nodes lie in constraint or not.</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.TracePath.GetPathLength(MBF.Algorithms.Assembly.PaDeNA.Scaffold.Paths)">
+            <summary>
+            Get length of path traversed using BFS.
+            </summary>
+            <param name="childPath">Path travelled to reach destination node.</param>
+            <returns>Distance beteen first and last contig node.</returns>
+        </member>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.Scaffold.Paths">
+            <summary>
+            Class stores information of path travelled while performing BFS.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Scaffold.Paths.path">
+            <summary>
+            Path travelled
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Scaffold.Paths.CurrentNode">
+            <summary>
+            Gets or sets value of current Node.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Scaffold.Paths.NodeOrientation">
+            <summary>
+            Gets or sets value indicating orientation of current node.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Scaffold.Paths.FamilyTree">
+            <summary>
+            Gets the value of family tree/path traversed to reach to current node.
+            </summary>
+        </member>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.Scaffold.DistanceCalculator">
+            <summary>
+            Class calculates distance between contigs using mate pairs mapped to contigs.
+            Reference: The Greedy Path-Merging Algorithm for contig Scaffolding: HUSON et al.
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.DistanceCalculator.CalculateDistance(MBF.Algorithms.Assembly.PaDeNA.Scaffold.ContigMatePairs)">
+            <summary>
+            Calculates distances between contigs.
+            </summary>
+            <param name="contigPairedReads">Input Contigs and mate pairs mappping.</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.DistanceCalculator.CalculateInterContigDistance(System.Collections.Generic.KeyValuePair{MBF.ISequence,System.Collections.Generic.Dictionary{MBF.ISequence,System.Collections.Generic.IList{MBF.Algorithms.Assembly.PaDeNA.Scaffold.ValidMatePair}}},System.Int32)">
+            <summary>
+            Calculate distance between single pair of contigs.
+            </summary>
+            <param name="contigsPairedRead">Contig mate pairs map.</param>
+            <param name="lengthOfContig">Length of forward contig.</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.DistanceCalculator.CalculateDistance(MBF.Algorithms.Assembly.PaDeNA.Scaffold.ValidMatePair,System.Int32)">
+            <summary>
+            Calculates distance between contigs for each pair of Full Overlap.
+            </summary>
+            <param name="validPairedRead">Valid mate pairs which have full Overlap 
+            and support a perticular orientation of contigs</param>
+            <param name="length">Length of forward contig.</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.DistanceCalculator.EdgeBundling(System.Collections.Generic.IList{MBF.Algorithms.Assembly.PaDeNA.Scaffold.ValidMatePair})">
+            <summary>
+            Bundles all valid mate pairs in single edge but considering ±3σ limit.
+            </summary>
+            <param name="contigPairedRead">List of Valid Paired Reads</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.DistanceCalculator.CalculateWeigthedEdge(System.Collections.Generic.IList{MBF.Algorithms.Assembly.PaDeNA.Scaffold.ValidMatePair})">
+            <summary>
+            Further estimates distances using weighted mean 
+            and standard deviation by merging valid mate pairs.
+            </summary>
+            <param name="distances">List of valid mate pairs.</param>
+        </member>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.AmbiguousCharacter">
+            <summary>
+              Looks up a localized string similar to At least one sequence should not contain Gap/Ambiguous character.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.CannotAssembleSequenceType">
+            <summary>
+              Looks up a localized string similar to Cannot Assemble RNA or Protein Sequences .
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.DanglingLinksPurger">
+            <summary>
+              Looks up a localized string similar to DanglingLinksPurger.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.DanglingLinksPurgerDescription">
+            <summary>
+              Looks up a localized string similar to Error correction module by removal of dangling links in graph.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.Depth">
+            <summary>
+              Looks up a localized string similar to Depth cannot be less than or equal to 0.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.DuplicatingReadIds">
+            <summary>
+              Looks up a localized string similar to Duplicate read found. Id:{0}.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.InappropriateKmerLength">
+            <summary>
+              Looks up a localized string similar to Kmer length must be less than the length of the shortest sequence, and should be greater than half the length of the longest sequence..
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.InputSequenceCannotBeNull">
+            <summary>
+              Looks up a localized string similar to One of the sequences in list is null. All sequences in input list must be valid sequences..
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.KmerLength">
+            <summary>
+              Looks up a localized string similar to Kmer length cannot be less than or equal to 0.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.NegativeRedundancy">
+            <summary>
+              Looks up a localized string similar to Redundancy value cannot be negative.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.NullContigBuilder">
+            <summary>
+              Looks up a localized string similar to Contig Builder cannot be null.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.PaDeNA">
+            <summary>
+              Looks up a localized string similar to PaDeNA.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.PaDeNADescription">
+            <summary>
+              Looks up a localized string similar to Implements parallel de-novo assembly using De-bruijn graph.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.PairedReadException">
+            <summary>
+              Looks up a localized string similar to No Paired Read Data.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.RedundantPathsPurger">
+            <summary>
+              Looks up a localized string similar to RedundantPathsPurger.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.RedundantPathsPurgerDescription">
+            <summary>
+              Looks up a localized string similar to Graph error correction by removal of redundant paths.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.SimplePathContigBuilder">
+            <summary>
+              Looks up a localized string similar to Simple path based contig builder.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.SimplePathContigBuilderDescription">
+            <summary>
+              Looks up a localized string similar to Builds contigs from simple paths in the de bruijn graph.
+            </summary>
+        </member>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.Utility.ReadAlignment">
+            <summary>
+            Utility for aligning reads to contigs.
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Utility.ReadAlignment.ReadContigAlignment(System.Collections.Generic.IList{MBF.ISequence},System.Collections.Generic.IList{MBF.ISequence},System.Int32)">
+            <summary>
+            Aligns reads to contigs using kmer method of alignment.
+            </summary>
+            <param name="contigs">List of contig sequences.</param>
+            <param name="reads">List of read sequences.</param>
+            <param name="kmerLength">Kmer Length.</param>
+            <returns>List of Contig</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Utility.ReadAlignment.MapRead(System.Int32,System.Collections.Generic.IList{System.Collections.Generic.IList{MBF.Algorithms.Kmer.KmerIndexer}},System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Traverse through list of contig-read match indexes for given read.
+            </summary>
+            <param name="position">Position from where list of 
+             indexes should be traversed.</param>
+            <param name="contigReadMatch">List for contig-read match indexes</param>
+            <param name="contigIndex">Index of contig sequence</param>
+            <param name="readLength">Length of read</param>
+            <param name="kmerLength">Length of kmer</param>
+            <returns>List of read maps.</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Utility.ReadAlignment.FindContinuous(MBF.Algorithms.Kmer.KmerIndexer,System.Collections.Generic.IList{MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadMap},System.Int32,System.Int32)">
+            <summary>
+            Merge continuous positions of a read in kmer indexes.
+            </summary>
+            <param name="kmer">Position of contig kmer.</param>
+            <param name="readMaps">Alignment between read and contig.</param>
+            <param name="position">Position of kmer in read.</param>
+            <param name="kmerLength">Length of kmer.</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Utility.ReadAlignment.IsContinousRight(MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadMap,System.Int32,System.Int32,System.Int32)">
+            <summary>
+             Find if positions occur simultaneously of read in contig, 
+             if contig is traced from right direction
+            </summary>
+            <param name="map">map from previous position of read</param>
+            <param name="readPosition">position of read</param>
+            <param name="contigPosition">position of contig</param>
+            <param name="length">length of kmer</param>
+            <returns>True if continuous position of reads in contig.</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Utility.ReadAlignment.IsContinousLeft(MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadMap,System.Int32,System.Int32,System.Int32)">
+            <summary>
+             Find if positions occur simultaneously of read in contig, 
+             if contig is traced from left direction.
+            </summary>
+            <param name="map">map from previous position of read</param>
+            <param name="readPosition">position of read</param>
+            <param name="contigPosition">position of contig</param>
+            <param name="length">length of kmer</param>
+            <returns>true if continuous position of reads in contig.</returns>
+        </member>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.Utility.ReadAlignment.ContigIndex">
+            <summary>
+            Stores information of kmer reads map with contigs.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Utility.ReadAlignment.ContigIndex._contigReadMatchIndexes">
+            <summary>
+            Contig stored in form of kmer maps of reads
+            ------------------------------  Contig
+            --------                        read1
+            --------                        read5
+                    --------                read2
+                            --------        read3
+                                    ------  read4
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Utility.ReadAlignment.ContigIndex.#ctor(MBF.ISequence)">
+            <summary>
+            Initializes a new instance of the ContigIndex class.
+            </summary>
+            <param name="contig">Contig sequence</param>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Utility.ReadAlignment.ContigIndex.ContigReadMatchIndexes">
+            <summary>
+            Gets the value of Read as indexes of contig overlap.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Utility.ReadAlignment.ContigIndex.ContigSequence">
+            <summary>
+            Gets the value of Contig sequence.
+            </summary>
+        </member>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler">
+            <summary>
+            Implements a de bruijn based approach for
+            assembly of DNA sequences.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler._kmerLength">
+            <summary>
+            User Input Parameter
+            Length of k-mer
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler._dangleThreshold">
+            <summary>
+            User Input Parameter
+            Threshold for removing dangling ends in graph
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler._isErosionEnabled">
+            <summary>
+            Bool to do erosion or not.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler._erosionThreshold">
+            <summary>
+            User Input Parameter
+            Threshold for eroding low coverage ends
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler._redundantPathLengthThreshold">
+            <summary>
+            User Input Parameter
+            Length Threshold for removing redundant paths in graph
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler._contigCoverageThreshold">
+            <summary>
+            Threshold used for removing low-coverage contigs
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler._lowCoverageContigPurger">
+            <summary>
+            Class implementing Low coverage contig removal.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler._sequenceReads">
+            <summary>
+            List of input sequence reads. Different steps in the assembly 
+            may access this. Should be set before starting the assembly process.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler._graph">
+            <summary>
+            Holds the de bruijn graph used for assembly process.
+            Graph creation modules sets this, so that further steps 
+            can access this for modifications.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler._danglingLinksPurger">
+            <summary>
+            Class implementing dangling links purging
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler._redundantPathsPurger">
+            <summary>
+            Class implementing redundant paths purger
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler._contigBuilder">
+            <summary>
+            Class implementing contig building
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler._scaffoldBuilder">
+            <summary>
+            Class implementing scaffold building
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.#ctor">
+            <summary>
+            Initializes a new instance of the ParallelDeNovoAssembler class.
+            Sets thresholds to default values.
+            Also initializes instances implementing different steps 
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.AddSequenceReads(System.Collections.Generic.IList{MBF.ISequence})">
+            <summary>
+            Add given list of sequences to input read list
+            </summary>
+            <param name="sequences">List of sequences to add</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.Assemble(System.Collections.Generic.IList{MBF.ISequence})">
+            <summary>
+            Assemble the list of sequence reads
+            </summary>
+            <param name="inputSequences">List of input sequences</param>
+            <returns>Assembled output</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.Assemble(System.Collections.Generic.IList{MBF.ISequence},System.Boolean)">
+            <summary>
+            Assemble the list of sequence reads. Also performs the 
+            scaffold building step as part of assembly process.
+            </summary>
+            <param name="inputSequences">List of input sequences</param>
+            <param name="includeScaffolds">Boolean indicating whether scaffold building step has to be run</param>
+            <returns>Assembled output</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.EstimateKmerLength(System.Collections.Generic.IList{MBF.ISequence})">
+            <summary>
+            For optimal graph formation, k-mer length should not be less 
+            than half the length of the longest input sequence and 
+            cannot be more than the length of the shortest input sequence. 
+            Reference for estimating kmerlength from reads: Supplement material from 
+            publication "ABySS: A parallel assembler for short read sequence data"
+            </summary>
+            <param name="sequences">List of input sequences</param>
+            <returns>Estimated optimal kmer length</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.EstimateDefaultThresholds">
+            <summary>
+            Estimates and sets erosion and coverage threshold for contigs.
+            Median value of kmer coverage is set as default value.
+            Reference: ABySS Release Notes 1.1.1 - "The default threshold 
+            is the square root of the median k-mer coverage"
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.CreateGraph">
+            <summary>
+            Step 1: Building k-mers from sequence reads
+            Step 2: Build de bruijn graph for input set of k-mers.
+            Sets the _assemblerGraph field.
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.UnDangleGraph">
+            <summary>
+            Step 3: Remove dangling links from graph
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.RemoveRedundancy">
+            <summary>
+            Step 4: Remove redundant paths from graph
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.BuildContigs">
+            <summary>
+            Step 5: Build contigs from de bruijn graph.
+            If coverage threshold is set, remove low coverage contigs.
+            </summary>
+            <returns>List of contig sequences</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.BuildScaffolds(System.Collections.Generic.IList{MBF.ISequence})">
+            <summary>
+            Step 6: Build scaffolds from contig list and paired reads
+            </summary>
+            <param name="contigs">List of contigs</param>
+            <returns>List of scaffold sequences</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.ValidateAllSequences(System.Collections.Generic.IEnumerable{MBF.ISequence})">
+            <summary>
+            Validate input sequences
+            </summary>
+            <param name="sequences">Input sequences</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.Initialize(System.Collections.Generic.IList{MBF.ISequence})">
+            <summary>
+            Sets up fields for the assembly process.
+            </summary>
+            <param name="sequenceReads">List of sequence reads</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.InitializeDefaultGraphModifiers">
+            <summary>
+            Initializes the above defined fields. For each step in assembly
+            we use a seperate class for implementation. This method assigns 
+            these variables to classes with desired implementation.
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.Dispose">
+            <summary>
+            Implements dispose to supress GC finalize
+            This is done as one of the methods uses ReadWriterLockSlim
+            which extends IDisposable.
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.Dispose(System.Boolean)">
+            <summary>
+            Dispose field instances
+            </summary>
+            <param name="disposeManaged">If disposeManaged equals true, clean all resources</param>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.Name">
+            <summary>
+            Gets the name of the current assembly algorithm used.
+            This property returns the Name of our assembly algorithm i.e 
+            Parallel De Novo algorithm.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.Description">
+            <summary>
+            Gets the description of the current assembly algorithm used.
+            This property returns a simple description of what 
+             Parallel De Novo class implements.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.KmerLength">
+            <summary>
+            Gets or sets the kmer length
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.AllowKmerLengthEstimation">
+            <summary>
+            Gets or sets whether to estimate kmer length.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.Graph">
+            <summary>
+            Gets the assembler de-bruijn graph
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.DanglingLinksPurger">
+            <summary>
+            Gets or sets the instance that implements
+            dangling links purging step.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.DanglingLinksThreshold">
+            <summary>
+            Gets or sets the threshold length 
+            for dangling link purger.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.AllowErosion">
+            <summary>
+            Gets or sets value to allow erosion of the graph.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.ErosionThreshold">
+            <summary>
+            Gets or sets the threshold length for eroding low coverage graph 
+            ends. In case erosion step is not to be done, set this to 0.
+            As an performance optimization in assembler process, erosion and 
+            dangling link purging step are done together in a single step. 
+            Note that because of this optimization, unless the danglingLinkPurger 
+            implements IGraphErodePurger, erosion will not be done irrespective 
+            of the threshold value provided. 
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.RedundantPathsPurger">
+            <summary>
+            Gets or sets the instance that implements
+            redundant paths purging step.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.RedundantPathLengthThreshold">
+            <summary>
+            Gets or sets the length threshold 
+            for redundant paths purger.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.LowCoverageContigPurger">
+            <summary>
+            Gets or sets instance of class implementing Low coverage contig removal.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.AllowLowCoverageContigRemoval">
+            <summary>
+            Gets or sets the value to enable removal of low coverage contigs.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.ContigCoverageThreshold">
+            <summary>
+            Threshold used for removing low-coverage contigs
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.ContigBuilder">
+            <summary>
+            Gets or sets the instance that implements
+            contig building step.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.ScaffoldBuilder">
+            <summary>
+            Gets or sets the instance that implements
+            scaffold building step.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.ScaffoldRedundancy">
+            <summary>
+            Gets or sets value of redundancy for building scaffolds.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.Depth">
+            <summary>
+            Gets or sets the Depth for graph traversal in scaffold builder step.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.ParallelDeNovoAssembler.SequenceReads">
+            <summary>
+            Gets the list of sequence reads
+            </summary>
+        </member>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.PaDeNAAssembly">
+            <summary>
+            PaDeNAAssembly is the result of running PaDeNA on a set input sequences. 
+            As part of assembled output, it gives contig and scaffold sequences.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.PaDeNAAssembly._contigSequences">
+            <summary>
+            Holds list of contigs created after Assembly.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.PaDeNAAssembly._scaffolds">
+            <summary>
+            Holds list of scaffolds created after Assembly.
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.PaDeNAAssembly.#ctor">
+            <summary>
+            Initializes a new instance of the PaDeNAAssembly class.
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.PaDeNAAssembly.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the PaDeNAAssembly class.
+            Constructor for deserialization.
+            </summary>
+            <param name="info">Serialization Info.</param>
+            <param name="context">Streaming context.</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.PaDeNAAssembly.AddContigs(System.Collections.Generic.IEnumerable{MBF.ISequence})">
+            <summary>
+            Add list of contigs
+            </summary>
+            <param name="contigs">List of contig sequences</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.PaDeNAAssembly.AddScaffolds(System.Collections.Generic.IEnumerable{MBF.ISequence})">
+            <summary>
+            Add list of scaffolds
+            </summary>
+            <param name="scaffolds">List of scaffold sequences</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.PaDeNAAssembly.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Method for serializing the PaDeNAAssembly.
+            </summary>
+            <param name="info">Serialization Info.</param>
+            <param name="context">Streaming context.</param>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.PaDeNAAssembly.AssembledSequences">
+            <summary>
+            Gets the list of assembled sequences
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.PaDeNAAssembly.Documentation">
+            <summary>
+            Gets or sets the associated documentation.
+            The Documentation object is intended for tracking the history, provenance,
+            and experimental context of a PaDeNAAssembly. The user can adopt any desired
+            convention for use of this object.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.PaDeNAAssembly.ContigSequences">
+            <summary>
+            Gets list of contig sequences created by assembler
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.PaDeNAAssembly.Scaffolds">
+            <summary>
+            Gets the list of assembler scaffolds
+            </summary>
+        </member>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger">
+            <summary>
+            Dangling links are caused by errors occuring at the end of read.
+            This class implements the methods for detecting dangling links
+            and removing the nodes on dangling links from the graph.
+            This also implements graph erosion, where ends of graph which 
+            have low coverage are removed. 
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger._lengthThreshold">
+            <summary>
+            Threshold length for dangling links 
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger._erodeThreshold">
+            <summary>
+            User Input Parameter
+            Threshold for eroding low coverage ends
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger._danglingLinkLengths">
+            <summary>
+            Field used to keep track of the minimum length of 
+            dangling link that crosses the length threshold.
+            This is used to update the threshold for next round.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger._danglingLinkExtensionTasks">
+            <summary>
+            Tasks queued to extend dangling links following
+            graph clean-up after erosion.
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the DanglingLinksPurger class.
+            </summary>
+            <param name="threshold">Threshold for dangling links</param>
+            <param name="erodeThreshold">Threshold for eroding endpoints</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger.ErodeGraphEnds(MBF.Algorithms.Assembly.Graph.DeBruijnGraph,System.Int32)">
+            <summary>
+            Erode ends of graph that have coverage less than given erodeThreshold.
+            As optimization, we also check for dangling links and keeps track of the
+            lengths of the links found. No removal is done at this step.
+            This is done to get an idea of the different lengths at 
+            which to run the dangling links purger step.
+            This method returns the lengths of dangling links found.
+            Locks: Method only does reads. No locking necessary here. 
+            </summary>
+            <param name="graph">Input graph</param>
+            <param name="erodeThreshold">Threshold for erosion</param>
+            <returns>List of lengths of dangling links detected</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger.DetectErroneousNodes(MBF.Algorithms.Assembly.Graph.DeBruijnGraph)">
+            <summary>
+            Detect nodes that are part of dangling links 
+            Locks: Method only does reads. No locking necessary here or its callees. 
+            </summary>
+            <param name="graph">Input graph</param>
+            <returns>List of nodes in dangling links</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger.RemoveErroneousNodes(MBF.Algorithms.Assembly.Graph.DeBruijnGraph,MBF.Algorithms.Assembly.Graph.DeBruijnPathList)">
+            <summary>
+            Removes nodes that are part of dangling links 
+            </summary>
+            <param name="graph">Input graph</param>
+            <param name="nodesList">List of dangling link nodes</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger.RemoveErodedNodes(MBF.Algorithms.Assembly.Graph.DeBruijnGraph,System.Collections.Generic.ICollection{MBF.Algorithms.Assembly.Graph.DeBruijnNode}@)">
+            <summary>
+            Delete nodes marked for erosion. Update adjacent nodes to update their extension tables.
+            After nodes are deleted, some new end-points might be created. We need to check for 
+            dangling links at these new points. This list is returned in the out parameter.
+            </summary>
+            <param name="graph">De Bruijn Graph</param>
+            <param name="graphNodes">Out parameter. List of graph nodes to check for dangling links</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger.RemoveLinkNodes(MBF.Algorithms.Assembly.Graph.DeBruijnPath,System.Collections.Generic.HashSet{MBF.Algorithms.Assembly.Graph.DeBruijnNode})">
+            <summary>
+            Removes nodes in link from the graph.
+            Parallelization Note: Locks required here. We are modifying graph structure here.
+            </summary>
+            <param name="nodes">List of nodes to remove</param>
+            <param name="lastNodes">Set of all nodes occuring at end of dangling links</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger.TraceDanglingExtensionLink(System.Boolean,MBF.Algorithms.Assembly.Graph.DeBruijnPath,MBF.Algorithms.Assembly.Graph.DeBruijnNode,System.Boolean)">
+            <summary>
+            Starting from potential end of dangling link, trace back along 
+            extension edges in graph to find if it is a valid dangling link.
+            Parallelization Note: No locks used in TraceDanglingLink. 
+            We only read graph structure here. No modifications are made.
+            </summary>
+            <param name="isForwardDirection">Boolean indicating direction of dangling link</param>
+            <param name="link">Dangling Link</param>
+            <param name="node">Node that is next on the link</param>
+            <param name="sameOrientation">Orientation of link</param>
+            <returns>List of nodes in dangling link</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger.CheckAndAddDanglingNode(MBF.Algorithms.Assembly.Graph.DeBruijnPath,MBF.Algorithms.Assembly.Graph.DeBruijnNode,System.Boolean@)">
+            <summary>
+            Checks if 'node' can be added to 'link' without 
+            violating any conditions pertaining to dangling links.
+            Returns null if loop is found or length exceeds threshold.
+            Otherwise, adds node to link and returns
+            </summary>
+            <param name="link">Dangling link</param>
+            <param name="node">Node to be added</param>
+            <param name="reachedErrorEndPoint">Indicates if we have reached end of dangling link</param>
+            <returns>Updated dangling link</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger.ExtendDanglingLinks">
+            <summary>
+            Try and extend previously terminated dangling links
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger.ExtendDanglingLink(System.Boolean,MBF.Algorithms.Assembly.Graph.DeBruijnPath,MBF.Algorithms.Assembly.Graph.DeBruijnNode,System.Boolean,System.Boolean)">
+            <summary>
+            Try and extend dangling links following
+            graph clean-up after erosion.
+            </summary>
+            <param name="isForwardDirection">Boolean indicating direction of dangling link</param>
+            <param name="danglingLink">Dangling Link</param>
+            <param name="node">Node that is next on the link</param>
+            <param name="sameOrientation">Orientation of link</param>
+            <param name="removeLast">Boolean indicating if last node 
+            in link has to be removed before extending</param>
+            <returns>Length of dangling link found after extension</returns>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger.Name">
+            <summary>
+            Gets the name of the algorithm
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger.Description">
+            <summary>
+            Gets the description of algorithm
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.DanglingLinksPurger.LengthThreshold">
+            <summary>
+            Gets or sets the threshold length
+            </summary>
+        </member>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.SimplePathContigBuilder">
+            <summary>
+            Class implements algorithm for extracting contig sequences from de 
+            bruijn graph. It detects simple paths in graph, and for each simple 
+            path in the graph, it generates corresponding sequence as a contig.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.SimplePathContigBuilder._graph">
+            <summary>
+            Holds reference to assembler graph
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.SimplePathContigBuilder._coverageThreshold">
+            <summary>
+            Holds value of the coverage threshold to be
+            used for filtering contigs.
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.SimplePathContigBuilder.RemoveLowCoverageContigs(MBF.Algorithms.Assembly.Graph.DeBruijnGraph,System.Double)">
+            <summary>
+            Build contigs from graph. For contigs whose coverage is less than 
+            the specified threshold, remove graph nodes belonging to them.
+            </summary>
+            <param name="graph">DeBruijn Graph</param>
+            <param name="coverageThreshold">Coverage Threshold for contigs</param>
+            <returns>Number of nodes removed</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.SimplePathContigBuilder.Build(MBF.Algorithms.Assembly.Graph.DeBruijnGraph)">
+            <summary>
+            Build contig sequences from the graph.
+            </summary>
+            <param name="graph">De Bruijn graph</param>
+            <returns>List of contig data</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.SimplePathContigBuilder.ExcludeAmbiguousExtensions">
+            <summary>
+            For nodes that have more than one extension in either direction,
+            mark the extensions invalid. For nodes that have palidromic sequence, 
+            all extensions are marked invalid. This is because for a palidromic sequence, 
+            left and right extensions are inter-changable and this causes ambiguity.
+            Locks: No locks used as extensions are only marked invalid, not deleted.
+            Write locks not used because in only possible conflict both threads will 
+            try to write same value to memory. So race is harmless.
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.SimplePathContigBuilder.IsPalindrome(MBF.Algorithms.Assembly.Graph.DeBruijnNode)">
+            <summary>
+            Checks if the sequence in the node is a palindrome.
+            A sequence is palindrome if it is same as its reverse complement.
+            Reference: http://en.wikipedia.org/wiki/Palindromic_sequence
+            </summary>
+            <param name="node">DeBruijn graph node</param>
+            <returns>Boolean indicating if node represents palidromic sequence</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.SimplePathContigBuilder.GetSimplePaths">
+            <summary>
+            Get simple paths in the graph
+            </summary>
+            <returns>List of simple paths</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.SimplePathContigBuilder.TraceSimplePath(System.Collections.Generic.List{MBF.ISequence},MBF.Algorithms.Assembly.Graph.DeBruijnNode,System.Boolean)">
+            <summary>
+            Trace simple path starting from 'node' in specified direction.
+            </summary>
+            <param name="assembledContigs">List of assembled contigs</param>
+            <param name="node">Starting node of contig path</param>
+            <param name="isForwardDirection">Boolean indicating direction of path</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.SimplePathContigBuilder.TraceSimplePathLinks(System.Collections.Generic.List{MBF.Algorithms.Assembly.Graph.DeBruijnNode},MBF.ISequence,System.Boolean,System.Boolean,MBF.Algorithms.Assembly.Graph.DeBruijnNode)">
+            <summary>
+            Trace simple path in specified direction
+            </summary>
+            <param name="contigPath">List of graph nodes corresponding to contig path</param>
+            <param name="contigSequence">Sequence of contig being assembled</param>
+            <param name="isForwardDirection">Boolean indicating direction of path</param>
+            <param name="sameOrientation">Path orientation</param>
+            <param name="node">Next node on the path</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.SimplePathContigBuilder.CheckAndAddNode(System.Collections.Generic.List{MBF.Algorithms.Assembly.Graph.DeBruijnNode},MBF.ISequence,MBF.Algorithms.Assembly.Graph.DeBruijnNode,System.Boolean,System.Boolean)">
+            <summary>
+            Checks if 'node' can be added to 'path' without causing a loop.
+            If yes, adds node to path and returns true. If not, returns false.
+            </summary>
+            <param name="contigPath">List of graph nodes corresponding to contig path</param>
+            <param name="contigSequence">Sequence of contig being assembled</param>
+            <param name="nextNode">Next node on the path to be addded</param>
+            <param name="isForwardDirection">Boolean indicating direction</param>
+            <param name="isSameOrientation">Boolean indicating orientation</param>
+            <returns>Boolean indicating if path was updated successfully</returns>
+        </member>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.Scaffold.PathPurger">
+            <summary>
+            Removes containing paths and merge Overlapping scaffold paths.
+            Containing Paths
+            -------------- Contig 1
+                --------   Contig 2
+            Overlapping Paths
+            --------        Contig 1 
+                ---------   Contig 2
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Scaffold.PathPurger._scaffoldPaths">
+            <summary>
+            Input list of scaffold paths.
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.PathPurger.PurgePath(System.Collections.Generic.IList{MBF.Algorithms.Assembly.PaDeNA.Scaffold.ScaffoldPath})">
+            <summary>
+            Removes containing paths and merge overlapping paths
+            </summary>
+            <param name="scaffoldPaths">Input paths/scaffold</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.PathPurger.SearchContainingAndOverlappingPaths(MBF.Algorithms.Assembly.PaDeNA.Scaffold.ScaffoldPath,System.Boolean[])">
+            <summary>
+            Search for containing and overlapping paths.
+            </summary>
+            <param name="scaffoldPath">Current Path</param>
+            <param name="isConsumed">Path status</param>
+            <returns>Update list or not</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.PathPurger.RemoveContainingPaths(MBF.Algorithms.Assembly.PaDeNA.Scaffold.ScaffoldPath,MBF.Algorithms.Assembly.PaDeNA.Scaffold.ScaffoldPath)">
+            <summary>
+            Remove containing paths.
+            </summary>
+            <param name="scaffoldPath">Current path</param>
+            <param name="path">Path to be compared with</param>
+            <returns>containing paths or not</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.PathPurger.RemoveOverlappingPaths(MBF.Algorithms.Assembly.PaDeNA.Scaffold.ScaffoldPath,MBF.Algorithms.Assembly.PaDeNA.Scaffold.ScaffoldPath)">
+            <summary>
+            Removes Overlapping paths by generating pairwise overlaps between paths.
+            </summary>
+            <param name="scaffoldPath">Current path</param>
+            <param name="path">Path to be compared with</param>
+            <returns>Overlapping paths or not</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.PathPurger.StitchPath(System.Collections.Generic.IList{System.Collections.Generic.KeyValuePair{MBF.Algorithms.Assembly.Graph.DeBruijnNode,MBF.Algorithms.Assembly.Graph.DeBruijnEdge}},System.Collections.Generic.IList{System.Collections.Generic.KeyValuePair{MBF.Algorithms.Assembly.Graph.DeBruijnNode,MBF.Algorithms.Assembly.Graph.DeBruijnEdge}},System.Int32,System.Int32)">
+            <summary>
+            Stiches overalpping paths and update the path.
+            </summary>
+            <param name="scaffoldPath">Current path</param>
+            <param name="path">Path to be compared with</param>
+            <param name="pos">End position of overlap in first path.</param>
+            <param name="pos1">End position of overlap in second path.</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.PathPurger.UpdatePath(System.Boolean[])">
+            <summary>
+            Removes all consumed path.
+            </summary>
+            <param name="isConsumed">Status of paths.</param>
+        </member>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.RedundantPathsPurger">
+            <summary>
+            Redundant links are caused by single point mutations occuring in middle of reads.
+            This class implements the methods for detecting redundant paths, 
+            and then removing all but one path.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.RedundantPathsPurger._pathLengthThreshold">
+            <summary>
+            Threshold for length of redundant paths
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.RedundantPathsPurger._graph">
+            <summary>
+            Holds reference to assembler graph
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.RedundantPathsPurger.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the RedundantPathsPurger class.
+            Takes user parameter for threshold. 
+            </summary>
+            <param name="length">Threshold length</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.RedundantPathsPurger.DetectErroneousNodes(MBF.Algorithms.Assembly.Graph.DeBruijnGraph)">
+            <summary>
+            Detect nodes that are on redundant paths. 
+            Start from any node that has ambiguous (more than one) extensions.
+            From this node, trace path for each extension until either they 
+            converge to a single node or threshold length is exceeded. 
+            In case they converge, we have a set of redundant paths. 
+            We pick the best path based on the kmer counts of the path nodes.
+            All paths other than the best one are returned for removal.
+            Locks: Method only does reads. No locking necessary here or its callees. 
+            </summary>
+            <param name="graph">De Bruijn Graph</param>
+            <returns>List of path nodes to be deleted</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.RedundantPathsPurger.RemoveErroneousNodes(MBF.Algorithms.Assembly.Graph.DeBruijnGraph,MBF.Algorithms.Assembly.Graph.DeBruijnPathList)">
+            <summary>
+            Removes nodes that are part of redundant paths. 
+            </summary>
+            <param name="graph">De Bruijn graph</param>
+            <param name="nodesList">Path nodes to be deleted</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.RedundantPathsPurger.DetachBestPath(System.Collections.Generic.List{MBF.Algorithms.Assembly.Graph.DeBruijnPathList})">
+            <summary>
+            Extract best path from the list of paths in each cluster.
+            Take off the best path from list and return rest of the paths
+            for removal.
+            </summary>
+            <param name="pathClusters">List of path clusters</param>
+            <returns>List of path nodes to be removed</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.RedundantPathsPurger.ExtractBestPath(MBF.Algorithms.Assembly.Graph.DeBruijnPathList)">
+            <summary>
+            Extract best path from list of paths. For the current cluster 
+            of paths, return only those that should be removed.
+            </summary>
+            <param name="divergingPaths">List of redundant paths</param>
+            <returns>List of paths nodes to be deleted</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.RedundantPathsPurger.GetBestPath(MBF.Algorithms.Assembly.Graph.DeBruijnPathList)">
+            <summary>
+            Gets the best path from the list of diverging paths.
+            Path that has maximum sum of 'count' of belonging k-mers is best.
+            In case there are multiple 'best' paths, we arbitrarily return one of them.
+            </summary>
+            <param name="divergingPaths">List of diverging paths</param>
+            <returns>Index of the best path</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.RedundantPathsPurger.GetStartNode(MBF.Algorithms.Assembly.Graph.DeBruijnPathList)">
+            <summary>
+            Gets start node of redundant path cluster
+            All paths in input are part of a redundant path cluster
+            So all of them have the same start and the end node.
+            Return the first node of first path
+            </summary>
+            <param name="paths">List of redundant paths</param>
+            <returns>Start node of redundant path cluster</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.RedundantPathsPurger.GetEndNode(MBF.Algorithms.Assembly.Graph.DeBruijnPathList)">
+            <summary>
+            Gets end node of redundant path cluster
+            All paths in input are part of a redundant path cluster
+            So all of them have the same start and the end node.
+            Return the last node of first path
+            </summary>
+            <param name="paths">List of redundant paths</param>
+            <returns>End node of redundant path cluster</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.RedundantPathsPurger.TraceDivergingExtensionPaths(MBF.Algorithms.Assembly.Graph.DeBruijnNode,System.Collections.Generic.Dictionary{MBF.Algorithms.Assembly.Graph.DeBruijnNode,MBF.Algorithms.Assembly.Graph.DeBruijnEdge},System.Boolean,System.Collections.Generic.List{MBF.Algorithms.Assembly.Graph.DeBruijnPathList})">
+            <summary>
+            Traces diverging paths in given direction.
+            For each path in the set of diverging paths, extend path by one node
+            at a time. Continue this until all diverging paths converge to a 
+            single node or length threshold is exceeded.
+            If paths converge, add path cluster containing list of redundant 
+            path nodes to list of redundant paths and return.
+            </summary>
+            <param name="startNode">Node at starting point of divergence</param>
+            <param name="divergingNodes">List of diverging nodes</param>
+            <param name="isForwardExtension">Bool indicating direction of divergence</param>
+            <param name="redundantPaths">List of redundant paths</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.RedundantPathsPurger.RemoveDuplicates(System.Collections.Generic.List{MBF.Algorithms.Assembly.Graph.DeBruijnPathList})">
+            <summary>
+            Some set of paths will appear twice, one traced in forward direction
+            and other in opposite. This method eliminate duplicates.
+            </summary>
+            <param name="redundantPathClusters">List of path cluster</param>
+            <returns>List of unique path clusters</returns>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.RedundantPathsPurger.Name">
+            <summary>
+            Gets the name of the algorithm.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.RedundantPathsPurger.Description">
+            <summary>
+            Gets the description of the algorithm.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.RedundantPathsPurger.LengthThreshold">
+            <summary>
+            Gets or sets threshold for length of redundant paths
+            </summary>
+        </member>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.PathWithOrientation">
+            <summary>
+            Structure that stores list of nodes in path, 
+            along with path orientation.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.PathWithOrientation._nodes">
+            <summary>
+            List of nodes in path
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.PathWithOrientation.#ctor(MBF.Algorithms.Assembly.Graph.DeBruijnNode,MBF.Algorithms.Assembly.Graph.DeBruijnNode,System.Boolean)">
+            <summary>
+            Initializes a new instance of the PathWithOrientation class.
+            </summary>
+            <param name="node1">First node to add</param>
+            <param name="node2">Second node to add</param>
+            <param name="orientation">Path orientation</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.PathWithOrientation.#ctor(MBF.Algorithms.Assembly.PaDeNA.PathWithOrientation)">
+            <summary>
+            Initializes a new instance of the PathWithOrientation class.
+            Copies the input path info to a new one.
+            </summary>
+            <param name="other">Path info to copy</param>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.PathWithOrientation.Nodes">
+            <summary>
+            Gets the list of nodes in path.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.PathWithOrientation.IsSameOrientation">
+            <summary>
+            Gets or sets a value indicating whether path orientation is same or opposite
+            with respect to the start node of the path.
+            </summary>
+        </member>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.Scaffold.OrientationBasedMatePairFilter">
+            <summary>
+            Filter mate pairs based on support for contig orientation.
+            The mate pairs support specific orientation of contigs, 
+            based on mapping of reverse read or forward read to specify orientation.
+            Orientation 1
+            ----------) (------------- 
+            contig 1      contig 2
+            
+            Orientation 2
+            ----------) (-------------
+            
+            contig 2      contig 1
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.OrientationBasedMatePairFilter.FilterPairedReads(MBF.Algorithms.Assembly.PaDeNA.Scaffold.ContigMatePairs,System.Int32)">
+            <summary>
+            Filter Paired Read Based on Orientation.
+            </summary>
+            <param name="matePairMap">Map between contigs using mate pair information.</param>
+            <param name="redundancy">Number of mate pairs required to create a link between two contigs.
+             Hierarchical Scaffolding With Bambus
+             by: Mihai Pop, Daniel S. Kosack, Steven L. Salzberg
+             Genome Research, Vol. 14, No. 1. (January 2004), pp. 149-159.</param>
+        </member>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder">
+            <summary>
+            Generates Scaffolds using Graph.
+            Algorithm:
+            Step1: Generate contig overlap graph. 
+            Step2: Map Reads to contigs.
+            Step3: Generate Contig Mate Pair Map.
+            Step4: Filter Paired Reads.
+            Step5: Distance Orientation.
+            Step6: Trace Scaffold Paths.
+            Step7: Assemble paths.
+            Step8: Generate sequence of scaffolds.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder._redundancy">
+            <summary>
+            Number of paired read required to connect two contigs.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder._depth">
+            <summary>
+            Depth for graph traversal.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder._kmerLength">
+            <summary>
+            kmer length.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder._mapPairedReads">
+            <summary>
+            Mapping reads to mate pairs.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder._readContigMap">
+            <summary>
+            Mapping reads to contigs.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder._pairedReadFilter">
+            <summary>
+            Filtering of mate pairs based on orientation of contigs.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder._distanceCalculator">
+             <summary>
+            Calculation of distance between contigs using mate pairs.
+             </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder._tracePath">
+            <summary>
+            Traversal of contig overlap graph.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder._pathAssembler">
+            <summary>
+            Removal of containing paths and removal of overlapping paths.
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder.#ctor">
+            <summary>
+            Initializes a new instance of the GraphScaffoldBuilder class. 
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder.#ctor(MBF.Algorithms.Assembly.IMatePairMapper,MBF.Algorithms.Assembly.PaDeNA.Scaffold.IReadContigMapper,MBF.Algorithms.Assembly.PaDeNA.Scaffold.IOrientationBasedMatePairFilter,MBF.Algorithms.Assembly.PaDeNA.Scaffold.IDistanceCalculator,MBF.Algorithms.Assembly.PaDeNA.Scaffold.ITracePath,MBF.Algorithms.Assembly.PaDeNA.Scaffold.IPathPurger)">
+            <summary>
+            Initializes a new instance of the GraphScaffoldBuilder class.
+            </summary>
+            <param name="mapPairedReads">Mapping reads to mate pairs.</param>
+            <param name="readContigMap"> Mapping reads to contigs.</param>
+            <param name="pairedReadFilter">Filtering of mate pairs.</param>
+            <param name="distanceCalculator">Calculation of distance between 
+            contigs using mate pairs.</param>
+            <param name="tracePath">Traversal of contig overlap graph.</param>
+            <param name="pathAssembler">Removal of containing paths and removal of overlapping paths.</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder.BuildScaffold(System.Collections.Generic.IList{MBF.ISequence},System.Collections.Generic.IList{MBF.ISequence},System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Builds scaffolds from list of reads and contigs
+            </summary>
+            <param name="reads">List of reads</param>
+            <param name="contigs">List of contigs</param>
+            <param name="kmerLength">Kmer Length</param>
+            <param name="depth">Depth for graph traversal</param>
+            <param name="redundancy">Number of mate pairs required to create a link between two contigs.
+             Hierarchical Scaffolding With Bambus
+             by: Mihai Pop, Daniel S. Kosack, Steven L. Salzberg
+             Genome Research, Vol. 14, No. 1. (January 2004), pp. 149-159.</param>
+            <returns>List of scaffold sequences</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder.GenerateContigOverlapGraph(System.Collections.Generic.IList{MBF.ISequence})">
+            <summary>
+            Generate contig overlap graph.
+            </summary>
+            <param name="contigs">List of contig sequences.</param>
+            <returns>Contig Graph.</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder.ReadContigMap(System.Collections.Generic.IList{MBF.ISequence},System.Collections.Generic.IList{MBF.ISequence})">
+            <summary>
+            Map reads to contigs.
+            </summary>
+            <param name="contigs">List of sequences of contigs.</param>
+            <param name="reads">List of sequences of reads.</param>
+            <returns>Map of reads and contigs.</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder.MapPairedReadsToContigs(MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadContigMap,System.Collections.Generic.IList{MBF.ISequence})">
+            <summary>
+            Map paired reads to contigs using FASTA sequence header.
+            </summary>
+            <param name="readContigMap">Map between reads and contigs</param>
+            <param name="reads">Sequences of reads.</param>
+            <returns>Contig Mate Pair map.</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder.FilterReadsBasedOnOrientation(MBF.Algorithms.Assembly.PaDeNA.Scaffold.ContigMatePairs)">
+            <summary>
+            Filter reads based on orientation of contigs.
+            </summary>
+            <param name="contigMatePairs">Contig Mate Pair map.</param>
+            <returns>Contig Mate Pair map.</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder.CalculateDistanceBetweenContigs(MBF.Algorithms.Assembly.PaDeNA.Scaffold.ContigMatePairs)">
+            <summary>
+            Calculate distance between contigs using paired reads.
+            </summary>
+            <param name="contigMatePairs">Contig Mate Pair map.</param>
+            <returns>Number of contig-read pairs</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder.TracePath(MBF.Algorithms.Assembly.Graph.DeBruijnGraph,MBF.Algorithms.Assembly.PaDeNA.Scaffold.ContigMatePairs)">
+            <summary>
+            Performs Breadth First Search in contig overlap graph.
+            </summary>
+            <param name="contigGraph">Contig Graph.</param>
+            <param name="contigMatePairs">Contig Mate Pair map.</param>
+            <returns>List of Scaffold Paths</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder.PathPurger(System.Collections.Generic.IList{MBF.Algorithms.Assembly.PaDeNA.Scaffold.ScaffoldPath})">
+            <summary>
+            Remove containing and overlapping paths.
+            </summary>
+            <param name="paths">List of Scaffold Paths</param>
+            <returns>Number of final paths</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder.GenerateScaffold(MBF.Algorithms.Assembly.Graph.DeBruijnGraph,System.Collections.Generic.IList{MBF.Algorithms.Assembly.PaDeNA.Scaffold.ScaffoldPath})">
+            <summary>
+            Generate sequences from list of contig nodes.
+            </summary>
+            <param name="contigGraph">Contig Overlap Graph.</param>
+            <param name="paths">Scaffold paths.</param>
+            <returns>List of sequences of scaffolds.</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder.Dispose">
+            <summary>
+            Implements dispose to supress GC finalize
+            This is done as this class creates an instance 
+            of DeBruijnGraph which extends IDisposable.
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.GraphScaffoldBuilder.Dispose(System.Boolean)">
+            <summary>
+            Dispose field instances
+            </summary>
+            <param name="disposeManaged">If disposeManaged equals true, clean all resources</param>
+        </member>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadContigMapper">
+            <summary>
+            Maps reads to contigs.
+            Class map reads to contigs using kmer method of alignment.
+            Each Sequence is broken in kmers. And these kmer are aligned with 
+            kmer of other sequences to generate ungapped alignments.
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadContigMapper.Map(System.Collections.Generic.IList{MBF.ISequence},System.Collections.Generic.IList{MBF.ISequence},System.Int32)">
+            <summary>
+            Public method mapping Reads to Contigs.
+            </summary>
+            <param name="contigs">List of sequences of contigs.</param>
+            <param name="reads">List of input reads.</param>
+            <param name="kmerLength">Length of kmer.</param>
+            <returns>Contig Read Map.</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadContigMapper.MapRead(System.Int32,System.Collections.Generic.IList{System.Collections.Generic.IList{MBF.Algorithms.Kmer.KmerIndexer}},System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Traverse through list of contig-read match indexes for given read.
+            </summary>
+            <param name="position">Position from where list of 
+             indexes should be traversed.</param>
+            <param name="contigReadMatch">List for contig-read match indexes</param>
+            <param name="contigIndex">Index of contig sequence</param>
+            <param name="readLength">Length of read</param>
+            <param name="kmerLength">Length of kmer</param>
+            <returns>List of read maps.</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadContigMapper.FindContinuous(MBF.Algorithms.Kmer.KmerIndexer,System.Collections.Generic.IList{MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadMap},System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Merge continuous positions of a read in kmer indexes.
+            </summary>
+            <param name="kmer">Position of contig kmer.</param>
+            <param name="readMaps">Alignment between read and contig.</param>
+            <param name="position">Position of kmer in read.</param>
+            <param name="kmerLength">Length of kmer.</param>
+            <param name="readLength">Length of the read.</param>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadContigMapper.IsContinousRight(MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadMap,System.Int32,System.Int32,System.Int32)">
+            <summary>
+             Find if positions occur simultaneously of read in contig, 
+             if contig is traced from right direction
+            </summary>
+            <param name="map">map from previous position of read</param>
+            <param name="readPosition">position of read</param>
+            <param name="contigPosition">position of contig</param>
+            <param name="length">length of kmer</param>
+            <returns>True if continuous position of reads in contig.</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadContigMapper.IsContinousLeft(MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadMap,System.Int32,System.Int32,System.Int32)">
+            <summary>
+             Find if positions occur simultaneously of read in contig, 
+             if contig is traced from left direction.
+            </summary>
+            <param name="map">map from previous position of read</param>
+            <param name="readPosition">position of read</param>
+            <param name="contigPosition">position of contig</param>
+            <param name="length">length of kmer</param>
+            <returns>true if continuous position of reads in contig.</returns>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadContigMapper.SetReadContigOverlap(System.Int32,MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadMap)">
+            <summary>
+            Determines whether read is full or partial overlap between read and contig.
+            Overlap of read and contig
+            FullOverlap
+            ------------- Contig
+               ------     Read
+            PartialOverlap
+            -------------       Contig
+                       ------   Read
+            </summary>
+            <param name="length">length of read</param>
+            <param name="read">map of read to contig</param>
+        </member>
+        <member name="T:MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadContigMapper.ReadIndex">
+            <summary>
+            Stores information of kmer reads map with contigs.
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadContigMapper.ReadIndex._contigReadMatchIndexes">
+            <summary>
+            Contig stored in form of kmer maps of reads
+            ------------------------------  Contig
+            --------                        read1
+            --------                        read5
+                    --------                read2
+                            --------        read3
+                                    ------  read4
+            </summary>
+        </member>
+        <member name="F:MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadContigMapper.ReadIndex._readSequence">
+            <summary>
+            Read Sequence
+            </summary>
+        </member>
+        <member name="M:MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadContigMapper.ReadIndex.#ctor(MBF.ISequence)">
+            <summary>
+            Initializes a new instance of the ReadIndex class.
+            </summary>
+            <param name="read">Read sequence</param>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadContigMapper.ReadIndex.ContigReadMatchIndexes">
+            <summary>
+            Gets the value of Read as indexes of contig overlap.
+            </summary>
+        </member>
+        <member name="P:MBF.Algorithms.Assembly.PaDeNA.Scaffold.ReadContigMapper.ReadIndex.ReadSequence">
+            <summary>
+            Gets the value of read sequence.
+            </summary>
+        </member>
+    </members>
+</doc>

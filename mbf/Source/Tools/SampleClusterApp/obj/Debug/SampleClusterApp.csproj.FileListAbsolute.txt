@@ -1,0 +1,13 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\HpcLibSettings.local.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\HpcLibSettings.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\SampleClusterApp.exe.config
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\SampleClusterApp.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\SampleClusterApp.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\SampleClusterApp.exe.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\SampleClusterApp.exe.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\SampleClusterApp\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\SampleClusterApp\obj\Debug\SampleClusterApp.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\SampleClusterApp\obj\Debug\SampleClusterApp.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\SampleClusterApp\obj\Debug\SampleClusterApp.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\SampleClusterApp\obj\Debug\SampleClusterApp.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\SampleClusterApp\obj\Debug\SampleClusterApp.pdb

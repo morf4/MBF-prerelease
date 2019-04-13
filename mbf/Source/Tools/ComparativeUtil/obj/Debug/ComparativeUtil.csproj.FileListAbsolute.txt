@@ -1,0 +1,23 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\ComparativeUtil.exe.config
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\ComparativeUtil.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\ComparativeUtil.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\ComparativeUtil.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\ComparativeUtil.exe.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\ComparativeUtil.exe.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ComparativeUtil\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ComparativeUtil\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ComparativeUtil\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\ComparativeUtil.exe.config
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\ComparativeUtil.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\ComparativeUtil.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\ComparativeUtil.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\ComparativeUtil.exe.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\ComparativeUtil.exe.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.Properties.Resources.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.csproj.GenerateResource.Cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.pdb

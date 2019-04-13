@@ -1,0 +1,7 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\EBIBlastAsyncFetchResults.object
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\TestData\TestUtils\Testcases.xml
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\MBF.TestAutomation.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\MBF.TestAutomation.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\MBF.TestAutomation\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\MBF.TestAutomation\obj\Debug\MBF.TestAutomation.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\MBF.TestAutomation\obj\Debug\MBF.TestAutomation.pdb

@@ -1,0 +1,10 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Silverlight.Test.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Silverlight.Test.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Silverlight.Test.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Silverlight.Test.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Silverlight.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Silverlight.Test\obj\Debug\Bio.Silverlight.Test.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Silverlight.Test\obj\Debug\Bio.Silverlight.Test.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Silverlight.Test\obj\Debug\Bio.Silverlight.Test.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Silverlight.Test\obj\Debug\Bio.Silverlight.Test.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Silverlight.Test\obj\Debug\Bio.Silverlight.Test.pdb

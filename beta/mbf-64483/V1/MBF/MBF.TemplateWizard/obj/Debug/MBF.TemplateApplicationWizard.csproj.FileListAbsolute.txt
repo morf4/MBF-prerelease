@@ -1,0 +1,13 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\MBF.TemplateWizard.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\MBF.TemplateWizard.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\MBF.TemplateWizard.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\MBF.TemplateWizard.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.TemplateWizard\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.TemplateWizard\obj\Debug\MBF.TemplateWizard.OperationsScreen.resources
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.TemplateWizard\obj\Debug\MBF.TemplateWizard.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.TemplateWizard\obj\Debug\MBF.TemplateWizard.WelcomeScreen.resources
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.TemplateWizard\obj\Debug\MBF.TemplateWizard.WizardForm.resources
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.TemplateWizard\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.TemplateWizard\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.TemplateWizard\obj\Debug\MBF.TemplateWizard.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.TemplateWizard\obj\Debug\MBF.TemplateWizard.pdb

@@ -1,0 +1,20 @@
+﻿SequenceAssembler
+
+
+winexe
+C#
+.cs
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBT\SequenceAssembler\obj\Debug\
+SequenceAssembler
+none
+false
+DEBUG;TRACE
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBT\SequenceAssembler\App.xaml
+27-2072986911
+
+67-93979923
+20-6937475
+AlignmentReport.xaml;BlastHeader.xaml;Dialog\AboutScreen.xaml;Dialog\AlignerDialog.xaml;Dialog\AssemblerDialog.xaml;Dialog\ColorSchemeDialog.xaml;Dialog\FileTypeAssociationDialog.xaml;Dialog\StartupScreen.xaml;PairwiseSequenceAlignment.xaml;ConsensusCustomView.xaml;RangeSlider.xaml;Dialog\EditSequenceDialog.xaml;Dialog\MessageDialog.xaml;ProgressAnimation.xaml;AssemblerPane.xaml;Dialog\BlastDialog .xaml;BlastPane.xaml;FileMenu.xaml;Resources\Styles.xaml;Dialog\OpenFileDialog .xaml;Resources\ResourceDictionary.xaml;ScaleMarkerLarge.xaml;ScaleMarkerSmall.xaml;SequenceAssembly.xaml;SequenceLine.xaml;SilverMapController.xaml;TreeViewTooltip.xaml;
+
+False
+

@@ -1,0 +1,7 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestData\SeqAlignment.sam
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestData\SeqAlignment.bam
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\MBF.SAMUtils.Test.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\MBF.SAMUtils.Test.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\SAMUtils.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\SAMUtils.Test\obj\Debug\MBF.SAMUtils.Test.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\SAMUtils.Test\obj\Debug\MBF.SAMUtils.Test.pdb

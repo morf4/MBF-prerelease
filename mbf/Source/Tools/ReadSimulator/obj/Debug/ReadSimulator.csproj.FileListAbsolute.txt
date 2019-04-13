@@ -1,0 +1,37 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\ReadSimulator.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\ReadSimulator.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\ReadSimulator.exe.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\ReadSimulator.exe.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ReadSimulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ReadSimulator\obj\Debug\SimulatorWindow.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ReadSimulator\obj\Debug\TestWindow.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ReadSimulator\obj\Debug\App.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ReadSimulator\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ReadSimulator\obj\Debug\ReadSimulator_MarkupCompile.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ReadSimulator\obj\Debug\ReadSimulator_MarkupCompile.lref
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ReadSimulator\obj\Debug\SimulatorWindow.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ReadSimulator\obj\Debug\TestWindow.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ReadSimulator\obj\Debug\ReadSimulator.g.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ReadSimulator\obj\Debug\ReadSimulator.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ReadSimulator\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ReadSimulator\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ReadSimulator\obj\Debug\ReadSimulator.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ReadSimulator\obj\Debug\ReadSimulator.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\ReadSimulator.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\ReadSimulator.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\ReadSimulator.exe.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\ReadSimulator.exe.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ReadSimulator\obj\Debug\ReadSimulator.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ReadSimulator\obj\Debug\SimulatorWindow.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ReadSimulator\obj\Debug\TestWindow.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ReadSimulator\obj\Debug\App.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ReadSimulator\obj\Debug\GeneratedInternalTypeHelper.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ReadSimulator\obj\Debug\ReadSimulator_MarkupCompile.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ReadSimulator\obj\Debug\ReadSimulator_MarkupCompile.lref
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ReadSimulator\obj\Debug\SimulatorWindow.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ReadSimulator\obj\Debug\TestWindow.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ReadSimulator\obj\Debug\ReadSimulator.g.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ReadSimulator\obj\Debug\ReadSimulator.Properties.Resources.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ReadSimulator\obj\Debug\ReadSimulator.csproj.GenerateResource.Cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ReadSimulator\obj\Debug\ReadSimulator.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ReadSimulator\obj\Debug\ReadSimulator.pdb

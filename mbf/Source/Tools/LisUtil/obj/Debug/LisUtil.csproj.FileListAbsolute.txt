@@ -1,0 +1,21 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\LISUtil.exe.config
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\LISUtil.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\LISUtil.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\LISUtil.exe.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\LISUtil.exe.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\LisUtil\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\LisUtil\obj\Debug\LISUtil.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\LisUtil\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\LisUtil\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\LisUtil\obj\Debug\LISUtil.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\LisUtil\obj\Debug\LISUtil.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\LISUtil.exe.config
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\LISUtil.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\LISUtil.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\LISUtil.exe.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\LISUtil.exe.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\LisUtil\obj\Debug\LisUtil.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\LisUtil\obj\Debug\LISUtil.Properties.Resources.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\LisUtil\obj\Debug\LisUtil.csproj.GenerateResource.Cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\LisUtil\obj\Debug\LISUtil.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\LisUtil\obj\Debug\LISUtil.pdb

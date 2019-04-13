@@ -1,0 +1,166 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeExpectedOutputEcoliWithScaffold.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\ComparativeExpectedOutputDefaultParams.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\ComparativeExpectedOutputVerbose.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\ComparativeExpectedOutputWithKmerAndMum.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\ComparativeExpectedOutputWithMaxLengthInsert.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\ComparativeExpectedOutputWithMeanLengthInsert.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\LisUtilExpectedOutputDefaultParams.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\LisUtilExpectedOutputWithMaxMatch.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeUtilExpectedOutputEcoli.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\EColiNucmerUtilOutput.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\EColiPadenaOutputWithAssemble.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\EColi.500_Padena_Assemble_Output.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\EColi.500_Padena_Scaffold_Output.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\EColiMumUtilOutput.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\EColi_500_Padena_AssembleWithScaffold_Output.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\EColi_500_NucmerOutput.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\EColi_ConsensusOutput.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\EColi_LayoutRefinementOutput.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\EColi_RepeatResolutionOutput.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\EColi_ScaffoldUtil_Output.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedComparativeUtilHelp.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedConsensusUtilHelp.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedLisUtilHelp.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedMumUtilHelp.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedNucmerUtilHelp.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedPadenaUtilHelp.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedRepeatResolutionUtilHelp.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedSamUtilsHelp.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedSamUtilsImportHelp.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedSamUtilsIndexHelp.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedSamUtilsMergeHelp.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedSamUtilsSortHelp.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedSamUtilsViewHelp.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedScaffoldUtilHelp.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputBoth.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputComplementBoth.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputComplementReverseOnly.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputDefaultParams.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputEcoli.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputNoAmbiguity.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputReverseOnly.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputShowMatchingStr.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputWithMaxMatch.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MumUtil_NoAmbiguity_EColi500Output.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MumUtil__EColi500Output_WithLength_AndBoth.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\EColi.500_NucmerOutputWithManySwitches.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputMediumSizedBam.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputMediumSizedSam.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputViewDefaultParams.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputViewWithHeaderForSAM.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputViewWithHEX.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputViewWithMinMapQuality.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputViewWithOutputBam.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputViewWithSAMFormat.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputViewWithUncompressedBAM.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_NucmerUtil_Output.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\UtilitiesTestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_MumUtil_Output.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\100K-Ecoli-Query.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\100K-Ecoli-Ref.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\100K-Ecoli-Query.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\100K-Ecoli-Ref.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\DNA-Medium-Ref.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\DNA-Medium-RefReads-WithError_1.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\E-Coli_5Mb_ReadsFile_NC_000913.bd_1X_1.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\E-Coli_5Mb_RefFile_NC_000913.bd.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\E-Coli_5Mb_RefFile_NC_000913.bd_Copy.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Ecoli.500_Copy.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Ecoli.500_WithError_1x_Paired.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\NC_000913.bd.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\NC_000913.bd_1X_1.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedBAMIndex.index
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputSortedBam.bam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputSortedBamByReadNames.bam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeBam.bam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeSam.sam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.TestConsole.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.TestConsole.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.TestConsole.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.TestConsole.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.TestConsole\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.TestConsole\obj\Debug\Bio.TestConsole.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.TestConsole\obj\Debug\Bio.TestConsole.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeExpectedOutputEcoliWithScaffold.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\ComparativeExpectedOutputDefaultParams.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\ComparativeExpectedOutputVerbose.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\ComparativeExpectedOutputWithKmerAndMum.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\ComparativeExpectedOutputWithMaxLengthInsert.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\ComparativeExpectedOutputWithMeanLengthInsert.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\LisUtilExpectedOutputDefaultParams.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\LisUtilExpectedOutputWithMaxMatch.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeUtilExpectedOutputEcoli.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\EColiNucmerUtilOutput.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\EColiPadenaOutputWithAssemble.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\EColi.500_Padena_Assemble_Output.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\EColi.500_Padena_Scaffold_Output.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\EColiMumUtilOutput.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\EColi_500_Padena_AssembleWithScaffold_Output.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\EColi_500_NucmerOutput.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\EColi_ConsensusOutput.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\EColi_LayoutRefinementOutput.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\EColi_RepeatResolutionOutput.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\EColi_ScaffoldUtil_Output.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedComparativeUtilHelp.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedConsensusUtilHelp.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedLisUtilHelp.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedMumUtilHelp.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedNucmerUtilHelp.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedPadenaUtilHelp.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedRepeatResolutionUtilHelp.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedSamUtilsHelp.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedSamUtilsImportHelp.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedSamUtilsIndexHelp.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedSamUtilsMergeHelp.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedSamUtilsSortHelp.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedSamUtilsViewHelp.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ExpectedScaffoldUtilHelp.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputBoth.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputComplementBoth.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputComplementReverseOnly.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputDefaultParams.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputEcoli.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputNoAmbiguity.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputReverseOnly.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputShowMatchingStr.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LisUtilExpectedOutputWithMaxMatch.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MumUtil_NoAmbiguity_EColi500Output.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MumUtil__EColi500Output_WithLength_AndBoth.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\EColi.500_NucmerOutputWithManySwitches.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputMediumSizedBam.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputMediumSizedSam.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputViewDefaultParams.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputViewWithHeaderForSAM.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputViewWithHEX.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputViewWithMinMapQuality.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputViewWithOutputBam.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputViewWithSAMFormat.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputViewWithUncompressedBAM.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_NucmerUtil_Output.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\UtilitiesTestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_MumUtil_Output.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\100K-Ecoli-Query.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\100K-Ecoli-Ref.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\100K-Ecoli-Query.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\100K-Ecoli-Ref.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\DNA-Medium-Ref.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\DNA-Medium-RefReads-WithError_1.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\E-Coli_5Mb_ReadsFile_NC_000913.bd_1X_1.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\E-Coli_5Mb_RefFile_NC_000913.bd.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\E-Coli_5Mb_RefFile_NC_000913.bd_Copy.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Ecoli.500_Copy.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Ecoli.500_WithError_1x_Paired.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\NC_000913.bd.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\NC_000913.bd_1X_1.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedBAMIndex.index
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputSortedBam.bam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ExpectedOutputSortedBamByReadNames.bam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeBam.bam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeSam.sam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TestConsole.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TestConsole.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TestConsole.dll.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TestConsole.dll.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.TestConsole\obj\Debug\Bio.TestConsole.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.TestConsole\obj\Debug\Bio.TestConsole.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.TestConsole\obj\Debug\Bio.TestConsole.pdb

@@ -1,0 +1,6 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\VennTool.exe.config
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\VennTool.exe
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\VennTool.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBT\DevTools\VennTool\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBT\DevTools\VennTool\obj\Debug\VennTool.exe
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBT\DevTools\VennTool\obj\Debug\VennTool.pdb

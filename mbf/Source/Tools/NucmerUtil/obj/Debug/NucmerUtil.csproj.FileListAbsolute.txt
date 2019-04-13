@@ -1,0 +1,21 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\NucmerUtil.exe.config
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\NucmerUtil.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\NucmerUtil.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\NucmerUtil.exe.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\NucmerUtil.exe.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\NucmerUtil\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\NucmerUtil\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\NucmerUtil\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\NucmerUtil.exe.config
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\NucmerUtil.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\NucmerUtil.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\NucmerUtil.exe.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\NucmerUtil.exe.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.Properties.Resources.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.csproj.GenerateResource.Cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.pdb

@@ -1,0 +1,25 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.XML
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio\obj\Debug\Bio.CloneLibrary.Resources.LibraryResource.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio\obj\Debug\Bio.Properties.Resource.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio\obj\Debug\Bio.SimilarityMatrices.Resources.SimilarityMatrixResources.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio\obj\Debug\Bio.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio\obj\Debug\Bio.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.XML
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.dll.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.dll.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio\obj\Debug\Bio.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio\obj\Debug\Bio.CloneLibrary.Resources.LibraryResource.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio\obj\Debug\Bio.Properties.Resource.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio\obj\Debug\Bio.SimilarityMatrices.Resources.SimilarityMatrixResources.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio\obj\Debug\Bio.csproj.GenerateResource.Cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio\obj\Debug\Bio.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio\obj\Debug\Bio.pdb

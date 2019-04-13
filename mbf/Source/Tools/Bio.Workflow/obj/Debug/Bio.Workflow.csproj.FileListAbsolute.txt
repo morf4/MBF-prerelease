@@ -1,0 +1,16 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Workflow.XML
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Workflow.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Workflow.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Workflow.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Workflow.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\Bio.Workflow\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\Bio.Workflow\obj\Debug\Bio.Workflow.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\Bio.Workflow\obj\Debug\Bio.Workflow.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.Workflow.XML
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.Workflow.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.Workflow.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.Workflow.dll.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.Workflow.dll.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\Bio.Workflow\obj\Debug\Bio.Workflow.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\Bio.Workflow\obj\Debug\Bio.Workflow.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\Bio.Workflow\obj\Debug\Bio.Workflow.pdb

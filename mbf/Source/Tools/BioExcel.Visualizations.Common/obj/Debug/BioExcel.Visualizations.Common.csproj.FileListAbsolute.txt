@@ -1,0 +1,79 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BioExcel.Visualizations.Common.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BioExcel.Visualizations.Common.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BioExcel.Visualizations.Common.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BioExcel.Visualizations.Common.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ColumnMap.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\AboutDialog.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\AssemblyInputDialog.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\BlastDialog.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\InputSequenceItem.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\MaxColumnsDialog.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\BedWizardDialog.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\Resources\ResourceDictionary.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\Resources\styles.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\OfficeColorPicker.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ColumnMap.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\AboutDialog.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\AssemblyInputDialog.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\BlastDialog.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ColorConfiguration.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ColorScheme.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ExportSelectionDialog.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\InputSelectionDialog.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\InputSequenceItem.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\MaxColumnsDialog.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\BedWizardDialog.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common_MarkupCompile.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common_MarkupCompile.lref
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\OfficeColorPicker.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ColorConfiguration.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ColorScheme.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ExportSelectionDialog.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\InputSelectionDialog.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common.g.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BiodexExcel.Visualizations.Common.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BioExcel.Visualizations.Common.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BioExcel.Visualizations.Common.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BioExcel.Visualizations.Common.dll.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BioExcel.Visualizations.Common.dll.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ColumnMap.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\AboutDialog.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\AssemblyInputDialog.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\BlastDialog.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\InputSequenceItem.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\MaxColumnsDialog.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\BedWizardDialog.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\Resources\ResourceDictionary.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\Resources\styles.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\OfficeColorPicker.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ColumnMap.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\AboutDialog.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\AssemblyInputDialog.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\BlastDialog.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ColorConfiguration.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ColorScheme.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ExportSelectionDialog.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\InputSelectionDialog.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\InputSequenceItem.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\MaxColumnsDialog.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\BedWizardDialog.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\GeneratedInternalTypeHelper.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common_MarkupCompile.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common_MarkupCompile.lref
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\OfficeColorPicker.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ColorConfiguration.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ColorScheme.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ExportSelectionDialog.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\InputSelectionDialog.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common.g.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BiodexExcel.Visualizations.Common.Properties.Resources.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common.csproj.GenerateResource.Cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common.pdb

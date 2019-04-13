@@ -1,0 +1,14 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Add-ins\Test\Bio.Test.AddIns.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Add-ins\Test\Bio.Test.AddIns.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Add-ins\Test\Bio.Test.AddIns.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Add-ins\Test\Bio.Test.AddIns.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Test.AddIns\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Test.AddIns\obj\Debug\Bio.Test.AddIns.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Test.AddIns\obj\Debug\Bio.Test.AddIns.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Add-ins\Test\Bio.Test.AddIns.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Add-ins\Test\Bio.Test.AddIns.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Add-ins\Test\Bio.Test.AddIns.dll.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Add-ins\Test\Bio.Test.AddIns.dll.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Test.AddIns\obj\Debug\Bio.Test.AddIns.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Test.AddIns\obj\Debug\Bio.Test.AddIns.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Test.AddIns\obj\Debug\Bio.Test.AddIns.pdb

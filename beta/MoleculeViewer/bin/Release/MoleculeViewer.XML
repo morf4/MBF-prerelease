@@ -1,0 +1,1752 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MoleculeViewer</name>
+    </assembly>
+    <members>
+        <member name="T:MoleculeViewer.Splash">
+            <summary>
+            Provides a popup window to display a splash logo for a specific duration.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Splash.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MoleculeViewer.Splash"/> class.
+            </summary>
+            <remarks>
+            Displays the animated splash screen and starts a timer to close the screen.
+            </remarks>
+        </member>
+        <member name="T:MoleculeViewer.Molecule">
+            <summary>
+            Represents a molecule and is constructed from a PDB file stream.
+            </summary>
+            <remarks>
+            This class contains references to the other business objects that make up 
+            a molecule and centralizes the functionality to generate the necessary 3D meshes.
+            </remarks>
+        </member>
+        <member name="M:MoleculeViewer.Molecule.#ctor(System.IO.Stream)">
+            <summary>
+            Parses a PDB stream and build the constituent objects.
+            </summary>
+            <param name="pdbStream">The PDB stream.</param>
+        </member>
+        <member name="M:MoleculeViewer.Molecule.GetSelectionViewState">
+            <summary>
+            Calculates a decent orientation of the molecule based on the bounding box of the
+            currently selected atoms. Used for animating to the center of a selection.
+            </summary>
+            <returns>The generated view state representing the desired orientation.</returns>
+        </member>
+        <member name="M:MoleculeViewer.Molecule.CreateAtomsAndStructures(System.IO.Stream)">
+            <summary>
+            Called by the contructor to parse the portions of the PDB file related to atoms and
+            secondary structures.
+            </summary>
+            <param name="pdbStream">The PDB stream.</param>
+        </member>
+        <member name="M:MoleculeViewer.Molecule.CreateBackbone">
+            <summary>
+            Called by the contructor after creating the <see cref="T:MoleculeViewer.Atom"/> objects to identify the
+            backbone atoms and connect them via referneces.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Molecule.CreateBonds">
+            <summary>
+            Called by the contructor after creating the <see cref="T:MoleculeViewer.Atom"/> objects to identify
+            covalently bonded atoms. Uses a simple distance heuristic of six angstroms.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Molecule.CreateResidues">
+            <summary>
+            Called by the constructor to create <see cref="T:MoleculeViewer.Residue"/> objects and group their
+            constituent atoms.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Molecule.CreateChains">
+            <summary>
+            Called by the constructor to create <see cref="T:MoleculeViewer.Chain"/> objects and group their
+            constituent residues (amino acids).
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Molecule.CreateMoleculeTransform">
+            <summary>
+            Called by the constructor to calculate the default scale and translation of the
+            molecule based on the bounding box of the atoms.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Molecule.SetStructureInfo">
+            <summary>
+            Called by the constructor to set secondary structure related properties on the residues
+            and atoms that compose each structure.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Molecule.CreateRibbons">
+            <summary>
+            Called by the constructor to create <see cref="T:MoleculeViewer.Ribbon"/> objects which are used to
+            compute the spline curves for secondary struction representations.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Molecule.CreateModel">
+            <summary>
+            Called by the constructor to create the container Model3DGroup for the molecule's 3D
+            model.
+            </summary>
+        </member>
+        <member name="E:MoleculeViewer.Molecule.ShowCartoonChanged">
+            <summary>
+            Allows part of the molecule to hide or show parts related to the cartoon view.
+            </summary>
+        </member>
+        <member name="E:MoleculeViewer.Molecule.ShowBackboneChanged">
+            <summary>
+            Allows part of the molecule to hide or show parts related to the backbone view.
+            </summary>
+        </member>
+        <member name="E:MoleculeViewer.Molecule.ShowFullChainChanged">
+            <summary>
+            Allows part of the molecule to hide or show parts related to the full chain view.
+            </summary>
+        </member>
+        <member name="E:MoleculeViewer.Molecule.ShowHetAtomsChanged">
+            <summary>
+            Allows part of the molecule to hide or show parts related to het atoms.
+            </summary>
+        </member>
+        <member name="E:MoleculeViewer.Molecule.ShowWatersChanged">
+            <summary>
+            Allows part of the molecule to hide or show parts related to waters.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Molecule.Atoms">
+            <summary>
+            All of the atoms contained in the molecule.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Molecule.Residues">
+            <summary>
+            All of the residues (amino acids) contained in the molecule.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Molecule.Chains">
+            <summary>
+            All of the chains of amino acids contained in the molecule.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Molecule.MoleculeTransform">
+            <summary>
+            The current orientation of the molecule. This is used by a
+            <see cref="T:MoleculeViewer.StructureControl"> to translate atom positions from world space to screen
+            space.</see>
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Molecule.Model">
+            <summary>
+            The Model3D for the molecule which contains all constituent parts. This can be added to
+            a Visual3D and then diplayed in a Viewport3D.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Molecule.ShowCartoon">
+            <summary>
+            Determines whether parts of the molecule related to the cartoon view are shown.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Molecule.ShowBackbone">
+            <summary>
+            Determines whether parts of the molecule related to the backbone view are shown.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Molecule.ShowFullChain">
+            <summary>
+            Determines whether parts of the molecule related to the full chain view are shown.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Molecule.ShowHetAtoms">
+            <summary>
+            Determines whether parts of the molecule related to het atoms are shown.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Molecule.ShowWaters">
+            <summary>
+            Determines whether parts of the molecule related to waters are shown.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Molecule.ColorScheme">
+            <summary>
+            The current molecule coloring method.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Molecule.SelectedAtoms">
+            <summary>
+            Provides a list of all currently selected atoms.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.Helix">
+            <summary>
+            <see cref="T:MoleculeViewer.Structure"/> subclass for helix structures.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.Structure">
+            <summary>
+            Abstract base class for secondary structures.
+            </summary>
+            <remarks>
+            Contains attributes about the structure that are parsed from a PDB file.
+            </remarks>
+        </member>
+        <member name="M:MoleculeViewer.Structure.CreateStructure(System.String)">
+            <summary>
+            Static method for parsing structure entries in a pdb file and instantiating the correct
+            <see cref="T:MoleculeViewer.Structure"/> subclass.
+            </summary>
+            <param name="pdbLine">A structure entry from a pdb file.</param>
+            <returns>An instance of a <see cref="T:MoleculeViewer.Structure"/> subclass.</returns>
+        </member>
+        <member name="P:MoleculeViewer.Structure.Color">
+            <summary>
+            Gets the color used when the structure-based coloring method is used.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Structure.ChainIdentifier">
+            <summary>
+            Alphanumeric chain identifier for the chain this structure belongs to.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Structure.StartResidueSequenceNumber">
+            <summary>
+            The residue index number for the first amino acid in this structure.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Structure.EndResidueSequenceNumber">
+            <summary>
+            The residue index number for the last amino acid in this structure.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Structure.ChainIdentifierColumn">
+            <summary>
+            Abstract property that returns the PDB file structure record column for the chain
+            identifier.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Structure.StartResidueSequenceNumberColumn">
+            <summary>
+            Abstract property that returns the PDB file structure record column for the starting
+            residue sequence number.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Structure.EndResidueSequenceNumberColumn">
+            <summary>
+            Abstract property that returns the PDB file structure record column for the ending
+            residue sequence number.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Helix.Color">
+            <summary>
+            Returns the color to use for helix structures.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Helix.ChainIdentifierColumn">
+            <summary>
+            Returns the PDB file helix structure record column for the chain identifier.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Helix.StartResidueSequenceNumberColumn">
+            <summary>
+            Returns the PDB file helix structure record column for the starting residue sequence
+            number.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Helix.EndResidueSequenceNumberColumn">
+            <summary>
+            Returns the PDB file helix structure record column for the ending residue sequence
+            number.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.ResidueControl">
+            <summary>
+            Control to render a residue (amino acid) in a molecule, 
+            applying camera settings and transforms.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.MoleculeViewControl">
+            <summary>
+            Abstract base control for viewing a part of a molecule in a <see cref="P:MoleculeViewer.MoleculeViewControl.PdbViewer"/>.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.MoleculeViewControl.OnMoleculeChanged">
+            <summary>
+            Called when the molecule is changed.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.MoleculeViewControl.PdbViewer">
+            <summary>
+            Gets or sets the PDB viewer that owns this control.
+            </summary>
+            <value>The PDB viewer.</value>
+        </member>
+        <member name="P:MoleculeViewer.MoleculeViewControl.Molecule">
+            <summary>
+            Gets or sets the molecule being viewed.
+            </summary>
+            <value>The molecule.</value>
+        </member>
+        <member name="M:MoleculeViewer.ResidueControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MoleculeViewer.ResidueControl"/> class and sets up visual elements for rendering.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.ResidueControl.HoverHitTest">
+            <summary>
+            Performs hit testing for the control.
+            </summary>
+            <returns>The active <see cref="T:MoleculeViewer.Residue"/> if any.</returns>
+        </member>
+        <member name="M:MoleculeViewer.ResidueControl.OnMoleculeChanged">
+            <summary>
+            Called when the molecule is changed.
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.ActionIndicator">
+            <summary>
+            ActionIndicator
+            </summary>
+            <summary>
+            Control to provide user feedback on the current state of mouse and 
+            keyboard inputs and corresponding actions being executed by the viewer.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.ActionIndicator.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.ActionIndicator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MoleculeViewer.ActionIndicator"/> class.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.ActionIndicator.Update(System.Boolean)">
+            <summary>
+            Updates the indicator as active or inactive to match the current keyboard and mouse state.
+            </summary>
+            <param name="isActive">if set to <c>true</c>, indicator is active.</param>
+        </member>
+        <member name="M:MoleculeViewer.ActionIndicator.FlashWheel">
+            <summary>
+            Flashes the control's wheel display.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.Stick">
+            <summary>
+            Static class that generates the mesh for a cylindrical stick with pseudo-rounded ends the
+            first time one is needed.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Stick.#cctor">
+            <summary>
+            Static constructor to generate the mesh when first needed.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Stick.CreateMesh(System.Double)">
+            <summary>
+            Populates the vertex and index buffers.
+            </summary>
+            <param name="capOffset">The distance from the end of the cylinder to the end of the
+            pseudo-rounded end.</param>
+            <returns>The mesh.</returns>
+        </member>
+        <member name="P:MoleculeViewer.Stick.ShortMesh">
+            <summary>
+            Gets the short, fat mesh.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Stick.LongMesh">
+            <summary>
+            Gets the long, skinny mesh.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.Properties.Resources">
+            <summary>
+               A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Properties.Resources.ResourceManager">
+            <summary>
+               Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Properties.Resources.Culture">
+            <summary>
+               Overrides the current thread's CurrentUICulture property for all
+               resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.Cartoon">
+            <summary>
+            Creates the 3D model for a particular residue when being displayed in cartoon mode.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Cartoon.#ctor(MoleculeViewer.Residue,System.Windows.Media.Color)">
+            <summary>
+            Builds the 3D model for the cartoon view a the given residue.
+            </summary>
+            <param name="residue">A residue.</param>
+            <param name="initialColor">The residue's current color.</param>
+        </member>
+        <member name="M:MoleculeViewer.Cartoon.HoverHitTest(System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult)">
+            <summary>
+            Performs hit testing for this cartoon mesh.
+            </summary>
+            <param name="rayHitTestResult">A 3D mesh hit test result from the WPF visual tree hit
+            testing framework</param>
+            <returns>
+            True if the mesh hit belongs to this residue, otherwise false.
+            </returns>
+        </member>
+        <member name="M:MoleculeViewer.Cartoon.AddTube(System.Double,System.Double)">
+            <summary>
+            Creates a cylindrical tube along the spline path.
+            </summary>
+            <param name="width">The x-radius of the extrusion ellipse.</param>
+            <param name="height">The y-radius of the extrusion ellipse.</param>
+        </member>
+        <member name="M:MoleculeViewer.Cartoon.AddTubeCap(System.Double,System.Double)">
+            <summary>
+            Creates an elliptical cap for a tube along the spline path.
+            </summary>
+            <param name="width">The x-radius of the cap ellipse.</param>
+            <param name="height">The y-radius of the cap ellipse.</param>
+        </member>
+        <member name="M:MoleculeViewer.Cartoon.AddSheet">
+            <summary>
+            Creates a rectangular solid sheet along the spline path.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Cartoon.AddSheetCap">
+            <summary>
+            Creates a flat cap or an arrow head cap for a sheet.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Cartoon.AddSheetCapSection(System.Windows.Media.Media3D.MeshGeometry3D,System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D)">
+            <summary>
+            Helper method to add a quadrilateral surface for a sheet cap.
+            </summary>
+            <param name="capMesh">The mesh to add the triangles to.</param>
+            <param name="p1">Point 1.</param>
+            <param name="p2">Point 2.</param>
+            <param name="p3">Point 3.</param>
+            <param name="p4">Point 4.</param>
+        </member>
+        <member name="P:MoleculeViewer.Cartoon.Model">
+            <summary>
+            The 3D model for this cartoon mesh.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Cartoon.Color">
+            <summary>
+            Gets and sets the color of the model.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.MainWindow">
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.MainWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MoleculeViewer.MainWindow"/> class.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.Residue">
+            <summary>
+            Represents a residue in a molecule. 
+            </summary>
+            <remarks>
+            Sometimes referred to as an amino acid. Generates WPF content to display the 
+            residue in cartoon mode as well as in the identifier strip at the
+            top of the screen. Aggregates all constituent atoms.
+            </remarks>
+        </member>
+        <member name="T:MoleculeViewer.HoverObject">
+            <summary>
+            Abstract base class for objects that support changing their visual state when hovered and
+            displaying <see cref="T:MoleculeViewer.HoverPopup"/> windows.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.HoverObject.OnIsHoveredChanged">
+            <summary>
+            Abstract method for subclasses to update their visual appearance based on the hovered
+            state.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.HoverObject.DisplayName">
+            <summary>
+            Label used for atom tooltips.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.HoverObject.IsHovered">
+            <summary>
+            Gets or sets a boolean indicating whether or not the mouse pointer is currently
+            hovering over the object.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Residue.#ctor(MoleculeViewer.Molecule,MoleculeViewer.Atom)">
+            <summary>
+            Creates a new <see cref="T:MoleculeViewer.Residue"/> object.
+            </summary>
+            <param name="molecule">The molecule this residue belongs to.</param>
+            <param name="atom">An atom in the residue. This is needed to obtain residue properties
+            since there is no corresponding PDB file record.</param>
+        </member>
+        <member name="M:MoleculeViewer.Residue.UpdateForAtomSelectionChange">
+            <summary>
+            Updates the selection state based on the selection states of the constituent atoms.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Residue.HoverHitTest(System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult)">
+            <summary>
+            Performs hit testing for this residue.
+            </summary>
+            <param name="rayHitTestResult">A 3D mesh hit test result from the WPF visual tree hit
+            testing framework</param>
+            <returns>True if the mesh hit belongs to this residue, otherwise false.</returns>
+        </member>
+        <member name="M:MoleculeViewer.Residue.IsAminoName(System.String)">
+            <summary>
+            Determines if a particular residue name refers to an amino acid.
+            </summary>
+            <param name="residueName">A multi-character residue abbreviation.</param>
+            <returns>True if and only if the residue name refers to an amino acid.</returns>
+        </member>
+        <member name="M:MoleculeViewer.Residue.OnIsHoveredChanged">
+            <summary>
+            Updates the 3D model to depict the correct hovered state.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Residue.GetResidueIdentifier(System.String)">
+            <summary>
+            Static method to obtain the single character abbreviation of an amino acid.
+            </summary>
+            <param name="residueName">A multi-character residue abbreviation.</param>
+            <returns>A single character abbreviation if one is available, othewise return the input
+            abbreviation.</returns>
+        </member>
+        <member name="M:MoleculeViewer.Residue.GetResidueColor(System.String)">
+            <summary>
+            Selects a color based on the residue type.
+            </summary>
+            <param name="residueName">A multi-character residue abbreviation.</param>
+            <returns>A color for the residue.</returns>
+        </member>
+        <member name="M:MoleculeViewer.Residue.MoleculeShowCartoonChanged(System.Object,System.EventArgs)">
+            <summary>
+            Toggles visibility of 3D model components based on the
+            <see cref="P:MoleculeViewer.Molecule.ShowCartoon"/> property.
+            </summary>
+            <param name="sender">The molecule.</param>
+            <param name="e">Empty event args.</param>
+        </member>
+        <member name="M:MoleculeViewer.Residue.UpdateColorView">
+            <summary>
+            Selects the material color for this residue based on the coloring method.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Residue.UpdateView">
+            <summary>
+            Updates the material color for this atom based on the coloring method and the current
+            hover state.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.DisplayName">
+            <summary>
+            Label used for atom tooltips.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.ResidueName">
+            <summary>
+            The multi-character abbreviation for the residue. For chain-based amino acids, this is
+            a three letter code.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.ChainIdentifier">
+            <summary>
+            Alphanumeric chain identifier for the chain residue belongs to.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.ResidueSequenceNumber">
+            <summary>
+            Index number for this amino acid.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.ResidueIdentifier">
+            <summary>
+            Shortened abbreviation for the residue. For chain-based amino acids, this is a single
+            letter.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.ResidueColor">
+            <summary>
+            The color used for this residue when using the residue-based coloring method.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.Atoms">
+            <summary>
+            The constituent atoms.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.Model">
+            <summary>
+            The 3D model for this residue.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.IsSheet">
+            <summary>
+            Gets and sets a boolean value indicating if this residue is part of a sheet.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.IsHelix">
+            <summary>
+            Gets and sets a boolean value indicating if this residue is part of a helix.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.IsStructureStart">
+            <summary>
+            Gets and sets a boolean value indicating if this residue is the first residue in a
+            secondary structure.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.IsStructureEnd">
+            <summary>
+            Gets and sets a boolean value indicating if this residue is the last residue in a
+            secondary structure.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.PreviousResidue">
+            <summary>
+            Reference to the previous residue in the current chain.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.NextResidue">
+            <summary>
+            Reference to the next residue in the current chain.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.CAlphaPosition">
+            <summary>
+            If residue belongs to a standard protein amino acid this will contain the 3D location
+            of the alpha carbon atom.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.CarbonylOxygenPosition">
+            <summary>
+            If residue belongs to a standard protein amino acid this will contain the 3D location
+            of the carbonyl oxygen atom.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.Chain">
+            <summary>
+            The chain this residue belongs to.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.Ribbon">
+            <summary>
+            Reference to the <see cref="P:MoleculeViewer.Residue.Ribbon"/> object that calculates spline paths for this
+            residue.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.StructureColor">
+            <summary>
+            The color to use for this residue when using the structure-based coloring method.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.ResidueStripItems">
+            <summary>
+            All of the <see cref="T:MoleculeViewer.ResidueStripItem"/> controls for this residue. For protein
+            amino acids, there is only one item in this list.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.ColorScheme">
+            <summary>
+            Currently used coloring method.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.Selection">
+            <summary>
+            Gets and sets a <see cref="T:MoleculeViewer.Residue.SelectionType"/> enumeration value indicating the current
+            selection state.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Residue.ShowAsSelection">
+            <summary>
+            Gets and sets a <see cref="T:MoleculeViewer.Residue.SelectionType"/> enumeration value indicating if the
+            residue is rendered as selected. For certain operations such as rubber-banding a
+            residue might be rendered as though it were selected even though it's not.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.Residue.SelectionType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.IKLogoAnimated">
+            <summary>
+            IKLogoAnimated
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.IKLogoAnimated.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.ResidueStripItem">
+            <summary>
+            Visual element representing a residue (amino acid) as a color coded 
+            single character to be displayed with others in a strip to represent 
+            an entire molecule.
+            </summary>
+            <remarks>
+            The control supports selection and display of partial 
+            and full selection and contiguous selection with its neighbors.
+            </remarks>
+        </member>
+        <member name="M:MoleculeViewer.ResidueStripItem.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MoleculeViewer.ResidueStripItem"/> class and sets up visual elements.
+            </summary>
+            <param name="character">The character.</param>
+        </member>
+        <member name="P:MoleculeViewer.ResidueStripItem.Residue">
+            <summary>
+            Gets or sets the residue represented by this control instance.
+            </summary>
+            <value>The residue.</value>
+        </member>
+        <member name="P:MoleculeViewer.ResidueStripItem.Label">
+            <summary>
+            Gets the label displayed in the strip.
+            </summary>
+            <value>The label.</value>
+        </member>
+        <member name="P:MoleculeViewer.ResidueStripItem.Size">
+            <summary>
+            Gets or sets the size of the strip item.
+            </summary>
+            <value>The size.</value>
+        </member>
+        <member name="P:MoleculeViewer.ResidueStripItem.ActionBorder">
+            <summary>
+            Gets or sets the type of border to display while performing an action that includes this strip item.
+            </summary>
+            <value>The type of border.</value>
+        </member>
+        <member name="T:MoleculeViewer.ResidueStripItem.ActionBorderType">
+            <summary>
+            Represents border rendering options for a strip item
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.LocalEntity">
+            <summary>
+            Represents entity data that can be displayed in a viewer.
+            </summary>
+            <remarks>
+            Entity data is stored in a file in the local file system.
+            </remarks>
+        </member>
+        <member name="M:MoleculeViewer.LocalEntity.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MoleculeViewer.LocalEntity"/> class.
+            </summary>
+            <param name="fileName">Name of the file storing the entity's data.</param>
+        </member>
+        <member name="M:MoleculeViewer.LocalEntity.GetStream">
+            <summary>
+            Gets the stream to read from the entity's data file.
+            </summary>
+            <returns>A read only stream.</returns>
+        </member>
+        <member name="P:MoleculeViewer.LocalEntity.DisplayName">
+            <summary>
+            Gets the name of the entity to display.
+            </summary>
+            <value>The display name.</value>
+        </member>
+        <member name="T:MoleculeViewer.App">
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.TsriLogoControl">
+            <summary>
+            TsriLogoControl
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.TsriLogoControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.TsriLogoControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MoleculeViewer.TsriLogoControl"/> class.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.StructureControl">
+            <summary>
+            Control to render a structural element of a molecule in 3D, 
+            applying camera settings and transforms.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.StructureControl.#ctor(MoleculeViewer.PdbViewer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MoleculeViewer.StructureControl"/> class and sets up visual elements for rendering.
+            </summary>
+            <param name="pdbViewer">The PDB viewer.</param>
+        </member>
+        <member name="M:MoleculeViewer.StructureControl.HoverHitTest">
+            <summary>
+            Performs hit testing for the displayed molecule.
+            </summary>
+            <returns>The active <see cref="T:MoleculeViewer.Atom"/> or <see cref="T:MoleculeViewer.Residue"/> if any.</returns>
+        </member>
+        <member name="M:MoleculeViewer.StructureControl.GetViewState">
+            <summary>
+            Gets the current <see cref="T:MoleculeViewer.ViewState"/> of the control instance.
+            </summary>
+            <returns>The current <see cref="T:MoleculeViewer.PdbViewState"/>.</returns>
+        </member>
+        <member name="M:MoleculeViewer.StructureControl.StartViewStateAnimation">
+            <summary>
+            Starts the view state animation.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.StructureControl.ContinueViewStateAnimation">
+            <summary>
+            Indicates whether the ViewState animation is in progress.
+            </summary>
+            <returns>true if the viewer is animating, otherwise false</returns>
+        </member>
+        <member name="M:MoleculeViewer.StructureControl.StopViewStateAnimation">
+            <summary>
+            Stops the view state animation.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.StructureControl.SetViewState(MoleculeViewer.PdbViewState)">
+            <summary>
+            Sets all camera and transform settings based on the specified <see cref="T:MoleculeViewer.PdbViewState"/>.
+            </summary>
+            <param name="pdbViewState">The new state of the view.</param>
+        </member>
+        <member name="M:MoleculeViewer.StructureControl.OnMoleculeChanged">
+            <summary>
+            Called when the molecule is changed.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.StructureControl.CaptureElement">
+            <summary>
+            Gets or sets the capture element to associate with this control.
+            </summary>
+            <value>The capture element.</value>
+        </member>
+        <member name="T:MoleculeViewer.ColorScheme">
+            <summary>
+            Emuneration for the various coloring methods.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.Atom">
+            <summary>
+            Abstract base class for all types of atoms.
+            </summary>
+            <remarks>
+            Handles the majority of atom-related display logic.
+            </remarks>
+        </member>
+        <member name="M:MoleculeViewer.Atom.CreateAtom(MoleculeViewer.Molecule,System.String)">
+            <summary>
+            Static method for parsing atom entries in a pdb file and instantiating the correct
+            <see cref="T:MoleculeViewer.Atom"/> subclass.
+            </summary>
+            <param name="molecule">The molecule this atom belongs to.</param>
+            <param name="pdbLine">An atom entry from a pdb file.</param>
+            <returns>An instance of an <see cref="T:MoleculeViewer.Atom"/> subclass.</returns>
+        </member>
+        <member name="M:MoleculeViewer.Atom.SetBFactorColors(System.Collections.Generic.List{MoleculeViewer.Atom})">
+            <summary>
+            Static method that sets colors for the temperature coloring method for a list of atoms
+            by normalizing the temperature values across the list.
+            </summary>
+            <param name="atoms">The list of atoms.</param>
+        </member>
+        <member name="M:MoleculeViewer.Atom.GetAverageTemperateColor(System.Collections.Generic.List{MoleculeViewer.Atom})">
+            <summary>
+            Used by a <see cref="P:MoleculeViewer.Atom.Residue"/> to calculate it's temperature color.
+            </summary>
+            <param name="atoms">A list of atoms.</param>
+            <returns>The average color.</returns>
+        </member>
+        <member name="M:MoleculeViewer.Atom.GetBounds(System.Collections.Generic.List{MoleculeViewer.Atom})">
+            <summary>
+            Static method to calculate the 3D bounding box for a list of atoms.
+            </summary>
+            <param name="atoms">A list of atoms.</param>
+            <returns>The 3D bounding box.</returns>
+        </member>
+        <member name="M:MoleculeViewer.Atom.Initialize">
+            <summary>
+            Extra initialization for this class and subclasses that can't be done in the
+            constructor since certain properties are expected to be set.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Atom.HoverHitTest(System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult)">
+            <summary>
+            Performs hit testing for this atom.
+            </summary>
+            <param name="rayHitTestResult">A 3D mesh hit test result from the WPF visual tree hit
+            testing framework</param>
+            <returns>True if the mesh hit belongs to this atom, otherwise false.</returns>
+        </member>
+        <member name="M:MoleculeViewer.Atom.UpdateSelectionView">
+            <summary>
+            Updates the 3D model to depict the correct selection state.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Atom.OnIsHoveredChanged">
+            <summary>
+            Updates the 3D model to depict the correct hovered state.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Atom.RenderAtomModel(System.Boolean)">
+            <summary>
+            Toggles visiblity of the atom. Also used to delay creation of the model until it's
+            actually needed.
+            </summary>
+            <param name="show">True to show the atom, false to hide it.</param>
+        </member>
+        <member name="M:MoleculeViewer.Atom.CreateBondStick(System.Windows.Media.Media3D.Model3DGroup,MoleculeViewer.Atom,System.Double)">
+            <summary>
+            Creates the 3D model for stick that represents a bond.
+            </summary>
+            <param name="modelGroup">The Model3DGroup that will contain the stick.</param>
+            <param name="atom">The other atom this atom is bonded with.</param>
+            <param name="distance">The distance to the other bonded atom.</param>
+        </member>
+        <member name="M:MoleculeViewer.Atom.CreateSelectionSphere">
+            <summary>
+            Creates the 3D model for a ball that is used to visually identify a selected atom.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Atom.CreateUnbondedSphere">
+            <summary>
+            Creates the 3D model for a small ball that is used to represent an unbonded atom since
+            no sticks will be connected.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Atom.UpdateColorView">
+            <summary>
+            Updates the material color for this atom based on the coloring method and the current
+            hover state.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Atom.DisplayName">
+            <summary>
+            Label used for atom tooltips.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Atom.AtomName">
+            <summary>
+            Abreviated type name for the atom.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Atom.ResidueName">
+            <summary>
+            Abbreviated residue name for the amino acid atom belongs to.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Atom.ChainIdentifier">
+            <summary>
+            Alphanumeric chain identifier for the chain atom belongs to.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Atom.ResidueSequenceNumber">
+            <summary>
+            Index number for the amino acid the atom belongs to.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Atom.Position">
+            <summary>
+            3D coordinate of this atom in angstroms.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Atom.Bonds">
+            <summary>
+            Covalently bonded atoms along with distance in angstroms.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Atom.Model">
+            <summary>
+            The 3D model for this atom.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Atom.Residue">
+            <summary>
+            Reference to the amino acid this atom belongs to.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Atom.StructureColor">
+            <summary>
+            Color to use for the structure coloring method.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Atom.ColorScheme">
+            <summary>
+            Currently used coloring method.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Atom.IsSelected">
+            <summary>
+            Gets and sets a boolean value indicating the current selection state.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Atom.ShowAsSelected">
+            <summary>
+            Gets and sets a boolean value indicating if the atom is rendered as selected. For
+            certain operations such as rubber-banding an atom might be rendered as though it were
+            selected even though it's not.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Atom.Molecule">
+            <summary>
+            The molecule this atom belongs to.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.Sheet">
+            <summary>
+            <see cref="T:MoleculeViewer.Structure"/> subclass for sheet structures.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Sheet.Color">
+            <summary>
+            Returns the color to use for sheet structures.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Sheet.ChainIdentifierColumn">
+            <summary>
+            Returns the PDB file sheet structure record column for the chain identifier.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Sheet.StartResidueSequenceNumberColumn">
+            <summary>
+            Returns the PDB file sheet structure record column for the starting residue sequence
+            number.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Sheet.EndResidueSequenceNumberColumn">
+            <summary>
+            Returns the PDB file sheet structure record column for the ending residue sequence
+            number.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.HoverPopup">
+            <summary>
+            Provides a popup control that supports <see cref="T:MoleculeViewer.HoverObject"/> visual state management.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.HoverPopup.#ctor(MoleculeViewer.HoverObject,MoleculeViewer.ArtifactViewer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MoleculeViewer.HoverPopup"/> class and sets up its child UI elements.
+            </summary>
+            <param name="hoverObject">The hover object.</param>
+            <param name="artifactViewer">The artifact viewer.</param>
+        </member>
+        <member name="T:MoleculeViewer.HetAtom">
+            <summary>
+            <see cref="T:MoleculeViewer.Atom"/> subclass for atoms that are not waters and are not standard protein chain atoms.
+            </summary>
+            <remarks>
+            Adds functionality to toggle visibility based on the <see cref="P:MoleculeViewer.Molecule.ShowHetAtoms"/> property.
+            </remarks>
+        </member>
+        <member name="M:MoleculeViewer.HetAtom.Initialize">
+            <summary>
+            Attaches an event handedler to <see cref="E:MoleculeViewer.Molecule.ShowHetAtomsChanged"/>.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.HetAtom.UpdateSelectionView">
+            <summary>
+            Override to check <see cref="P:MoleculeViewer.Molecule.ShowHetAtoms"/> when the atom's selection state
+            is changed.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.HetAtom.MoleculeShowHetAtomsChanged(System.Object,System.EventArgs)">
+            <summary>
+            Toggles visibility based on the <see cref="P:MoleculeViewer.Molecule.ShowHetAtoms"/> property.
+            </summary>
+            <param name="sender">The molecule.</param>
+            <param name="e">Empty event args.</param>
+        </member>
+        <member name="T:MoleculeViewer.Chain">
+            <summary>
+            Container object to group residues by chain and set chain-based temperature colors.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Chain.#ctor(System.String)">
+            <summary>
+            Creates the chain container object.
+            </summary>
+            <param name="chainIdentifier"></param>
+        </member>
+        <member name="M:MoleculeViewer.Chain.SetChainColors(System.Collections.Generic.List{MoleculeViewer.Chain})">
+            <summary>
+            Assigns colors to all the chains for a molecule.
+            </summary>
+            <param name="chains">A list of chains.</param>
+        </member>
+        <member name="M:MoleculeViewer.Chain.GetChainColor(System.Int32)">
+            <summary>
+            Selects one of five chain colors.
+            </summary>
+            <param name="index">A chain color index.</param>
+            <returns>A color.</returns>
+        </member>
+        <member name="P:MoleculeViewer.Chain.ChainIdentifier">
+            <summary>
+            Alphanumeric chain identifier.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Chain.ChainColor">
+            <summary>
+            Color used for this chain.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.Chain.Residues">
+            <summary>
+            A list of the constituent residues.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.ViewState">
+            <summary>
+            Abstract base class to represent the state of a rendered view.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.ViewState.CreateSmoothTween(MoleculeViewer.ViewState,MoleculeViewer.ViewState,System.Double)">
+            <summary>
+            Creates the smooth tween of the two specified ViewStates.
+            </summary>
+            <param name="startViewState">Start <see cref="T:MoleculeViewer.ViewState"/> of the tween.</param>
+            <param name="endViewState">End <see cref="T:MoleculeViewer.ViewState"/> of the tween.</param>
+            <param name="t">The interpolation coefficient.</param>
+            <returns>A <see cref="T:MoleculeViewer.ViewState"/> representing the tween of the specifed ViewStates.</returns>
+        </member>
+        <member name="M:MoleculeViewer.ViewState.CreateXmlNode">
+            <summary>
+            Creates the XML node representing the ViewState.
+            </summary>
+            <returns>An XML node representing this instance.</returns>
+        </member>
+        <member name="M:MoleculeViewer.ViewState.CreateTween(MoleculeViewer.ViewState,System.Double)">
+            <summary>
+            Creates the tween of the instance and the specified end ViewState.
+            </summary>
+            <param name="endViewState">End <see cref="T:MoleculeViewer.ViewState"/> of the tween.</param>
+            <param name="t">The interpolation coefficient.</param>
+            <returns>
+            A <see cref="T:MoleculeViewer.ViewState"/> representing the tween of this instance and the specifed end ViewState.
+            </returns>
+        </member>
+        <member name="T:MoleculeViewer.Ribbon">
+            <summary>
+            Calculates spline paths for all residues in a particular structure.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Ribbon.CreateControlPoints">
+            <summary>
+            Initiates the spine calculation logic for all constituent residues.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Ribbon.GetResidueSpline(MoleculeViewer.Residue,System.Collections.Generic.List{System.Windows.Media.Media3D.Point3D}@,System.Collections.Generic.List{System.Windows.Media.Media3D.Vector3D}@,System.Collections.Generic.List{System.Windows.Media.Media3D.Vector3D}@)">
+            <summary>
+            Gets all of the values that represent the spline for a particular residue.
+            </summary>
+            <param name="residue">A residue in the corresponding secondary structure.</param>
+            <param name="residueRibbonPoints">A list control points for the spline.</param>
+            <param name="residueTorsionVectors">A list of the torsion vectors for the
+            spline.</param>
+            <param name="residueNormalVectors">A list of the normal vectors for the spline.</param>
+        </member>
+        <member name="M:MoleculeViewer.Ribbon.PopulateAtomLists">
+            <summary>
+            Helper function used by <see cref="M:MoleculeViewer.Ribbon.CreateControlPoints"/> to populate the data
+            stuctures which refence certain atom types.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Ribbon.PopulateControlLists">
+            <summary>
+            Helper function used by <see cref="M:MoleculeViewer.Ribbon.CreateControlPoints"/> to populate the data
+            stuctures which hold control point data.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Ribbon.PopulateSplineLists">
+            <summary>
+            Helper function used by <see cref="M:MoleculeViewer.Ribbon.CreateControlPoints"/> to populate the data
+            stuctures which hold the spline data.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Ribbon.AddSplineNode(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D)">
+            <summary>
+            Helper function used by <see cref="M:MoleculeViewer.Ribbon.PopulateSplineLists"/> to populate the data
+            stuctures for a particular point along the spline.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Ribbon.Reflect(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D,System.Double)">
+            <summary>
+            Reflects one point across another by a specified amount.
+            </summary>
+            <param name="p1">Point 1.</param>
+            <param name="p2">Point 2.</param>
+            <param name="amount">The reflection scaling factor.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MoleculeViewer.Ribbon.Spline(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D,System.Double)">
+            <summary>
+            Calculates the actual spline position.
+            </summary>
+            <param name="p1">Point 1.</param>
+            <param name="p2">Point 2.</param>
+            <param name="p3">Point 3.</param>
+            <param name="t">The parametric value along the spline section.</param>
+            <returns></returns>
+        </member>
+        <member name="P:MoleculeViewer.Ribbon.Residues">
+            <summary>
+            All of the residues in the secondary strucuture associated with this
+            <see cref="T:MoleculeViewer.Ribbon"/>.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.PdbViewState">
+            <summary>
+            Represents the state of camera settings and transformations of a 3D view of a PDB.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.PdbViewState.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MoleculeViewer.PdbViewState"/> class.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.PdbViewState.#ctor(System.Xml.XmlNode)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MoleculeViewer.PdbViewState"/> class.
+            </summary>
+            <param name="xmlNode">The XML node representing the initial ViewState.</param>
+        </member>
+        <member name="M:MoleculeViewer.PdbViewState.CreateXmlNode">
+            <summary>
+            Creates the XML node representing the ViewState.
+            </summary>
+            <returns>An XML node representing this instance.</returns>
+        </member>
+        <member name="M:MoleculeViewer.PdbViewState.CreateTween(MoleculeViewer.ViewState,System.Double)">
+            <summary>
+            Creates the tween of the instance and the specified end ViewState.
+            </summary>
+            <param name="endViewState">End <see cref="T:MoleculeViewer.ViewState"/> of the tween.</param>
+            <param name="t">The interpolation coefficient.</param>
+            <returns>
+            A <see cref="T:MoleculeViewer.ViewState"/> representing the tween of this instance and the specifed end ViewState.
+            </returns>
+        </member>
+        <member name="P:MoleculeViewer.PdbViewState.Translation">
+            <summary>
+            Gets or sets the translation.
+            </summary>
+            <value>The 3D translation vector.</value>
+        </member>
+        <member name="P:MoleculeViewer.PdbViewState.Scale">
+            <summary>
+            Gets or sets the scale.
+            </summary>
+            <value>The scale ratio.</value>
+        </member>
+        <member name="P:MoleculeViewer.PdbViewState.Rotation">
+            <summary>
+            Gets or sets the rotation quaternion.
+            </summary>
+            <value>The 3D rotation quaternion.</value>
+        </member>
+        <member name="P:MoleculeViewer.PdbViewState.Clip">
+            <summary>
+            Gets or sets the clip.
+            </summary>
+            <value>The clip value.</value>
+        </member>
+        <member name="P:MoleculeViewer.PdbViewState.Slab">
+            <summary>
+            Gets or sets the slab.
+            </summary>
+            <value>The slab value.</value>
+        </member>
+        <member name="T:MoleculeViewer.AboutWindow">
+            <summary>
+            AboutWindow
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.AboutWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MoleculeViewer.AboutWindow"/> class.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.AboutWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.Sphere">
+            <summary>
+            Static class that generates the mesh for a sphere the first time one is needed.
+            </summary>
+            <remarks>
+            The tessellation alorithm is based on recursive octahedron subdivision to avoid noticable
+            symmetry artifacts since the polygon count is low.
+            </remarks>
+        </member>
+        <member name="M:MoleculeViewer.Sphere.#cctor">
+            <summary>
+            Static constructor to generate the mesh when first needed. Creates the faces of the
+            base octahedron and calls <see cref="M:MoleculeViewer.Sphere.Divide"/> to initiate the recursive subdivision.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Sphere.AddBaseTriangle(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D)">
+            <summary>
+            Helper function to create a face for the base octahedron.
+            </summary>
+            <param name="p1">Vertex 1.</param>
+            <param name="p2">Vertex 2.</param>
+            <param name="p3">Vertex 3.</param>
+        </member>
+        <member name="M:MoleculeViewer.Sphere.Divide">
+            <summary>
+            Performs the recursive subdivision.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Sphere.DivideTriangle(System.Int32)">
+            <summary>
+            Replaces a triange at a given index buffer offset and replaces it with four triangles
+            that compose an equilateral subdivision.
+            </summary>
+            <param name="indexOffset">An offset into the index buffer.</param>
+        </member>
+        <member name="M:MoleculeViewer.Sphere.GetNormalizedMidpoint(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D)">
+            <summary>
+            Calculates the midpoint between two points on a unit sphere and projects the result
+            back to the surface of the sphere.
+            </summary>
+            <param name="p1">Point 1.</param>
+            <param name="p2">Point 2.</param>
+            <returns>The normalized midpoint.</returns>
+        </member>
+        <member name="P:MoleculeViewer.Sphere.Mesh">
+            <summary>
+            Gets the spherical mesh.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.PdbViewer">
+            <summary>
+            Provides a transformable view of a molecule as defined in a PDB file.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.ArtifactViewer">
+            <summary>
+            A abstract base control representing a transformable view of an entity.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.ArtifactViewer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MoleculeViewer.ArtifactViewer"/> class.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.ArtifactViewer.GetViewState">
+            <summary>
+            Gets the current <see cref="T:MoleculeViewer.ViewState"/> of the artifact instance.
+            </summary>
+            <returns>The current <see cref="T:MoleculeViewer.ViewState"/>.</returns>
+        </member>
+        <member name="M:MoleculeViewer.ArtifactViewer.AnimateToViewState(MoleculeViewer.ViewState)">
+            <summary>
+            Changes the view camera and transform settings to the specified <see cref="T:MoleculeViewer.ViewState"/> 
+            through an animation.
+            </summary>
+            <param name="viewState">The target <see cref="T:MoleculeViewer.ViewState"/> to animate to.</param>
+        </member>
+        <member name="M:MoleculeViewer.ArtifactViewer.OnEntityChanged">
+            <summary>
+            Called when the entity is changed.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.ArtifactViewer.ConfigureContextMenu(System.Windows.Controls.ContextMenu)">
+            <summary>
+            Builds the context menu based on the current state of the viewer.
+            </summary>
+            <param name="contextMenu">The context menu to apply the menu items to.</param>
+        </member>
+        <member name="M:MoleculeViewer.ArtifactViewer.StartViewStateAnimation">
+            <summary>
+            Starts the view state animation.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.ArtifactViewer.ContinueViewStateAnimation">
+            <summary>
+            Indicates whether the ViewState animation is in progress.
+            </summary>
+            <returns>True if the viewer is animating, otherwise false</returns>
+        </member>
+        <member name="M:MoleculeViewer.ArtifactViewer.StopViewStateAnimation">
+            <summary>
+            Stops the view state animation.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.ArtifactViewer.SetViewState(MoleculeViewer.ViewState)">
+            <summary>
+            Sets the view state for this viewer instance.
+            </summary>
+            <param name="viewState">New <see cref="T:MoleculeViewer.ViewState"/> to apply to the view.</param>
+        </member>
+        <member name="P:MoleculeViewer.ArtifactViewer.Entity">
+            <summary>
+            Gets or sets the entity to display in the viewer.
+            </summary>
+            <value>The entity containing the artifact data.</value>
+        </member>
+        <member name="P:MoleculeViewer.ArtifactViewer.IsWorking">
+            <summary>
+            Gets a value indicating whether this instance is working.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is working; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:MoleculeViewer.ArtifactViewer.HoverObject">
+            <summary>
+            Gets the <see cref="P:MoleculeViewer.ArtifactViewer.HoverObject"/> for this artifact instance.
+            </summary>
+            <value>The hover object.</value>
+        </member>
+        <member name="P:MoleculeViewer.ArtifactViewer.ContextMenuHoverObject">
+            <summary>
+            Gets the <see cref="P:MoleculeViewer.ArtifactViewer.HoverObject"/> for this instance's context menu.
+            </summary>
+            <value>The context menu's hover object.</value>
+        </member>
+        <member name="P:MoleculeViewer.ArtifactViewer.IsPopupOpen">
+            <summary>
+            Gets a value indicating whether this instance has a popup open.
+            </summary>
+            <value>
+            	<c>true</c> if this instance has a popup open; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:MoleculeViewer.PdbViewer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MoleculeViewer.PdbViewer"/> class and 
+            sets up its child controls and other visual elements.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.PdbViewer.GetViewState">
+            <summary>
+            Gets the <see cref="T:MoleculeViewer.ViewState"/> of the viewer.
+            </summary>
+            <returns>A <see cref="T:MoleculeViewer.ViewState"/> representing the current view.</returns>
+        </member>
+        <member name="M:MoleculeViewer.PdbViewer.HoverHitTest">
+            <summary>
+            Performs hit testing for the displayed molecule.
+            </summary>
+            <returns>The active <see cref="T:MoleculeViewer.HoverObject"/> if any.</returns>
+        </member>
+        <member name="M:MoleculeViewer.PdbViewer.OnEntityChanged">
+            <summary>
+            Called when the entity is changed.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.PdbViewer.ConfigureContextMenu(System.Windows.Controls.ContextMenu)">
+            <summary>
+            Builds the context menu based on the current state of the viewer.
+            </summary>
+            <param name="contextMenu">The context menu to apply the menu items to.</param>
+        </member>
+        <member name="M:MoleculeViewer.PdbViewer.StartViewStateAnimation">
+            <summary>
+            Starts the view state animation.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.PdbViewer.ContinueViewStateAnimation">
+            <summary>
+            Indicates whether the ViewState animation is in progress.
+            </summary>
+            <returns>
+            true if the viewer is animating, otherwise false
+            </returns>
+        </member>
+        <member name="M:MoleculeViewer.PdbViewer.StopViewStateAnimation">
+            <summary>
+            Stops the view state animation.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.PdbViewer.SetViewState(MoleculeViewer.ViewState)">
+            <summary>
+            Sets the view state.
+            </summary>
+            <param name="viewState">New <see cref="T:MoleculeViewer.ViewState"/> to apply to the view.</param>
+        </member>
+        <member name="P:MoleculeViewer.PdbViewer.ActionType">
+            <summary>
+            Gets or sets the type of the action to perform on the view.
+            </summary>
+            <value>The type of the action.</value>
+        </member>
+        <member name="P:MoleculeViewer.PdbViewer.IsWorking">
+            <summary>
+            Gets a value indicating whether this instance is working.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is working; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:MoleculeViewer.CAlpha">
+            <summary>
+            <see cref="T:MoleculeViewer.Atom"/> subclass for alpha carbon protein backbone atoms. 
+            </summary>
+            <remarks>
+            Adds functionality to manage the atom's backbone 3D model.
+            </remarks>
+        </member>
+        <member name="T:MoleculeViewer.ChainAtom">
+            <summary>
+            <see cref="T:MoleculeViewer.Atom"/> subclass for standard protein chain atoms. 
+            </summary>
+            <remarks>
+            Adds functionality to toggle visibility based on the <see cref="P:MoleculeViewer.Molecule.ShowFullChain"/> property.
+            </remarks>
+        </member>
+        <member name="M:MoleculeViewer.ChainAtom.Initialize">
+            <summary>
+            Attaches an event handedler to <see cref="E:MoleculeViewer.Molecule.ShowFullChainChanged"/>.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.ChainAtom.UpdateSelectionView">
+            <summary>
+            Override to check <see cref="P:MoleculeViewer.Molecule.ShowFullChain"/> when the atom's selection state
+            is changed.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.ChainAtom.MoleculeShowFullChainChanged(System.Object,System.EventArgs)">
+            <summary>
+            Toggles visibility based on the <see cref="P:MoleculeViewer.Molecule.ShowFullChain"/> property.
+            </summary>
+            <param name="sender">The molecule.</param>
+            <param name="e">Empty event args.</param>
+        </member>
+        <member name="M:MoleculeViewer.CAlpha.Initialize">
+            <summary>
+            Attaches an event handedler to <see cref="E:MoleculeViewer.Molecule.ShowBackboneChanged"/>.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.CAlpha.HoverHitTest(System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult)">
+            <summary>
+            Performs hit testing for the backbone 3D model.
+            </summary>
+            <param name="rayHitTestResult">A 3D mesh hit test result from the WPF visual tree hit
+            testing framework</param>
+            <returns>True if the mesh hit belongs to the backbone, otherwise false.</returns>
+        </member>
+        <member name="M:MoleculeViewer.CAlpha.MoleculeShowBackboneChanged(System.Object,System.EventArgs)">
+            <summary>
+            Toggles visibility based on the <see cref="P:MoleculeViewer.Molecule.ShowBackbone"/> property.
+            </summary>
+            <param name="sender">The molecule.</param>
+            <param name="e">Empty event args.</param>
+        </member>
+        <member name="M:MoleculeViewer.CAlpha.CreateBackboneBond(MoleculeViewer.CAlpha)">
+            <summary>
+            Creates the 3D model for the stick that represents backbone segment with another
+            <see cref="T:MoleculeViewer.CAlpha"/>.
+            </summary>
+            <param name="cAlpha"></param>
+        </member>
+        <member name="P:MoleculeViewer.CAlpha.PreviousCAlpha">
+            <summary>
+            Gets and sets a reference to the previous <see cref="T:MoleculeViewer.CAlpha"/> in the backbone.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.CAlpha.NextCAlpha">
+            <summary>
+            Gets and sets a reference to the next <see cref="T:MoleculeViewer.CAlpha"/> in the backbone.
+            </summary>
+        </member>
+        <member name="T:MoleculeViewer.ArtifactControl">
+            <summary>
+            Provides a UI container for a view of a PDB that can switch the displayed entity.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.ArtifactControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MoleculeViewer.ArtifactControl"/> class.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.ArtifactControl.OpenArtifact(MoleculeViewer.LocalEntity)">
+            <summary>
+            Opens the specified entity.
+            </summary>
+            <param name="entity">The entity to open.</param>
+        </member>
+        <member name="M:MoleculeViewer.ArtifactControl.CloseArtifact">
+            <summary>
+            Closes the currently displayed artifact.
+            </summary>
+        </member>
+        <member name="P:MoleculeViewer.ArtifactControl.ViewState">
+            <summary>
+            Gets the xml state data for the control's current view.
+            </summary>
+            <value>The view state xml.</value>
+        </member>
+        <member name="T:MoleculeViewer.Water">
+            <summary>
+            <see cref="T:MoleculeViewer.Atom"/> subclass for water atoms.
+            </summary>
+            <remarks>
+            Adds functionality to toggle visibility based on the <see cref="P:MoleculeViewer.Molecule.ShowWaters"/> property.
+            </remarks>
+        </member>
+        <member name="M:MoleculeViewer.Water.Initialize">
+            <summary>
+            Attaches an event handedler to <see cref="E:MoleculeViewer.Molecule.ShowWatersChanged"/>.
+            </summary>
+        </member>
+        <member name="M:MoleculeViewer.Water.MoleculeShowWatersChanged(System.Object,System.EventArgs)">
+            <summary>
+            Toggles visibility based on the <see cref="P:MoleculeViewer.Molecule.ShowWaters"/> property.
+            </summary>
+            <param name="sender">The molecule.</param>
+            <param name="e">Empty event args.</param>
+        </member>
+        <member name="T:MoleculeViewer.PdbActionType">
+            <summary>
+            Represents the actions that can be applied to a PDB entity
+            </summary>
+        </member>
+        <member name="F:MoleculeViewer.PdbActionType.None">
+            <summary>
+            No action
+            </summary>
+        </member>
+        <member name="F:MoleculeViewer.PdbActionType.Animating">
+            <summary>
+            Animation action
+            </summary>
+        </member>
+        <member name="F:MoleculeViewer.PdbActionType.ToggleResidues">
+            <summary>
+            Change residue state
+            </summary>
+        </member>
+        <member name="F:MoleculeViewer.PdbActionType.SelectResidues">
+            <summary>
+            Select residues
+            </summary>
+        </member>
+        <member name="F:MoleculeViewer.PdbActionType.DeselectResidues">
+            <summary>
+            De-select residues
+            </summary>
+        </member>
+        <member name="F:MoleculeViewer.PdbActionType.Rotate">
+            <summary>
+            Apply a rotation transform
+            </summary>
+        </member>
+        <member name="F:MoleculeViewer.PdbActionType.Zoom">
+            <summary>
+            Zoom the view
+            </summary>
+        </member>
+        <member name="F:MoleculeViewer.PdbActionType.Menu">
+            <summary>
+            Show a menu
+            </summary>
+        </member>
+        <member name="F:MoleculeViewer.PdbActionType.Select">
+            <summary>
+            Select the pdb
+            </summary>
+        </member>
+        <member name="F:MoleculeViewer.PdbActionType.Clip">
+            <summary>
+            Apply a clip value
+            </summary>
+        </member>
+        <member name="F:MoleculeViewer.PdbActionType.Reset">
+            <summary>
+            Reset all actions
+            </summary>
+        </member>
+        <member name="F:MoleculeViewer.PdbActionType.Deselect">
+            <summary>
+            De-select the pdb
+            </summary>
+        </member>
+        <member name="F:MoleculeViewer.PdbActionType.Slab">
+            <summary>
+            Apply a slab value
+            </summary>
+        </member>
+        <member name="F:MoleculeViewer.PdbActionType.Translate">
+            <summary>
+            Apply a translate transform
+            </summary>
+        </member>
+    </members>
+</doc>

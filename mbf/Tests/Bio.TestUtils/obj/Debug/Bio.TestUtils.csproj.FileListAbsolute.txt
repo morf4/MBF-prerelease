@@ -1,0 +1,16 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Testcases.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.TestUtils.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.TestUtils.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.TestUtils.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.TestUtils.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.TestUtils\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.TestUtils\obj\Debug\Bio.TestUtils.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.TestUtils\obj\Debug\Bio.TestUtils.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Testcases.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TestUtils.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TestUtils.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TestUtils.dll.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TestUtils.dll.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.TestUtils\obj\Debug\Bio.TestUtils.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.TestUtils\obj\Debug\Bio.TestUtils.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.TestUtils\obj\Debug\Bio.TestUtils.pdb

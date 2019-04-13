@@ -1,0 +1,25 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.TemplateWizard.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.TemplateWizard.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.TemplateWizard.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.TemplateWizard.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\Bio.TemplateWizard\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.OperationsScreen.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.WelcomeScreen.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.WizardForm.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\Bio.TemplateWizard\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\Bio.TemplateWizard\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TemplateWizard.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TemplateWizard.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TemplateWizard.dll.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TemplateWizard.dll.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.OperationsScreen.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.Properties.Resources.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.WelcomeScreen.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.WizardForm.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.csproj.GenerateResource.Cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.pdb

@@ -1,0 +1,8 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\MBT.VennToNodeXL.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\MBT.VennToNodeXL.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBT\libs\MBT.VennToNodeXL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBT\libs\MBT.VennToNodeXL\obj\Debug\MBT.VennDiagram.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBT\libs\MBT.VennToNodeXL\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBT\libs\MBT.VennToNodeXL\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBT\libs\MBT.VennToNodeXL\obj\Debug\MBT.VennToNodeXL.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBT\libs\MBT.VennToNodeXL\obj\Debug\MBT.VennToNodeXL.pdb

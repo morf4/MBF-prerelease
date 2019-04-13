@@ -1,0 +1,1016 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\WiggleTestConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\EcoliDataWithZeroErrorsPaired_output.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\EcoliDataWithZeroErrorsNonPaired_output.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\EcoliDataWithErrors_output.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\AzureBlastConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\BedTestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\BioHPCTestConfigs.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\BlastRecords.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\BlastXmlWithMoreThanTenRecords.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\BlastXmlWithMoreThanThreeRecords.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUM50.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUM50_Dna.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUM50_Rna.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUMEmpty50.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUMFewAlphabets50.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUMInvalid50.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUMInvalidDiagnol50.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUMModified50.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUMOnlyAlphabet50.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\BoyerMooreTestConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ClustalWTestData\ClustalWTestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ClustalWTestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\ComparativeTestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\FastQTestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\GenBankFeaturesTestConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\GffTestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\GreaterThanOneTree.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNewickBranch.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNewickLeaf.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNewickParse.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNewickParserPeek.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LargeSizeBlastRecords.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LargeSizeDnaIllumina_output.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LargeSize_FastQ_Sanger_Output.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MatrixTestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MediumSizedBlastXml.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_Aligned_Seq.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_End_Index.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_First_Mum_Order.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_First_Seq_Start.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_Length.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_Nodes.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_Second_Mum_Order.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_Second_Seq_Start.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_SimpleAligned_Seq.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_Start_Index.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MSAConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MUMmerTestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\NexusTestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\NUCmerTestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\OneLeafTree.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\OneLineTree.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\BubbleLinksLeft.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\BubbleLinksRight.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\BubbleLinksSequence.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ChrKmers.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ChromosomeReadsContigsLeft.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ChromosomeReadsContigsNodeSequence.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ChromosomeReadsContigsRight.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ContigsWithBothOrientaionNodeSequence.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ContigsWithBothOrientationLeft.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ContigsWithBothOrientationRight.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\MultipleBubbleLinksLeft.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\MultipleBubbleLinksRight.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\MultipleBubbleLinksSequence.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\MultipleDanglingLinksLeft.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\MultipleDanglingLinksRight.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\MultipleDanglingLinksSequence.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineKmers.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithClustersContigs.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithClustersKmers.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithRCContigs.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithRCGraphLeft.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithRCGraphRight.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithRCKmers.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithRCSequence.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineStep4Left.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineStep4Right.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineStep4Sequences.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineWithClustersStep2left.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineWithClustersStep2right.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineWithClustersStep2sequence.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\PaDeNATestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\PalindromeContigNodeSequence.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\PalindromeContigRight.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\PalindromeContigsLeft.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithDanglingLinksLeft.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithDanglingLinksRight.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithDanglingLinksSequence.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\SmallSizeReadsStep2left.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\SmallSizeReadsStep2Right.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\Step2SmallSizeSequence.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\Step4RedundantPathleft.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\Step4RedundantPathright.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\Step4RedundantPathsequence.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\Step4SmallSizeDanglingLinksLeft.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\Step4SmallSizeDanglingLinksRight.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\Step4SmallSizeDanglingLinksSequence.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\VirualGenomeNodeSequence.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\VirualGenomeStep2left.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\VirualGenomeStep2Right.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\virulgenomekmers.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PhylipTestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PhylogeneticTestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Phylo_Tree_Special_Char.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\QualitativeTestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Readme.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\reads_output.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\attribution.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeBAMSortOutputMatchChromosomeCoordinates.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeBAMSortOutputMatchChromosomeNameAndCoordinates.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeBAMSortOutputMatchReadNames.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SAMBAMTestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SequenceAlignmentParser.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SequenceParser.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SimpleDna_output.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_FastQ_Dna_output.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_Aligned_Seq.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_End_Index.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_First_Mum_Order.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_First_Seq_Start.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_Length.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_Nodes.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_Phylo_Tree.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_Second_Mum_Order.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_Second_Seq_Start.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_Start_Index.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\TestsConfig.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\VeryLargeSize_Output.txt
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\00_Bonobo_DEL_Chr1.bed
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\00_Gorilla_DEL_chr1.bed
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\AlignEmptyFile_1.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\AlignFileWithBlankLines.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\AlignFileWithGap_1.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\AlignFileWithSpaces_1.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\AlignFile_1.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\AlignFile_2.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\AlignFile_Dna_1.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\AlignFile_Dna_2.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\AlignFile_Pro_1.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\AlignFile_Pro_2.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\AlignFile_Rna_1.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\AlignFile_Rna_2.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\AlignmentData.aln
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\AlignUnicodeFile_1.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\DNA-Large-Ref-Reads-WithError.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\DNA-Large-Ref.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\DNA-Medium-Ref.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\DNA-Medium-RefReads-WithError_1.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\EColi-NC_000913-Ref.bd.1X.NonPairedReads.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\EColi-NC_000913-Ref.bd.1X.PairedReads.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\EColi-NC_000913-Ref.bd.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\EColi-NC_000913.bd_1xWithError-Reads_1.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Ecoli.500.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Ecoli.500_WithError_1x_Paired.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Ecoli.500_ZeroError_10x.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Ecoli.500_ZeroError_10x_Paired.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Ecoli.500_ZeroError_1x.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Ecoli.500_ZeroError_1x_Paired.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\LargeSize_DNA_Reads_WithAddition.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\LargeSize_DNA_Reads_WithDeletion.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\LargeSize_DNA_Ref.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Multi_Seq_Medium_Size.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Multi_Seq_Search_Medium_Size.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\PCASimpleDnaFile1.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\PCASimpleDnaFile2.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Simple_Fasta_DNA_Reads.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Simple_Fasta_DNA_ReadsWithErrors_.001_1.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Simple_Fasta_DNA_Ref.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Simple_Fasta_DNA_RefWith_72bp.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\DNA-Medium.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\DNA-MultiSequences.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\dna.phy
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\DnaGenBank_MiscRecombination.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\DNAGenBank_Variation.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\DNA\12.afa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\DNA\12_raw.afa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\DNA\4_raw.afa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\EmptyNexusFile.nex
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\EmptyPhylipParserFile.phy
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\EmptySeq.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Fasta1000BP.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Fasta1000BPReference.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\FastQDnaSolexa.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\FastQEmptyFile.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\FastQFileWithEmptySeqIdAndQualityScore.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\FastQFileWithEmptySequence.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\FastQFileWithInvalidAlphabet.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\FastQFileWithInvalidQualityScore.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\FastQFileWithInvalidSeqID.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\FastQProteinSolexa.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\FastQRnaSolexa.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\FastQSanger.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\FastQSangerWithBlankLines.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\FastQWithEmptyQualScore.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\GenBankRepeatRegion.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\GenBank_Features.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\HumanReferenceGene.bed
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidAlignFile_1.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateEndFeature.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateFrameFeature.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateGenBankParseFeaturesHasReader.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNexusParserAlignAlphabet.nex
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNexusParserAlphabet.nex
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNexusParserHeader.nex
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNexusParserSeqCount.nex
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNexusParserSeqLength.nex
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNullFeature.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateParseHeaderDateFormate.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateParseHeaderFieldLen.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateParseHeaderProtein.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateParseHeaderVersion.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidatePhylipParserAlignAlphabet.phy
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidatePhylipParserAlphabet.phy
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidatePhylipParserCount.phy
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidatePhylipParserSeqLength.phy
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateScoreFeature.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateSpecificSeqs.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateStartFeature.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateStrandFeature.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalideGenBank.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalideGenBankParseHeader.genbank
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalideGenBankReference.genbank
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidFastQFormat.Fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidFastQQualScore.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidFeatureLength.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidGenBankHeaderDataType.genbank
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidGenBankSegment.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidGenBankWithoutLocus.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\InvalidGenBankWithPrimary.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_ParseReference.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_ParseReference_Default.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_ParseSequence.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_ParseSequence_Default.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_ParseSource.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_Unknown_Locus.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_Unknown_MoleculeType.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_Unknown_RawDate.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_Unknown_StrandTopology.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_Unknown_StrandType.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LargeSize.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LargeSize.gb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LargeSize.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LargeSize.GFF
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LargeSizeDnaIllumina.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LargeSizeDnaIlluminaFastq.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LargeSizeDnaSanger.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LargeSizeFastQDnaSolexa.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LargeSize_AlignFile_Pro_1.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LargeSize_AlignFile_Pro_2.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\LargeSize_FastQ_Sanger.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Long_Start_End.bed
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Mandatory_GenBank_Headers.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Maximum_Sequences.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MediumSize.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MediumSize.Gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MediumSizeDNAGenBank.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MediumSizeDnaIllumina.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MediumSizeDnaSanger.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MediumSizeFastQDnaSolexa.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MediumSizeRNAGenBank.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MediumSize_AlignFile_Pro_1.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MediumSize_AlignFile_Pro_2.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MediumSize_GenBankFile.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MergeBed.bed
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Metadata_GenBank_DNA.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Metadata_GenBank_Protein.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Metadata_GenBank_RNA.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MiscRNAGenBank.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\AzureDnaResultsASync.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\AzureProteinSeqResultsASync.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\AzureWebServiceCancelRequestIdentifier.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\AzureWebServiceRequestStatusForDnaSeq.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\AzureWebserviceResultsSync.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCCancelRequestIdentifierForDna.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCCancelRequestIdentifierForProtein.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCFetchResultsAsync.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCFetchResultsForProtein.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCFetchResultsSync.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCFetchResultsSyncForProtein.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCGetRequestStatusForDna.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCGetRequestStatusForProtein.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCRequestIdentifierForDna.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCRequestIdentifierForProtein.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\EBIBlastAsyncFetchResults.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\EBIBlastObjectsBvtSyc.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\EBIBlastRequestStatusForDnaSeq.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\EBIBlastRequestStatusForProteinSeq.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\NCBIBlastObjectsBvtAsyc.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\NCBIBlastRequestIdentifierForDna.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\NCBIBlastRequestIdentifierForProtein.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\NCBIBlastRequestStatusForDna.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\NCBIBlastRequestStatusForProtein.object
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MulitSeqSanger-DNA_PRO.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MulitSeqSanger-DNA_RNA.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MulitSeqSanger-DNA_RNA_PRO.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MulitSeqSanger-RNA_PROTEIN.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MulitSeqSolexa-DNA_PRO.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MulitSeqSolexa-DNA_RNA.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MulitSeqSolexa-DNA_RNA_PRO.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MulitSeqSolexa-RNA_PRO.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiChromoSnpFile.tsv
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiGene_CDS_DNA.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultipleReference_GenBank_Protein.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSeqIllumina-DNA_PRO.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSeqIllumina-DNA_RNA.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSeqIllumina-DNA_RNA_PRO.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSeqIllumina-RNA_PROTEIN.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequence-Dna_Pro.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequence-DNA_RNA.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequence-Dna_Rna_Pro.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequence-Rna_Pro.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequenceDNA_GenBank.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequences-DNA_DNA.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequences-DNA_Pro.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequences-DNA_RNA.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequences-DNA_RNA_Pro.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequences-RNA_Pro.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequences_GenBank_Protein.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequence_GenBank_RNA.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\MultiSeq_GenBank_Protein.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Multi_Sequences.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Multi_Seq_Medium_Size.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Multi_Seq_Search_Medium_Size.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Multi_Seq_Search_Small_Size.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Multi_Seq_Small_Size.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Nucmer_Query_Seq.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Nucmer_Query_Seq.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Nucmer_Reference_Seq.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Nucmer_Reference_Seq.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\OneLineDnaIlluminaSequence.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\OneLineSeq.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\OneLineSeq.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\OneLineSeq.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\OneLineSeqDnaSolexa.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\OneLineSnpFile.tsv
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\One_Line.bed
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\OnlyFeatures.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\OperatorGenBankFile.genbank
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\1And2FormatPairedReadsLibraryInformation.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\AverageSizeChromosomes.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ChrReads.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ClustalWContigs.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\EulerTestDataReads.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\FilterContigsReverseDirectionAndPalindromeContig.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\FilterContigsRevReadWithRevComplement.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\FilterContigsWithForwardOrientation.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\FilterContigsWithOneLineReads.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\FilterContigsWithReadAndPalindromeContig.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\FilterContigsWithReadNotSupportReverseOrientation.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\FilterContigsWithRevComplement.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\FilterContigsWithReverseOrientation.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\LeftSideContigGenerator.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLine200bpReadsWithRC.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineBubbleReads.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReads.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsFor10KAnd50And100KLibrary.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsFor2KAnd0.5KLibrary.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsForMapToContig.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsForMapToContigPartialOverlap.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsForPairedReads.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWith1And2PairedReads.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithFAndRPairedReads.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithX1AndY1PairedReads.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithBubbles.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithDanglingLinks.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithDotsBetweenSequenceId.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithMultipleBubbles.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithMultipleDanglingLinks.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithSpecialCharsID.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldForForwardReadAndPalindromeContig.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldForForwardReadAndRevComplContig.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldForReverseReadAndPalindromeContig.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldForReverseReadAndRevComplContig.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldPaths.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldPathsForForwardReadAndReverseCompContig.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldPathsForReverseDirectionDoesNotSupportOrientation.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldPathsWithForwardOrientation.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldPathsWithReverse.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\SeqReadsAndReverse.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\SeqReadsWithRightSideContig.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\SequenceIdWithDotReads.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\SequenceReadsWithoutIDName.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\virulgenomereads.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PhylipParserEncodingFile.phy
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\primate-mtDNA-interleaved.nex
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\PROTEIN-Medium.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ProteinFastQIllumina.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ProteinFastQSanger.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ProteinGenBank_MaturePeptide.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ProteinGenBank_Variation.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Protein\12.afa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Protein\12_raw.afa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\QueryBedWithTenChromo.bed
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Query_Protein.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Query_Protein_Ambiguity.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Query_Rna.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Query_Rna_Ambiguity.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Query_Small_Size_Ambiguity.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\random.GFF
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\reads.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ReferenceBed.bed
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ReferenceBedWithAllIdenticalEntries.bed
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\ReferenceBedWithTenChromo.bed
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\RNA-Medium.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\RnaFastQIllumina.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\RnaFastQSanger.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\RNAGenBank_Variation.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\RNA\15.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\RNA\15_raw.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\AlignmentQualitySequenceWithDV.bam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\AlignmentWithIndexTwelveOutput.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\AlignmentWithQualityValues.bam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\AlignmentWithQualityValues.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\AlignmentWithQualityValues.sam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\AlignmentWithRef.sam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\AlignmentWithSequenceRange.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\AlignmentWithSequenceRefName.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\BAMFileWithPairedReads.bam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\BAMWithQualityValues.bam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\EmptyReaderLine.sam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\EmptySAMFile.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\InvalidSamBioReader.sam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\InvalidSAMEmptyFile.sam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeBam.bam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeBam.bam.bai
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeBAMSequences.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeSAMFile.sam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\NA07000.454.BCM.crossmatch.bam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\NA07000.454.BCM.crossmatchSeqAlignmentOutput.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\qualitativesequences.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\RefSequencesOutput.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ref_list.fna
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SamFormatterFile.sam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignment.bam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignment.bam.bai
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignment.sam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignmentFormatWithRef.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignmentOutput.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignmentOutputWithIndex.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignmentWithBlankLine.sam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignmentWithRef.bam
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignmentWithRef.bam.bai
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignmentWithRefSeq.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqFormatterAlignOutput.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SampleSparseSeq.csv
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Search_Dna.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Search_Dna.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Search_Medium_Size.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Search_Protein.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Search_Protein_Ambiguity.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Search_Rna.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Search_Rna_Ambiguity.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Search_Small_Size.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Search_Small_Size_Ambiguity.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\simple.GFF
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SimpleDnaIllumina.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SimpleDnaIllumina.fq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SimpleDnaIlluminaDV.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SimpleNexusCharBlock.nex
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SimpleNexusFile.nex
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SimpleSnpFile.tsv
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Encoding.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Encoding_Reader.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fasta_DNA.fa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fasta_DNA.fas
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fasta_DNA.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fasta_DNA.fna
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fasta_DNA.fsa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fasta_DNA.mpfa
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fasta_Protein.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fasta_RNA.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fastq_Sequence.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_GenBank_DNA.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_GenBank_DNA.genbank
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_GenBank_Primary.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_GenBank_Protein.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_GenBank_RNA.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Gff_Dna.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Gff_Protein.GFF
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Gff_Rna.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SingleSequenceFastQSanger.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SmallSizeQueryBed.bed
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\SmallSizeReferenceBed.bed
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size.bed
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size.gbk
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size.gff
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Temp_Dna.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Three_Chromo.bed
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\TwoLineSeqDnaSolexa.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\TwoLineSequenceDnaIllumina.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\TwoLineSequenceeDnaSanger.fastq
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\VeryLargeSize_AlignFile_Pro_1.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\VeryLargeSize_AlignFile_Pro_2.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\VeryLargeSize_Protein.fasta
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\WiggleWithFixedStep.wig
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\WiggleWithInvalidAutoScale.wig
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\WiggleWithInvalidTrack.wig
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\WiggleWithVariableStep.wig
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.TestAutomation.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.TestAutomation.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.TestAutomation.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.TestAutomation.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.TestAutomation\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.TestAutomation\obj\Debug\Bio.TestAutomation.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.TestAutomation\obj\Debug\Bio.TestAutomation.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\WiggleTestConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\EcoliDataWithZeroErrorsPaired_output.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\EcoliDataWithZeroErrorsNonPaired_output.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\EcoliDataWithErrors_output.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\AzureBlastConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\BedTestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\BioHPCTestConfigs.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\BlastRecords.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\BlastXmlWithMoreThanTenRecords.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\BlastXmlWithMoreThanThreeRecords.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUM50.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUM50_Dna.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUM50_Rna.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUMEmpty50.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUMFewAlphabets50.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUMInvalid50.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUMInvalidDiagnol50.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUMModified50.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\BLOSUMOnlyAlphabet50.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\BoyerMooreTestConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ClustalWTestData\ClustalWTestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ClustalWTestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\ComparativeTestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\FastQTestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\GenBankFeaturesTestConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\GffTestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\GreaterThanOneTree.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNewickBranch.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNewickLeaf.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNewickParse.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNewickParserPeek.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LargeSizeBlastRecords.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LargeSizeDnaIllumina_output.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LargeSize_FastQ_Sanger_Output.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MatrixTestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MediumSizedBlastXml.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_Aligned_Seq.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_End_Index.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_First_Mum_Order.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_First_Seq_Start.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_Length.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_Nodes.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_Second_Mum_Order.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_Second_Seq_Start.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_SimpleAligned_Seq.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size_Start_Index.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MSAConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MUMmerTestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\NexusTestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\NUCmerTestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\OneLeafTree.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\OneLineTree.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\BubbleLinksLeft.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\BubbleLinksRight.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\BubbleLinksSequence.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ChrKmers.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ChromosomeReadsContigsLeft.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ChromosomeReadsContigsNodeSequence.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ChromosomeReadsContigsRight.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ContigsWithBothOrientaionNodeSequence.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ContigsWithBothOrientationLeft.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ContigsWithBothOrientationRight.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\MultipleBubbleLinksLeft.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\MultipleBubbleLinksRight.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\MultipleBubbleLinksSequence.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\MultipleDanglingLinksLeft.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\MultipleDanglingLinksRight.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\MultipleDanglingLinksSequence.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineKmers.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithClustersContigs.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithClustersKmers.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithRCContigs.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithRCGraphLeft.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithRCGraphRight.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithRCKmers.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithRCSequence.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineStep4Left.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineStep4Right.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineStep4Sequences.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineWithClustersStep2left.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineWithClustersStep2right.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineWithClustersStep2sequence.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\PaDeNATestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\PalindromeContigNodeSequence.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\PalindromeContigRight.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\PalindromeContigsLeft.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithDanglingLinksLeft.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithDanglingLinksRight.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithDanglingLinksSequence.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\SmallSizeReadsStep2left.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\SmallSizeReadsStep2Right.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\Step2SmallSizeSequence.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\Step4RedundantPathleft.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\Step4RedundantPathright.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\Step4RedundantPathsequence.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\Step4SmallSizeDanglingLinksLeft.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\Step4SmallSizeDanglingLinksRight.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\Step4SmallSizeDanglingLinksSequence.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\VirualGenomeNodeSequence.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\VirualGenomeStep2left.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\VirualGenomeStep2Right.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\virulgenomekmers.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PhylipTestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PhylogeneticTestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Phylo_Tree_Special_Char.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\QualitativeTestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Readme.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\reads_output.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\attribution.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeBAMSortOutputMatchChromosomeCoordinates.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeBAMSortOutputMatchChromosomeNameAndCoordinates.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeBAMSortOutputMatchReadNames.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SAMBAMTestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SequenceAlignmentParser.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SequenceParser.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SimpleDna_output.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_FastQ_Dna_output.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_Aligned_Seq.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_End_Index.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_First_Mum_Order.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_First_Seq_Start.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_Length.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_Nodes.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_Phylo_Tree.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_Second_Mum_Order.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_Second_Seq_Start.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size_Start_Index.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\TestsConfig.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\VeryLargeSize_Output.txt
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\00_Bonobo_DEL_Chr1.bed
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\00_Gorilla_DEL_chr1.bed
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\AlignEmptyFile_1.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\AlignFileWithBlankLines.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\AlignFileWithGap_1.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\AlignFileWithSpaces_1.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\AlignFile_1.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\AlignFile_2.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\AlignFile_Dna_1.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\AlignFile_Dna_2.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\AlignFile_Pro_1.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\AlignFile_Pro_2.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\AlignFile_Rna_1.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\AlignFile_Rna_2.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\AlignmentData.aln
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\AlignUnicodeFile_1.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\DNA-Large-Ref-Reads-WithError.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\DNA-Large-Ref.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\DNA-Medium-Ref.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\DNA-Medium-RefReads-WithError_1.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\EColi-NC_000913-Ref.bd.1X.NonPairedReads.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\EColi-NC_000913-Ref.bd.1X.PairedReads.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\EColi-NC_000913-Ref.bd.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\EColi-NC_000913.bd_1xWithError-Reads_1.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Ecoli.500.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Ecoli.500_WithError_1x_Paired.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Ecoli.500_ZeroError_10x.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Ecoli.500_ZeroError_10x_Paired.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Ecoli.500_ZeroError_1x.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Ecoli.500_ZeroError_1x_Paired.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\LargeSize_DNA_Reads_WithAddition.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\LargeSize_DNA_Reads_WithDeletion.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\LargeSize_DNA_Ref.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Multi_Seq_Medium_Size.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Multi_Seq_Search_Medium_Size.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\PCASimpleDnaFile1.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\PCASimpleDnaFile2.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Simple_Fasta_DNA_Reads.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Simple_Fasta_DNA_ReadsWithErrors_.001_1.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Simple_Fasta_DNA_Ref.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ComparativeTestData\Simple_Fasta_DNA_RefWith_72bp.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\DNA-Medium.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\DNA-MultiSequences.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\dna.phy
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\DnaGenBank_MiscRecombination.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\DNAGenBank_Variation.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\DNA\12.afa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\DNA\12_raw.afa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\DNA\4_raw.afa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\EmptyNexusFile.nex
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\EmptyPhylipParserFile.phy
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\EmptySeq.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Fasta1000BP.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Fasta1000BPReference.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\FastQDnaSolexa.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\FastQEmptyFile.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\FastQFileWithEmptySeqIdAndQualityScore.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\FastQFileWithEmptySequence.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\FastQFileWithInvalidAlphabet.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\FastQFileWithInvalidQualityScore.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\FastQFileWithInvalidSeqID.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\FastQProteinSolexa.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\FastQRnaSolexa.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\FastQSanger.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\FastQSangerWithBlankLines.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\FastQWithEmptyQualScore.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\GenBankRepeatRegion.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\GenBank_Features.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\HumanReferenceGene.bed
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidAlignFile_1.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateEndFeature.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateFrameFeature.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateGenBankParseFeaturesHasReader.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNexusParserAlignAlphabet.nex
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNexusParserAlphabet.nex
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNexusParserHeader.nex
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNexusParserSeqCount.nex
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNexusParserSeqLength.nex
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateNullFeature.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateParseHeaderDateFormate.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateParseHeaderFieldLen.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateParseHeaderProtein.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateParseHeaderVersion.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidatePhylipParserAlignAlphabet.phy
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidatePhylipParserAlphabet.phy
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidatePhylipParserCount.phy
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidatePhylipParserSeqLength.phy
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateScoreFeature.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateSpecificSeqs.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateStartFeature.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidateStrandFeature.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalideGenBank.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalideGenBankParseHeader.genbank
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalideGenBankReference.genbank
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidFastQFormat.Fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidFastQQualScore.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidFeatureLength.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidGenBankHeaderDataType.genbank
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidGenBankSegment.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidGenBankWithoutLocus.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\InvalidGenBankWithPrimary.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_ParseReference.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_ParseReference_Default.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_ParseSequence.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_ParseSequence_Default.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_ParseSource.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_Unknown_Locus.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_Unknown_MoleculeType.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_Unknown_RawDate.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_Unknown_StrandTopology.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Invalid_GenBank_Unknown_StrandType.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LargeSize.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LargeSize.gb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LargeSize.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LargeSize.GFF
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LargeSizeDnaIllumina.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LargeSizeDnaIlluminaFastq.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LargeSizeDnaSanger.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LargeSizeFastQDnaSolexa.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LargeSize_AlignFile_Pro_1.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LargeSize_AlignFile_Pro_2.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\LargeSize_FastQ_Sanger.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Long_Start_End.bed
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Mandatory_GenBank_Headers.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Maximum_Sequences.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MediumSize.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MediumSize.Gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MediumSizeDNAGenBank.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MediumSizeDnaIllumina.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MediumSizeDnaSanger.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MediumSizeFastQDnaSolexa.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MediumSizeRNAGenBank.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MediumSize_AlignFile_Pro_1.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MediumSize_AlignFile_Pro_2.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MediumSize_GenBankFile.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Medium_Size.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MergeBed.bed
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Metadata_GenBank_DNA.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Metadata_GenBank_Protein.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Metadata_GenBank_RNA.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MiscRNAGenBank.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\AzureDnaResultsASync.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\AzureProteinSeqResultsASync.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\AzureWebServiceCancelRequestIdentifier.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\AzureWebServiceRequestStatusForDnaSeq.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\AzureWebserviceResultsSync.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCCancelRequestIdentifierForDna.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCCancelRequestIdentifierForProtein.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCFetchResultsAsync.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCFetchResultsForProtein.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCFetchResultsSync.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCFetchResultsSyncForProtein.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCGetRequestStatusForDna.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCGetRequestStatusForProtein.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCRequestIdentifierForDna.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\BioHPCRequestIdentifierForProtein.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\EBIBlastAsyncFetchResults.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\EBIBlastObjectsBvtSyc.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\EBIBlastRequestStatusForDnaSeq.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\EBIBlastRequestStatusForProteinSeq.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\NCBIBlastObjectsBvtAsyc.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\NCBIBlastRequestIdentifierForDna.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\NCBIBlastRequestIdentifierForProtein.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\NCBIBlastRequestStatusForDna.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MockOutputObjects\NCBIBlastRequestStatusForProtein.object
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MulitSeqSanger-DNA_PRO.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MulitSeqSanger-DNA_RNA.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MulitSeqSanger-DNA_RNA_PRO.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MulitSeqSanger-RNA_PROTEIN.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MulitSeqSolexa-DNA_PRO.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MulitSeqSolexa-DNA_RNA.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MulitSeqSolexa-DNA_RNA_PRO.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MulitSeqSolexa-RNA_PRO.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiChromoSnpFile.tsv
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiGene_CDS_DNA.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultipleReference_GenBank_Protein.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSeqIllumina-DNA_PRO.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSeqIllumina-DNA_RNA.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSeqIllumina-DNA_RNA_PRO.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSeqIllumina-RNA_PROTEIN.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequence-Dna_Pro.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequence-DNA_RNA.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequence-Dna_Rna_Pro.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequence-Rna_Pro.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequenceDNA_GenBank.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequences-DNA_DNA.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequences-DNA_Pro.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequences-DNA_RNA.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequences-DNA_RNA_Pro.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequences-RNA_Pro.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequences_GenBank_Protein.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSequence_GenBank_RNA.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\MultiSeq_GenBank_Protein.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Multi_Sequences.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Multi_Seq_Medium_Size.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Multi_Seq_Search_Medium_Size.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Multi_Seq_Search_Small_Size.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Multi_Seq_Small_Size.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Nucmer_Query_Seq.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Nucmer_Query_Seq.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Nucmer_Reference_Seq.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Nucmer_Reference_Seq.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\OneLineDnaIlluminaSequence.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\OneLineSeq.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\OneLineSeq.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\OneLineSeq.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\OneLineSeqDnaSolexa.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\OneLineSnpFile.tsv
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\One_Line.bed
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\OnlyFeatures.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\OperatorGenBankFile.genbank
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\1And2FormatPairedReadsLibraryInformation.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\AverageSizeChromosomes.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ChrReads.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ClustalWContigs.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\EulerTestDataReads.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\FilterContigsReverseDirectionAndPalindromeContig.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\FilterContigsRevReadWithRevComplement.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\FilterContigsWithForwardOrientation.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\FilterContigsWithOneLineReads.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\FilterContigsWithReadAndPalindromeContig.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\FilterContigsWithReadNotSupportReverseOrientation.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\FilterContigsWithRevComplement.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\FilterContigsWithReverseOrientation.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\LeftSideContigGenerator.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLine200bpReadsWithRC.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineBubbleReads.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReads.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsFor10KAnd50And100KLibrary.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsFor2KAnd0.5KLibrary.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsForMapToContig.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsForMapToContigPartialOverlap.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsForPairedReads.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWith1And2PairedReads.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithFAndRPairedReads.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\OneLineReadsWithX1AndY1PairedReads.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithBubbles.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithDanglingLinks.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithDotsBetweenSequenceId.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithMultipleBubbles.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithMultipleDanglingLinks.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ReadsWithSpecialCharsID.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldForForwardReadAndPalindromeContig.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldForForwardReadAndRevComplContig.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldForReverseReadAndPalindromeContig.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldForReverseReadAndRevComplContig.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldPaths.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldPathsForForwardReadAndReverseCompContig.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldPathsForReverseDirectionDoesNotSupportOrientation.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldPathsWithForwardOrientation.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\ScaffoldPathsWithReverse.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\SeqReadsAndReverse.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\SeqReadsWithRightSideContig.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\SequenceIdWithDotReads.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\SequenceReadsWithoutIDName.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PaDeNATestData\virulgenomereads.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PhylipParserEncodingFile.phy
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\primate-mtDNA-interleaved.nex
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\PROTEIN-Medium.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ProteinFastQIllumina.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ProteinFastQSanger.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ProteinGenBank_MaturePeptide.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ProteinGenBank_Variation.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Protein\12.afa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Protein\12_raw.afa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\QueryBedWithTenChromo.bed
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Query_Protein.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Query_Protein_Ambiguity.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Query_Rna.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Query_Rna_Ambiguity.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Query_Small_Size_Ambiguity.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\random.GFF
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\reads.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ReferenceBed.bed
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ReferenceBedWithAllIdenticalEntries.bed
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\ReferenceBedWithTenChromo.bed
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\RNA-Medium.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\RnaFastQIllumina.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\RnaFastQSanger.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\RNAGenBank_Variation.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\RNA\15.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\RNA\15_raw.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\AlignmentQualitySequenceWithDV.bam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\AlignmentWithIndexTwelveOutput.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\AlignmentWithQualityValues.bam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\AlignmentWithQualityValues.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\AlignmentWithQualityValues.sam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\AlignmentWithRef.sam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\AlignmentWithSequenceRange.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\AlignmentWithSequenceRefName.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\BAMFileWithPairedReads.bam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\BAMWithQualityValues.bam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\EmptyReaderLine.sam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\EmptySAMFile.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\InvalidSamBioReader.sam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\InvalidSAMEmptyFile.sam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeBam.bam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeBam.bam.bai
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeBAMSequences.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\MediumSizeSAMFile.sam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\NA07000.454.BCM.crossmatch.bam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\NA07000.454.BCM.crossmatchSeqAlignmentOutput.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\qualitativesequences.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\RefSequencesOutput.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\ref_list.fna
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SamFormatterFile.sam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignment.bam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignment.bam.bai
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignment.sam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignmentFormatWithRef.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignmentOutput.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignmentOutputWithIndex.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignmentWithBlankLine.sam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignmentWithRef.bam
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignmentWithRef.bam.bai
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqAlignmentWithRefSeq.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SAMBAMTestData\SeqFormatterAlignOutput.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SampleSparseSeq.csv
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Search_Dna.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Search_Dna.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Search_Medium_Size.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Search_Protein.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Search_Protein_Ambiguity.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Search_Rna.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Search_Rna_Ambiguity.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Search_Small_Size.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Search_Small_Size_Ambiguity.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\simple.GFF
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SimpleDnaIllumina.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SimpleDnaIllumina.fq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SimpleDnaIlluminaDV.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SimpleNexusCharBlock.nex
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SimpleNexusFile.nex
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SimpleSnpFile.tsv
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Encoding.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Encoding_Reader.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fasta_DNA.fa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fasta_DNA.fas
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fasta_DNA.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fasta_DNA.fna
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fasta_DNA.fsa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fasta_DNA.mpfa
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fasta_Protein.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fasta_RNA.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Fastq_Sequence.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_GenBank_DNA.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_GenBank_DNA.genbank
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_GenBank_Primary.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_GenBank_Protein.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_GenBank_RNA.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Gff_Dna.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Gff_Protein.GFF
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Simple_Gff_Rna.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SingleSequenceFastQSanger.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SmallSizeQueryBed.bed
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\SmallSizeReferenceBed.bed
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size.bed
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size.gbk
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Small_Size.gff
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Temp_Dna.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\Three_Chromo.bed
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\TwoLineSeqDnaSolexa.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\TwoLineSequenceDnaIllumina.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\TwoLineSequenceeDnaSanger.fastq
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\VeryLargeSize_AlignFile_Pro_1.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\VeryLargeSize_AlignFile_Pro_2.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\VeryLargeSize_Protein.fasta
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\WiggleWithFixedStep.wig
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\WiggleWithInvalidAutoScale.wig
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\WiggleWithInvalidTrack.wig
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\TestData\TestUtils\WiggleWithVariableStep.wig
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TestAutomation.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TestAutomation.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TestAutomation.dll.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TestAutomation.dll.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.TestAutomation\obj\Debug\Bio.TestAutomation.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.TestAutomation\obj\Debug\Bio.TestAutomation.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.TestAutomation\obj\Debug\Bio.TestAutomation.pdb

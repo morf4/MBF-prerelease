@@ -1,0 +1,105 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\DiagonalScoreMatrix.txt
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestsConfig.xml
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\10 - SwineFluOutbreak_HongKong_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\10 - SwineFluOutbreak_NewYork_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\100 - Dna1.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\100 - Dna2.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\11 - SwineFluOutbreak_HongKong_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\11 - SwineFluOutbreak_NewYork_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\1MB - Dna1.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\1MB - Dna2.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\2 - SwineFluOutbreak_HongKong_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\2 - SwineFluOutbreak_NewYork_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\20 - SwineFluOutbreak_HongKong_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\20 - SwineFluOutbreak_NewYork_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\25 - SwineFluOutbreak_HongKong_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\25 - SwineFluOutbreak_NewYork_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\2MB - Dna1.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\2MB - Dna2.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\30 - SwineFluOutbreak_HongKong_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\30 - SwineFluOutbreak_NewYork_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\36 - SwineFluOutbreak_HongKong_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\36 - SwineFluOutbreak_NewYork_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\38 - SwineFluOutbreak_HongKong_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\38 - SwineFluOutbreak_NewYork_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\4 - SwineFluOutbreak_HongKong_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\4 - SwineFluOutbreak_NewYork_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\45 - SwineFluOutbreak_HongKong_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\45 - SwineFluOutbreak_NewYork_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\50 - Dna1.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\50 - Dna2.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\500 - Dna1.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\500 - Dna2.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\6 - SwineFluOutbreak_HongKong_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\6 - SwineFluOutbreak_NewYork_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\7 - SwineFluOutbreak_HongKong_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\7 - SwineFluOutbreak_NewYork_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\8 - SwineFluOutbreak_HongKong_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\AlignmentAlgorithms\8 - SwineFluOutbreak_NewYork_DNA.FASTA
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\BAMTestData\NA07000.SLX.SC.Mosaik.SRP000033.2009_08.bam.bam
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\ObjectModel\Flavobacteria bacterium MS024-3C ctg90, whole genome shotgun sequence.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\ObjectModel\Homo sapiens tyrosine monooxygenasetryptophan monooxygenase activation.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\ObjectModel\Macrobrachium lanchesteri mitochondrion, complete genome.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.10240.1.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.10240.3.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.10240.fragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.102400.1.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.102400.3.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.102400.fragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.1048576.1.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.1048576.3.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.1048576.fragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.2097152.1.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.2097152.3.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.2097152.fragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.51200.1.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.51200.3.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.51200.fragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.512000.1.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.512000.3.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.512000.fragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.5242880.1.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.5242880.3.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\E-coli Test Data\ecoli.5242880.fragments
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\EulerTestData\1MB_Euler.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\EulerTestData\2MB_Euler.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\EulerTestData\500KB_Euler.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\EulerTestData\5MB_Euler.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PaDeNA\EulerTestData\7MB_Euler.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\10.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\10_raw.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\12.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\854.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\122.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\854_raw.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\122_raw.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\12_raw.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\2.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\2_raw.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\4.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\4_raw.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\6.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\6_raw.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\8.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\8_raw.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\WD40.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Dna\WD40_raw.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Protein\10.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Protein\10_raw.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Protein\12.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Protein\12_raw.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Protein\2.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Protein\2_raw.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Protein\4.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Protein\4_raw.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Protein\6.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Protein\6_raw.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Protein\8.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Protein\8_raw.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Protein\all.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\TestUtils\PerfTestData\PAMSAM\Protein\all_raw.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\MBF.PerfTests.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\MBF.PerfTests.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.PerfTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.PerfTests\obj\Debug\MBF.PerfTests.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.PerfTests\obj\Debug\MBF.PerfTests.pdb

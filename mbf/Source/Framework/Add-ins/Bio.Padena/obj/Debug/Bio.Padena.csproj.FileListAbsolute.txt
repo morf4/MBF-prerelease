@@ -1,0 +1,21 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Padena.XML
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Padena.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Padena.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Padena.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Padena.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Add-ins\Bio.Padena\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Add-ins\Bio.Padena\obj\Debug\Bio.Algorithms.Assembly.Padena.Properties.Resource.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Add-ins\Bio.Padena\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Add-ins\Bio.Padena\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Add-ins\Bio.Padena\obj\Debug\Bio.Padena.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Add-ins\Bio.Padena\obj\Debug\Bio.Padena.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.Padena.XML
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.Padena.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.Padena.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.Padena.dll.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.Padena.dll.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.Padena\obj\Debug\Bio.Padena.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.Padena\obj\Debug\Bio.Algorithms.Assembly.Padena.Properties.Resource.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.Padena\obj\Debug\Bio.Padena.csproj.GenerateResource.Cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.Padena\obj\Debug\Bio.Padena.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.Padena\obj\Debug\Bio.Padena.pdb

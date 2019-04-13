@@ -1,0 +1,21 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\ScaffoldUtil.exe.config
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\ScaffoldUtil.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\ScaffoldUtil.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\ScaffoldUtil.exe.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\ScaffoldUtil.exe.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ScaffoldUtil\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ScaffoldUtil\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ScaffoldUtil\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\ScaffoldUtil.exe.config
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\ScaffoldUtil.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\ScaffoldUtil.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\ScaffoldUtil.exe.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\ScaffoldUtil.exe.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.Properties.Resources.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.csproj.GenerateResource.Cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.pdb

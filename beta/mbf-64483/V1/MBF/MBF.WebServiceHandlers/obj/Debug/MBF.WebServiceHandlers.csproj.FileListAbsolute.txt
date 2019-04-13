@@ -1,0 +1,11 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\MBF.WebServiceHandlers.xml
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\MBF.WebServiceHandlers.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\MBF.WebServiceHandlers.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\MBF.WebServiceHandlers.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\MBF.WebServiceHandlers.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.WebServiceHandlers\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.WebServiceHandlers\obj\Debug\MBF.WebServiceHandlers.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.WebServiceHandlers\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.WebServiceHandlers\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.WebServiceHandlers\obj\Debug\MBF.WebServiceHandlers.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\MBF.WebServiceHandlers\obj\Debug\MBF.WebServiceHandlers.pdb

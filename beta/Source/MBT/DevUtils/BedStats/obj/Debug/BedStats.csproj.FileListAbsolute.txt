@@ -1,0 +1,6 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\BedStats.exe.config
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\BedStats.exe
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\BedStats.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Source\MBT\DevUtils\BedStats\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Source\MBT\DevUtils\BedStats\obj\Debug\BedStats.exe
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Source\MBT\DevUtils\BedStats\obj\Debug\BedStats.pdb

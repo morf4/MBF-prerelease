@@ -1,0 +1,62 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\AlignmentAlgorithms\AmbiguousDNA.txt
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\AlignmentAlgorithms\DiagonalScoreMatrix.txt
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\AlignmentAlgorithms\readme.txt
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\ObjectModel\readme.txt
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\EulerTestData\readme.txt
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PAMSAM\Dna\readme.txt
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\SAMBAMTestData\readme.txt
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestsConfig.xml
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\AlignmentAlgorithms\LargeSizeEcoli_Query.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\AlignmentAlgorithms\LargeSizeEcoli_Ref.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\AlignmentAlgorithms\MUMmer-MediumSizeEcoli_Query.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\AlignmentAlgorithms\MUMmer-MediumSizeEcoli_Ref.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\AlignmentAlgorithms\MediumSizeStreptomyces coelicolor A3(2)-Query.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\AlignmentAlgorithms\MediumSizeStreptomyces coelicolor A3(2)-Ref.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\AlignmentAlgorithms\NUCmer-MediumSizeEcoli-Query.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\AlignmentAlgorithms\NUCmer-MediumSizeEcoli-Ref.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\AlignmentAlgorithms\SmallSizeE-coli_Query.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\AlignmentAlgorithms\SmallSizeE-coli_Ref.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\AlignmentAlgorithms\SmallSizeHomosapiensclaspin-Query.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\AlignmentAlgorithms\SmallSizeHomosapiensclaspin-Ref.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\ObjectModel\Flavobacteria bacterium MS024-3C ctg90, whole genome shotgun sequence.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\ObjectModel\Homo sapiens tyrosine monooxygenasetryptophan monooxygenase activation.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\ObjectModel\Macrobrachium lanchesteri mitochondrion, complete genome.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.10240.1.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.10240.3.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.10240.fragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.102400.1.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.102400.3.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.102400.fragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.1048576.1.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.1048576.3.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.1048576.fragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.2097152.1.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.2097152.3.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.2097152.fragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.51200.1.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.51200.3.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.51200.fragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.512000.1.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.512000.3.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.512000.fragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.5242880.1.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.5242880.3.errorFragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\E-coli Test Data\ecoli.5242880.fragments
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\EulerTestData\1MB_Euler.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\EulerTestData\2MB_Euler.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\EulerTestData\500KB_Euler.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\EulerTestData\5MB_Euler.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PaDeNA\EulerTestData\7MB_Euler.fasta
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PAMSAM\Dna\122_Phyllodonta indeterminata voucher_Query.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PAMSAM\Dna\122_Phyllodonta indeterminata voucher_Ref.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PAMSAM\Dna\854_Phyllodonta indeterminata voucher_Query.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\PAMSAM\Dna\854_Phyllodonta indeterminata voucher_Ref.afa
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\SAMBAMTestData\20MBVeryLargeSize-NA12273.SLX.MOSAIK.SRP000033.2009_11.bam
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\SAMBAMTestData\20MBVeryLargeSize-NA12273.SLX.MOSAIK.SRP000033.2009_11.sam
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\SAMBAMTestData\LargeSize-NA12273.SLX.MOSAIK.SRP000033.2009_11.bam
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\PerfTestData\SAMBAMTestData\LargeSize-NA12273.SLX.MOSAIK.SRP000033.2009_11.sam
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\MBF.PerfTests.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\MBF.PerfTests.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Tests\MBF.PerfTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Tests\MBF.PerfTests\obj\Debug\MBF.PerfTests.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Tests\MBF.PerfTests\obj\Debug\MBF.PerfTests.pdb

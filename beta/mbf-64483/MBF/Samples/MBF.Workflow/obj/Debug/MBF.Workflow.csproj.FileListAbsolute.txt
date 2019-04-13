@@ -1,0 +1,5 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\MBF.Workflow.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\MBF.Workflow.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\Samples\MBF.Workflow\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\Samples\MBF.Workflow\obj\Debug\MBF.Workflow.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\Samples\MBF.Workflow\obj\Debug\MBF.Workflow.pdb

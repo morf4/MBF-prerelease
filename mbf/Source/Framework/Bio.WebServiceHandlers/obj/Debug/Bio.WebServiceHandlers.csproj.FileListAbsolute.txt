@@ -1,0 +1,21 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.WebServiceHandlers.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.WebServiceHandlers.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.WebServiceHandlers.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.WebServiceHandlers.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.WebServiceHandlers.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.WebServiceHandlers\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.WebServiceHandlers\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.WebServiceHandlers\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.WebServiceHandlers.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.WebServiceHandlers.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.WebServiceHandlers.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.WebServiceHandlers.dll.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.WebServiceHandlers.dll.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.Properties.Resources.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.csproj.GenerateResource.Cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.pdb

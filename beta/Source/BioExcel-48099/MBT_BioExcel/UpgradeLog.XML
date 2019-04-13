@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="BioExcel">
+</Property><Property Name="Solution File" Value="C:\Users\Jonathan_Moore\Desktop\MBI\changesets\BioExcel-48099\MBT_BioExcel\BioExcel.sln">
+</Property><Property Name="Date" Value="Thursday, December 16, 2010">
+</Property><Property Name="Time" Value="1:05 AM">
+</Property></Properties><Event ErrorLevel="0" Project="BioExcel" Source="BioExcel\BioExcel.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="BioExcel" Source="BioExcel\BioExcel.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BioExcel.Visualizations.Common" Source="BioExcel.Visualizations.Common\BioExcel.Visualizations.Common.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="BioExcel.Visualizations.Common" Source="BioExcel.Visualizations.Common\BioExcel.Visualizations.Common.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="BioExcel.sln" Description="The solution file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="" Source="BioExcel.sln" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="BioExcel" Source="BioExcel\BioExcel.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

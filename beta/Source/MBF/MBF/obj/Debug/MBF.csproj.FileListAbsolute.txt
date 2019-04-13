@@ -1,0 +1,13 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\MBF.xml
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\MBF.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\MBF.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\MBF.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\MBF.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Source\MBF\MBF\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Source\MBF\MBF\obj\Debug\MBF.CloneLibrary.Resources.LibraryResource.resources
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Source\MBF\MBF\obj\Debug\MBF.Properties.Resource.resources
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Source\MBF\MBF\obj\Debug\MBF.SimilarityMatrices.Resources.SimilarityMatrixResources.resources
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Source\MBF\MBF\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Source\MBF\MBF\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Source\MBF\MBF\obj\Debug\MBF.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Source\MBF\MBF\obj\Debug\MBF.pdb

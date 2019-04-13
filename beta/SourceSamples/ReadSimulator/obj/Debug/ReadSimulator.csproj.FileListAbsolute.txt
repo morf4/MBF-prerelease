@@ -1,0 +1,17 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\ReadSimulator.exe
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\ReadSimulator.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\SourceSamples\ReadSimulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\SourceSamples\ReadSimulator\obj\Debug\SimulatorWindow.g.cs
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\SourceSamples\ReadSimulator\obj\Debug\TestWindow.g.cs
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\SourceSamples\ReadSimulator\obj\Debug\App.g.cs
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\SourceSamples\ReadSimulator\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\SourceSamples\ReadSimulator\obj\Debug\ReadSimulator_MarkupCompile.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\SourceSamples\ReadSimulator\obj\Debug\ReadSimulator_MarkupCompile.lref
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\SourceSamples\ReadSimulator\obj\Debug\SimulatorWindow.baml
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\SourceSamples\ReadSimulator\obj\Debug\TestWindow.baml
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\SourceSamples\ReadSimulator\obj\Debug\ReadSimulator.g.resources
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\SourceSamples\ReadSimulator\obj\Debug\ReadSimulator.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\SourceSamples\ReadSimulator\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\SourceSamples\ReadSimulator\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\SourceSamples\ReadSimulator\obj\Debug\ReadSimulator.exe
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\SourceSamples\ReadSimulator\obj\Debug\ReadSimulator.pdb

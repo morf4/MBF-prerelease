@@ -1,0 +1,19 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Comparative.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Comparative.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Comparative.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Comparative.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Algorithms.Assembly.Comparative.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Comparative.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Comparative.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.Comparative.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.Comparative.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.Comparative.dll.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.Comparative.dll.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Comparative.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Algorithms.Assembly.Comparative.Properties.Resources.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Comparative.csproj.GenerateResource.Cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Comparative.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Comparative.pdb

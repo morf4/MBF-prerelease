@@ -1,0 +1,17 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\ReadGenerator.exe
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\ReadGenerator.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\ReadGenerator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\ReadGenerator\obj\Debug\SimulatorWindow.g.cs
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\ReadGenerator\obj\Debug\TestWindow.g.cs
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\ReadGenerator\obj\Debug\App.g.cs
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\ReadGenerator\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\ReadGenerator\obj\Debug\ReadGenerator_MarkupCompile.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\ReadGenerator\obj\Debug\ReadGenerator_MarkupCompile.lref
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\ReadGenerator\obj\Debug\SimulatorWindow.baml
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\ReadGenerator\obj\Debug\TestWindow.baml
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\ReadGenerator\obj\Debug\ReadGenerator.g.resources
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\ReadGenerator\obj\Debug\ReadGenerator.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\ReadGenerator\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\ReadGenerator\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\ReadGenerator\obj\Debug\ReadGenerator.exe
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\ReadGenerator\obj\Debug\ReadGenerator.pdb

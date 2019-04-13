@@ -1,0 +1,8 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\SAMUtils.exe
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\Build\Binaries\Debug\SAMUtils.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\SAMUtils\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\SAMUtils\obj\Debug\SAMUtils.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\SAMUtils\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\SAMUtils\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\SAMUtils\obj\Debug\SAMUtils.exe
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\V1\MBF\Samples\SAMUtils\obj\Debug\SAMUtils.pdb

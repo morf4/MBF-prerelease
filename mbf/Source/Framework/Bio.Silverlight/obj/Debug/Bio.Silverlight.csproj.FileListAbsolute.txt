@@ -1,0 +1,10 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Silverlight.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Silverlight.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Silverlight.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Silverlight.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.Silverlight\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.Silverlight\obj\Debug\Bio.Properties.Resource.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.Silverlight\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.Silverlight\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.Silverlight\obj\Debug\Bio.Silverlight.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.Silverlight\obj\Debug\Bio.Silverlight.pdb

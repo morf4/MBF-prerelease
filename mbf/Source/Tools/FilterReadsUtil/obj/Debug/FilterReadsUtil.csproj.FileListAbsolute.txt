@@ -1,0 +1,15 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\FilterReadsUtil.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\FilterReadsUtil.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\FilterReadsUtil\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.Properties.Resource.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\FilterReadsUtil\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\FilterReadsUtil\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\FilterReadsUtil.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\FilterReadsUtil.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.Properties.Resource.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.csproj.GenerateResource.Cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.pdb

@@ -1,0 +1,18 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\HpcLibSettings.local.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\HpcLibSettings.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.XML
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Hpc.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Hpc.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Hpc.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Hpc.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.Hpc\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.Properties.Resource.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.Hpc\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.Hpc\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.Properties.Resource.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.csproj.GenerateResource.Cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.pdb

@@ -1,0 +1,8 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Silverlight.TestAutomation.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Silverlight.TestAutomation.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Silverlight.TestAutomation\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Silverlight.TestAutomation\obj\Debug\Bio.Silverlight.TestAutomation.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Silverlight.TestAutomation\obj\Debug\Bio.Silverlight.TestAutomation.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Silverlight.TestAutomation\obj\Debug\Bio.Silverlight.TestAutomation.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Silverlight.TestAutomation\obj\Debug\Bio.Silverlight.TestAutomation.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Silverlight.TestAutomation\obj\Debug\Bio.Silverlight.TestAutomation.pdb

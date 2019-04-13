@@ -1,0 +1,6 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\TestData\TestUtils\Testcases.xml
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\MBF.TestUtils.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\MBF.TestUtils.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Tests\MBF.TestUtils\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Tests\MBF.TestUtils\obj\Debug\MBF.TestUtils.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Tests\MBF.TestUtils\obj\Debug\MBF.TestUtils.pdb

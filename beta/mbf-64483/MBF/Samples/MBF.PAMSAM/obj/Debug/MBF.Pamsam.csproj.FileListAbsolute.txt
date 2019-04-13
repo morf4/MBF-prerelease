@@ -1,0 +1,8 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\MBF.PAMSAM.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\MBF.PAMSAM.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\Samples\MBF.PAMSAM\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\Samples\MBF.PAMSAM\obj\Debug\MBF.Algorithms.Alignment.MultipleSequenceAlignment.Resource.resources
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\Samples\MBF.PAMSAM\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\Samples\MBF.PAMSAM\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\Samples\MBF.PAMSAM\obj\Debug\MBF.PAMSAM.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\Samples\MBF.PAMSAM\obj\Debug\MBF.PAMSAM.pdb

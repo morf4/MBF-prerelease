@@ -1,0 +1,19 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\HpcLibSettings.local.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\HpcLibSettings.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\TestData\TestUtils\Testcases.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Tests.XML
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Tests.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Tests.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Tests.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\Bio.Tests.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Tests\obj\Debug\Bio.Tests.Properties.Resource.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Tests\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Tests\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Tests\obj\Debug\Bio.Tests.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Tests\obj\Debug\Bio.Tests.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Tests\obj\Debug\Bio.Tests.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Tests\obj\Debug\Bio.Tests.Properties.Resource.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Tests\obj\Debug\Bio.Tests.csproj.GenerateResource.Cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Tests\obj\Debug\Bio.Tests.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Tests\obj\Debug\Bio.Tests.pdb

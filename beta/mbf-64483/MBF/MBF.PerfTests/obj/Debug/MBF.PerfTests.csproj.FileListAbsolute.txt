@@ -1,0 +1,5 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\MBF.PerfTests.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\MBF.PerfTests.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\MBF.PerfTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\MBF.PerfTests\obj\Debug\MBF.PerfTests.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\MBF.PerfTests\obj\Debug\MBF.PerfTests.pdb

@@ -1,0 +1,21 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BedStats.exe.config
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BedStats.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BedStats.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BedStats.exe.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BedStats.exe.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\DevUtils\BedStats\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.Properties.Resource.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\DevUtils\BedStats\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\DevUtils\BedStats\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BedStats.exe.config
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BedStats.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BedStats.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BedStats.exe.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BedStats.exe.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.Properties.Resource.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.csproj.GenerateResource.Cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.pdb

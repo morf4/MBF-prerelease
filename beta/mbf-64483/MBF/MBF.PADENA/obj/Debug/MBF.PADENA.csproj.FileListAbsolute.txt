@@ -1,0 +1,11 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\MBF.PaDeNA.xml
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\MBF.PaDeNA.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\MBF.PaDeNA.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\MBF.PaDeNA.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\Build\Binaries\Debug\MBF.PaDeNA.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\MBF.PADENA\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\MBF.PADENA\obj\Debug\MBF.Algorithms.Assembly.PaDeNA.Properties.Resource.resources
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\MBF.PADENA\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\MBF.PADENA\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\MBF.PADENA\obj\Debug\MBF.PaDeNA.dll
+C:\Users\Jonathan_Moore\Desktop\mbf-64483\MBF\MBF.PADENA\obj\Debug\MBF.PaDeNA.pdb

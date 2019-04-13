@@ -1,0 +1,20 @@
+﻿BioExcel.Visualizations.Common
+
+
+library
+C#
+.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\
+BiodexExcel.Visualizations.Common
+none
+false
+CODE_ANALYSIS;DEBUG;TRACE
+
+14862541182
+
+231278183910
+16-426794318
+DialogBox\OfficeColorPicker.xaml;DialogBox\ColumnMap.xaml;DialogBox\AboutDialog.xaml;DialogBox\AssemblyInputDialog.xaml;DialogBox\BlastDialog.xaml;DialogBox\ColorConfiguration.xaml;DialogBox\ColorScheme.xaml;DialogBox\ExportSelectionDialog.xaml;DialogBox\InputSelectionDialog.xaml;DialogBox\InputSequenceItem.xaml;DialogBox\MaxColumnsDialog.xaml;DialogBox\BedWizardDialog.xaml;Resources\ResourceDictionary.xaml;Resources\styles.xaml;
+
+True
+

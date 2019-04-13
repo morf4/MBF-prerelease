@@ -1,0 +1,5 @@
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\MumUtil.exe
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Build\Binaries\Debug\MumUtil.pdb
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Source\MBT\MumUtil\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Source\MBT\MumUtil\obj\Debug\MumUtil.exe
+C:\Users\Jonathan_Moore\Desktop\mbf-70308\Source\MBT\MumUtil\obj\Debug\MumUtil.pdb

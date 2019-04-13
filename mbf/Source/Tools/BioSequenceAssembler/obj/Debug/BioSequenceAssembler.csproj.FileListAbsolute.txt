@@ -1,0 +1,137 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BioSequenceAssembler.exe.config
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BioSequenceAssembler.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BioSequenceAssembler.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BioSequenceAssembler.exe.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BioSequenceAssembler.exe.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\AlignmentReport.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\BlastHeader.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AboutScreen.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AlignerDialog.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AssemblerDialog.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\ColorSchemeDialog.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\FileTypeAssociationDialog.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\StartupScreen.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\PairwiseSequenceAlignment.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\MessageDialog.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\ProgressAnimation.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\BlastDialog .baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\FileMenu.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Resources\Styles.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Resources\ResourceDictionary.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\ScaleMarkerLarge.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\ScaleMarkerSmall.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\SilverMapController.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\TreeViewTooltip.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\App.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\AlignmentReport.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\BlastHeader.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AboutScreen.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AlignerDialog.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AssemblerDialog.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\ColorSchemeDialog.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\FileTypeAssociationDialog.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\StartupScreen.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\PairwiseSequenceAlignment.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\ConsensusCustomView.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\RangeSlider.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\EditSequenceDialog.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\MessageDialog.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\ProgressAnimation.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\AssemblerPane.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\BlastDialog .g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\BlastPane.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\FileMenu.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\OpenFileDialog .g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\ScaleMarkerLarge.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\ScaleMarkerSmall.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\SequenceAssembly.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\SequenceLine.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\SilverMapController.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\TreeViewTooltip.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\App.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler_MarkupCompile.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler_MarkupCompile.lref
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\ConsensusCustomView.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\RangeSlider.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\EditSequenceDialog.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\AssemblerPane.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\BlastPane.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\OpenFileDialog .baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\SequenceAssembly.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\SequenceLine.baml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.g.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\SequenceAssembler.Properties.Resource.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.exe
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BioSequenceAssembler.exe.config
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BioSequenceAssembler.exe
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BioSequenceAssembler.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BioSequenceAssembler.exe.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BioSequenceAssembler.exe.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\AlignmentReport.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\BlastHeader.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AboutScreen.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AlignerDialog.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AssemblerDialog.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\ColorSchemeDialog.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\FileTypeAssociationDialog.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\StartupScreen.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\PairwiseSequenceAlignment.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\MessageDialog.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\ProgressAnimation.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\BlastDialog .baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\FileMenu.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Resources\Styles.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Resources\ResourceDictionary.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\ScaleMarkerLarge.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\ScaleMarkerSmall.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\SilverMapController.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\TreeViewTooltip.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\App.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\AlignmentReport.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\BlastHeader.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AboutScreen.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AlignerDialog.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AssemblerDialog.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\ColorSchemeDialog.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\FileTypeAssociationDialog.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\StartupScreen.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\PairwiseSequenceAlignment.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\ConsensusCustomView.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\RangeSlider.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\EditSequenceDialog.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\MessageDialog.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\ProgressAnimation.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\AssemblerPane.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\BlastDialog .g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\BlastPane.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\FileMenu.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\OpenFileDialog .g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\ScaleMarkerLarge.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\ScaleMarkerSmall.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\SequenceAssembly.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\SequenceLine.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\SilverMapController.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\TreeViewTooltip.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\App.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\GeneratedInternalTypeHelper.g.cs
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler_MarkupCompile.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler_MarkupCompile.lref
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\ConsensusCustomView.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\RangeSlider.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\EditSequenceDialog.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\AssemblerPane.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\BlastPane.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\OpenFileDialog .baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\SequenceAssembly.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\SequenceLine.baml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.g.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\SequenceAssembler.Properties.Resource.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.csproj.GenerateResource.Cache

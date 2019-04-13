@@ -1,0 +1,6 @@
+C:\Users\Jonathan_Moore\Desktop\MBI\changesets\BioExcel-48099\MBT_BioExcel\BioExcel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\MBI\changesets\BioExcel-48099\MBT_BioExcel\BioExcel\obj\Debug\BioExcel.SelectionHelper.resources
+C:\Users\Jonathan_Moore\Desktop\MBI\changesets\BioExcel-48099\MBT_BioExcel\BioExcel\obj\Debug\BioExcel.MBFRibbon.resources
+C:\Users\Jonathan_Moore\Desktop\MBI\changesets\BioExcel-48099\MBT_BioExcel\BioExcel\obj\Debug\BioExcel.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Desktop\MBI\changesets\BioExcel-48099\MBT_BioExcel\BioExcel\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Desktop\MBI\changesets\BioExcel-48099\MBT_BioExcel\BioExcel\obj\Debug\GenerateResource.write.1.tlog

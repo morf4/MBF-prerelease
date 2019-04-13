@@ -1,0 +1,29 @@
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\DisplayDNASequenceDistribution.bas
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BioExcel.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BioExcel.pdb
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BioExcel.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BioExcel.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BioExcel.dll.manifest
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Build\Binaries\Debug\BioExcel.vsto
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel\obj\Debug\BiodexExcel.BioRibbon.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel\obj\Debug\BiodexExcel.SelectionHelper.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel\obj\Debug\BiodexExcel.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel\obj\Debug\BioExcel.dll
+C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\BioExcel\obj\Debug\BioExcel.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\DisplayDNASequenceDistribution.bas
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BioExcel.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BioExcel.pdb
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BioExcel.dll.CodeAnalysisLog.xml
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BioExcel.dll.lastcodeanalysissucceeded
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BioExcel.dll.manifest
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\BioExcel.vsto
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel\obj\Debug\BioExcel.csprojResolveAssemblyReference.cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel\obj\Debug\BiodexExcel.BioRibbon.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel\obj\Debug\BiodexExcel.SelectionHelper.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel\obj\Debug\BiodexExcel.Properties.Resources.resources
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel\obj\Debug\BioExcel.csproj.GenerateResource.Cache
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel\obj\Debug\BioExcel.dll
+G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel\obj\Debug\BioExcel.pdb
