@@ -19,3 +19,9 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\DevUtils\BedStats
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.exe
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.pdb
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.Properties.Resource.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\DevUtils\BedStats\obj\Debug\BedStats.pdb

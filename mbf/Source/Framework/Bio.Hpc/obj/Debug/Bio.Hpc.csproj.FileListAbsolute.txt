@@ -16,3 +16,9 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.Hpc\obj\D
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.dll
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.pdb
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.Properties.Resource.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.dll
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.Hpc\obj\Debug\Bio.Hpc.pdb

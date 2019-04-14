@@ -19,3 +19,15 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\NucmerUtil\obj\De
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.exe
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\NucmerUtil.exe.config
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\NucmerUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\NucmerUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\NucmerUtil.exe.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\NucmerUtil.exe.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.Properties.Resources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\NucmerUtil\obj\Debug\NucmerUtil.pdb

@@ -23,3 +23,17 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\Bio.TemplateWizar
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.dll
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.TemplateWizard.dll
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.TemplateWizard.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.TemplateWizard.dll.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.TemplateWizard.dll.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.OperationsScreen.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.Properties.Resources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.WelcomeScreen.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.WizardForm.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.dll
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\Bio.TemplateWizard\obj\Debug\Bio.TemplateWizard.pdb

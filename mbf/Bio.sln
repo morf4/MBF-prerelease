@@ -1,14 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BioSequenceAssembler", "Source\Tools\BioSequenceAssembler\BioSequenceAssembler.csproj", "{49391C5C-F94E-4BD4-8139-5D4184557E79}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BedStats", "Source\Tools\DevUtils\BedStats\BedStats.csproj", "{04AE089E-B261-421F-B56F-7464E8D459AC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VennTool", "Source\Tools\DevUtils\VennTool\VennTool.csproj", "{6A22023F-655F-4327-AEFF-E35866867019}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadSimulator", "Source\Tools\ReadSimulator\ReadSimulator.csproj", "{1CEA873B-6050-42C9-845F-13B694504BCA}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{126712E3-C7E5-44EC-B7AA-E4BEBABAEA00}"
 	ProjectSection(SolutionItems) = preProject
 		Bio.vsmdi = Bio.vsmdi
@@ -16,6 +10,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Source\Tools\ReadMe.txt = Source\Tools\ReadMe.txt
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BioSequenceAssembler", "Source\Tools\BioSequenceAssembler\BioSequenceAssembler.csproj", "{49391C5C-F94E-4BD4-8139-5D4184557E79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BedStats", "Source\Tools\DevUtils\BedStats\BedStats.csproj", "{04AE089E-B261-421F-B56F-7464E8D459AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VennTool", "Source\Tools\DevUtils\VennTool\VennTool.csproj", "{6A22023F-655F-4327-AEFF-E35866867019}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadSimulator", "Source\Tools\ReadSimulator\ReadSimulator.csproj", "{1CEA873B-6050-42C9-845F-13B694504BCA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MumUtil", "Source\Tools\MumUtil\MumUtil.csproj", "{050EF1B0-2525-4726-98D4-3ED96CBB696A}"
 EndProject
@@ -59,11 +61,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bio.Comparative", "Source\F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bio.Test.AddIns", "Tests\Bio.Test.AddIns\Bio.Test.AddIns.csproj", "{DEBBBC2C-BDB2-4DDC-AB61-7D95324E3147}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bio.Workflow", "Source\Tools\Bio.Workflow\Bio.Workflow.csproj", "{6B85CB8B-C8EA-4805-8D54-BE033F993A61}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bio.TestConsole", "Tests\Bio.TestConsole\Bio.TestConsole.csproj", "{5AD96CB3-25BB-4FB0-8B0E-C0A0600C0D65}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bio.Silverlight", "Source\Framework\Bio.Silverlight\Bio.Silverlight.csproj", "{5F239EA0-9370-4E10-9465-2F805BF25A70}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bio.Silverlight.Test", "Tests\Bio.Silverlight.Test\Bio.Silverlight.Test.csproj", "{7FD5DDB3-8584-4083-B740-176B736FC64C}"
 EndProject
@@ -84,123 +82,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileFormatConverter", "Source\Tools\FileFormatConverter\FileFormatConverter.csproj", "{A60BA4EA-5EF2-4CDD-BAEA-2B08815A76B5}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 38
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs09
-		SccProjectUniqueName0 = Source\\Tools\\LisUtil\\LisUtil.csproj
-		SccProjectName0 = Source/Tools/LisUtil
-		SccLocalPath0 = Source\\Tools\\LisUtil
-		SccLocalPath1 = .
-		SccProjectUniqueName2 = Source\\Framework\\Add-ins\\Bio.Comparative\\Bio.Comparative.csproj
-		SccProjectName2 = Source/Framework/Add-ins/Bio.Comparative
-		SccLocalPath2 = Source\\Framework\\Add-ins\\Bio.Comparative
-		SccProjectUniqueName3 = Source\\Framework\\Add-ins\\Bio.Padena\\Bio.Padena.csproj
-		SccProjectName3 = Source/Framework/Add-ins/Bio.Padena
-		SccLocalPath3 = Source\\Framework\\Add-ins\\Bio.Padena
-		SccProjectUniqueName4 = Source\\Framework\\Add-ins\\Bio.Pamsam\\Bio.Pamsam.csproj
-		SccProjectName4 = Source/Framework/Add-ins/Bio.Pamsam
-		SccLocalPath4 = Source\\Framework\\Add-ins\\Bio.Pamsam
-		SccProjectUniqueName5 = Source\\Framework\\Bio.Hpc.DistributeApp\\Bio.Hpc.DistributeApp.csproj
-		SccProjectName5 = Source/Framework/Bio.Hpc.DistributeApp
-		SccLocalPath5 = Source\\Framework\\Bio.Hpc.DistributeApp
-		SccProjectUniqueName6 = Source\\Framework\\Bio.Hpc\\Bio.Hpc.csproj
-		SccProjectName6 = Source/Framework/Bio.Hpc
-		SccLocalPath6 = Source\\Framework\\Bio.Hpc
-		SccProjectUniqueName7 = Source\\Framework\\Bio.Silverlight\\Bio.Silverlight.csproj
-		SccProjectName7 = Source/Framework/Bio.Silverlight
-		SccLocalPath7 = Source\\Framework\\Bio.Silverlight
-		SccProjectUniqueName8 = Source\\Framework\\Bio.WebServiceHandlers\\Bio.WebServiceHandlers.csproj
-		SccProjectName8 = Source/Framework/Bio.WebServiceHandlers
-		SccLocalPath8 = Source\\Framework\\Bio.WebServiceHandlers
-		SccProjectUniqueName9 = Source\\Framework\\Bio\\Bio.csproj
-		SccProjectName9 = Source/Framework/Bio
-		SccLocalPath9 = Source\\Framework\\Bio
-		SccProjectUniqueName10 = Source\\Tools\\Bio.TemplateWizard\\Bio.TemplateWizard.csproj
-		SccProjectName10 = Source/Tools/Bio.TemplateWizard
-		SccLocalPath10 = Source\\Tools\\Bio.TemplateWizard
-		SccProjectUniqueName11 = Source\\Tools\\Bio.Workflow\\Bio.Workflow.csproj
-		SccProjectName11 = Source/Tools/Bio.Workflow
-		SccLocalPath11 = Source\\Tools\\Bio.Workflow
-		SccProjectUniqueName12 = Source\\Tools\\BioExcel.Visualizations.Common\\BioExcel.Visualizations.Common.csproj
-		SccProjectName12 = Source/Tools/BioExcel.Visualizations.Common
-		SccLocalPath12 = Source\\Tools\\BioExcel.Visualizations.Common
-		SccProjectUniqueName13 = Source\\Tools\\BioExcel\\BioExcel.csproj
-		SccProjectName13 = Source/Tools/BioExcel
-		SccLocalPath13 = Source\\Tools\\BioExcel
-		SccProjectUniqueName14 = Source\\Tools\\BioSequenceAssembler\\BioSequenceAssembler.csproj
-		SccProjectName14 = Source/Tools/BioSequenceAssembler
-		SccLocalPath14 = Source\\Tools\\BioSequenceAssembler
-		SccProjectUniqueName15 = Source\\Tools\\ComparativeUtil\\ComparativeUtil.csproj
-		SccProjectName15 = Source/Tools/ComparativeUtil
-		SccLocalPath15 = Source\\Tools\\ComparativeUtil
-		SccProjectUniqueName16 = Source\\Tools\\ConsensusUtil\\ConsensusUtil.csproj
-		SccProjectName16 = Source/Tools/ConsensusUtil
-		SccLocalPath16 = Source\\Tools\\ConsensusUtil
-		SccProjectUniqueName17 = Source\\Tools\\DevUtils\\BedStats\\BedStats.csproj
-		SccProjectName17 = Source/Tools/DevUtils/BedStats
-		SccLocalPath17 = Source\\Tools\\DevUtils\\BedStats
-		SccProjectUniqueName18 = Source\\Tools\\DevUtils\\Tools.VennToNodeXL\\Tools.VennToNodeXL.csproj
-		SccProjectName18 = Source/Tools/DevUtils/Tools.VennToNodeXL
-		SccLocalPath18 = Source\\Tools\\DevUtils\\Tools.VennToNodeXL
-		SccProjectUniqueName19 = Source\\Tools\\DevUtils\\VennTool\\VennTool.csproj
-		SccProjectName19 = Source/Tools/DevUtils/VennTool
-		SccLocalPath19 = Source\\Tools\\DevUtils\\VennTool
-		SccProjectUniqueName20 = Source\\Tools\\FileFormatConverter\\FileFormatConverter.csproj
-		SccProjectName20 = Source/Tools/FileFormatConverter
-		SccLocalPath20 = Source\\Tools\\FileFormatConverter
-		SccProjectUniqueName21 = Source\\Tools\\FilterReadsUtil\\FilterReadsUtil.csproj
-		SccProjectName21 = Source/Tools/FilterReadsUtil
-		SccLocalPath21 = Source\\Tools\\FilterReadsUtil
-		SccProjectUniqueName22 = Source\\Tools\\LayoutRefinementUtil\\LayoutRefinementUtil.csproj
-		SccProjectName22 = Source/Tools/LayoutRefinementUtil
-		SccLocalPath22 = Source\\Tools\\LayoutRefinementUtil
-		SccProjectUniqueName23 = Source\\Tools\\MumUtil\\MumUtil.csproj
-		SccProjectName23 = Source/Tools/MumUtil
-		SccLocalPath23 = Source\\Tools\\MumUtil
-		SccProjectUniqueName24 = Source\\Tools\\NucmerUtil\\NucmerUtil.csproj
-		SccProjectName24 = Source/Tools/NucmerUtil
-		SccLocalPath24 = Source\\Tools\\NucmerUtil
-		SccProjectUniqueName25 = Source\\Tools\\PadenaUtil\\PadenaUtil.csproj
-		SccProjectName25 = Source/Tools/PadenaUtil
-		SccLocalPath25 = Source\\Tools\\PadenaUtil
-		SccProjectUniqueName26 = Source\\Tools\\ReadSimulator\\ReadSimulator.csproj
-		SccProjectName26 = Source/Tools/ReadSimulator
-		SccLocalPath26 = Source\\Tools\\ReadSimulator
-		SccProjectUniqueName27 = Source\\Tools\\RepeatResolutionUtil\\RepeatResolutionUtil.csproj
-		SccProjectName27 = Source/Tools/RepeatResolutionUtil
-		SccLocalPath27 = Source\\Tools\\RepeatResolutionUtil
-		SccProjectUniqueName28 = Source\\Tools\\SampleClusterApp\\SampleClusterApp.csproj
-		SccProjectName28 = Source/Tools/SampleClusterApp
-		SccLocalPath28 = Source\\Tools\\SampleClusterApp
-		SccProjectUniqueName29 = Source\\Tools\\SamUtil\\SamUtil.csproj
-		SccProjectName29 = Source/Tools/SamUtil
-		SccLocalPath29 = Source\\Tools\\SamUtil
-		SccProjectUniqueName30 = Source\\Tools\\ScaffoldUtil\\ScaffoldUtil.csproj
-		SccProjectName30 = Source/Tools/ScaffoldUtil
-		SccLocalPath30 = Source\\Tools\\ScaffoldUtil
-		SccProjectUniqueName31 = Tests\\Bio.Silverlight.Test\\Bio.Silverlight.Test.csproj
-		SccProjectName31 = Tests/Bio.Silverlight.Test
-		SccLocalPath31 = Tests\\Bio.Silverlight.Test
-		SccProjectUniqueName32 = Tests\\Bio.Silverlight.TestAutomation\\Bio.Silverlight.TestAutomation.csproj
-		SccProjectName32 = Tests/Bio.Silverlight.TestAutomation
-		SccLocalPath32 = Tests\\Bio.Silverlight.TestAutomation
-		SccProjectUniqueName33 = Tests\\Bio.Test.AddIns\\Bio.Test.AddIns.csproj
-		SccProjectName33 = Tests/Bio.Test.AddIns
-		SccLocalPath33 = Tests\\Bio.Test.AddIns
-		SccProjectUniqueName34 = Tests\\Bio.TestAutomation\\Bio.TestAutomation.csproj
-		SccProjectName34 = Tests/Bio.TestAutomation
-		SccLocalPath34 = Tests\\Bio.TestAutomation
-		SccProjectUniqueName35 = Tests\\Bio.TestConsole\\Bio.TestConsole.csproj
-		SccProjectName35 = Tests/Bio.TestConsole
-		SccLocalPath35 = Tests\\Bio.TestConsole
-		SccProjectUniqueName36 = Tests\\Bio.Tests\\Bio.Tests.csproj
-		SccProjectName36 = Tests/Bio.Tests
-		SccLocalPath36 = Tests\\Bio.Tests
-		SccProjectUniqueName37 = Tests\\Bio.TestUtils\\Bio.TestUtils.csproj
-		SccProjectName37 = Tests/Bio.TestUtils
-		SccLocalPath37 = Tests\\Bio.TestUtils
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -460,16 +341,6 @@ Global
 		{DEBBBC2C-BDB2-4DDC-AB61-7D95324E3147}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{DEBBBC2C-BDB2-4DDC-AB61-7D95324E3147}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{DEBBBC2C-BDB2-4DDC-AB61-7D95324E3147}.Release|x86.ActiveCfg = Release|Any CPU
-		{6B85CB8B-C8EA-4805-8D54-BE033F993A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B85CB8B-C8EA-4805-8D54-BE033F993A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B85CB8B-C8EA-4805-8D54-BE033F993A61}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{6B85CB8B-C8EA-4805-8D54-BE033F993A61}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{6B85CB8B-C8EA-4805-8D54-BE033F993A61}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{6B85CB8B-C8EA-4805-8D54-BE033F993A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B85CB8B-C8EA-4805-8D54-BE033F993A61}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B85CB8B-C8EA-4805-8D54-BE033F993A61}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{6B85CB8B-C8EA-4805-8D54-BE033F993A61}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{6B85CB8B-C8EA-4805-8D54-BE033F993A61}.Release|x86.ActiveCfg = Release|Any CPU
 		{5AD96CB3-25BB-4FB0-8B0E-C0A0600C0D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5AD96CB3-25BB-4FB0-8B0E-C0A0600C0D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AD96CB3-25BB-4FB0-8B0E-C0A0600C0D65}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -480,16 +351,6 @@ Global
 		{5AD96CB3-25BB-4FB0-8B0E-C0A0600C0D65}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{5AD96CB3-25BB-4FB0-8B0E-C0A0600C0D65}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{5AD96CB3-25BB-4FB0-8B0E-C0A0600C0D65}.Release|x86.ActiveCfg = Release|Any CPU
-		{5F239EA0-9370-4E10-9465-2F805BF25A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F239EA0-9370-4E10-9465-2F805BF25A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5F239EA0-9370-4E10-9465-2F805BF25A70}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{5F239EA0-9370-4E10-9465-2F805BF25A70}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{5F239EA0-9370-4E10-9465-2F805BF25A70}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{5F239EA0-9370-4E10-9465-2F805BF25A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F239EA0-9370-4E10-9465-2F805BF25A70}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5F239EA0-9370-4E10-9465-2F805BF25A70}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{5F239EA0-9370-4E10-9465-2F805BF25A70}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{5F239EA0-9370-4E10-9465-2F805BF25A70}.Release|x86.ActiveCfg = Release|Any CPU
 		{7FD5DDB3-8584-4083-B740-176B736FC64C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7FD5DDB3-8584-4083-B740-176B736FC64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FD5DDB3-8584-4083-B740-176B736FC64C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -585,5 +446,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {984E8985-7D9F-4461-A7FB-25552728E200}
 	EndGlobalSection
 EndGlobal

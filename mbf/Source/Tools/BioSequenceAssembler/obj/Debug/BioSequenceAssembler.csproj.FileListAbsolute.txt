@@ -135,3 +135,73 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssemb
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.g.resources
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\SequenceAssembler.Properties.Resource.resources
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.csproj.GenerateResource.Cache
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\BioSequenceAssembler.exe.config
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\BioSequenceAssembler.exe
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\BioSequenceAssembler.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\BioSequenceAssembler.exe.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\BioSequenceAssembler.exe.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\AlignmentReport.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\BlastHeader.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AboutScreen.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AlignerDialog.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AssemblerDialog.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\ColorSchemeDialog.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\FileTypeAssociationDialog.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\StartupScreen.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\PairwiseSequenceAlignment.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\MessageDialog.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\ProgressAnimation.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\BlastDialog .baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\FileMenu.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Resources\Styles.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Resources\ResourceDictionary.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\ScaleMarkerLarge.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\ScaleMarkerSmall.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\SilverMapController.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\TreeViewTooltip.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\App.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\AlignmentReport.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\BlastHeader.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AboutScreen.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AlignerDialog.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\AssemblerDialog.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\ColorSchemeDialog.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\FileTypeAssociationDialog.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\StartupScreen.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\PairwiseSequenceAlignment.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\ConsensusCustomView.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\RangeSlider.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\EditSequenceDialog.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\MessageDialog.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\ProgressAnimation.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\AssemblerPane.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\BlastDialog .g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\BlastPane.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\FileMenu.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\OpenFileDialog .g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\ScaleMarkerLarge.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\ScaleMarkerSmall.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\SequenceAssembly.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\SequenceLine.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\SilverMapController.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\TreeViewTooltip.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\App.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler_MarkupCompile.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler_MarkupCompile.lref
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\ConsensusCustomView.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\RangeSlider.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\EditSequenceDialog.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\AssemblerPane.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\BlastPane.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\Dialog\OpenFileDialog .baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\SequenceAssembly.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\SequenceLine.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.g.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\SequenceAssembler.Properties.Resource.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\obj\Debug\BioSequenceAssembler.pdb

@@ -23,3 +23,16 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio\obj\Debug
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio\obj\Debug\Bio.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio\obj\Debug\Bio.dll
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio\obj\Debug\Bio.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.XML
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.dll
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.dll.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.dll.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio\obj\Debug\Bio.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio\obj\Debug\Bio.CloneLibrary.Resources.LibraryResource.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio\obj\Debug\Bio.Properties.Resource.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio\obj\Debug\Bio.SimilarityMatrices.Resources.SimilarityMatrixResources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio\obj\Debug\Bio.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio\obj\Debug\Bio.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio\obj\Debug\Bio.dll
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio\obj\Debug\Bio.pdb

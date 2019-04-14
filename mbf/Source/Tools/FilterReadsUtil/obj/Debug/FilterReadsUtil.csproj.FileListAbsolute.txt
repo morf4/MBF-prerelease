@@ -13,3 +13,12 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\FilterReadsUtil\o
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.exe
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\FilterReadsUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\FilterReadsUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.Properties.Resource.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\FilterReadsUtil\obj\Debug\FilterReadsUtil.pdb

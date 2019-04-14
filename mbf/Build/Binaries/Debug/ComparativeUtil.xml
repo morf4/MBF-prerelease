@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ComparativeUtil</name>
+    </assembly>
+    <members>
+        <member name="T:ComparativeUtil.AssembleArguments">
+            <summary>
+            Class for Assemble options.
+            </summary>
+        </member>
+        <member name="F:ComparativeUtil.AssembleArguments.FilePath">
+            <summary>
+            Paths of input and output file.
+            </summary>
+        </member>
+        <member name="F:ComparativeUtil.AssembleArguments.KmerLength">
+            <summary>
+            Use anchor matches that are unique in both the reference and query.
+            </summary>
+        </member>
+        <member name="F:ComparativeUtil.AssembleArguments.Scaffold">
+            <summary>
+            Run scaffolding step after generating contigs
+            </summary>
+        </member>
+        <member name="F:ComparativeUtil.AssembleArguments.MumLength">
+            <summary>
+            Minimum length of MUM.
+            </summary>
+        </member>
+        <member name="F:ComparativeUtil.AssembleArguments.Help">
+            <summary>
+            Print the help information.
+            </summary>
+        </member>
+        <member name="F:ComparativeUtil.AssembleArguments.OutputFile">
+            <summary>
+            Output file.
+            </summary>
+        </member>
+        <member name="F:ComparativeUtil.AssembleArguments.CloneLibraryName">
+            <summary>
+            Clone Library Name.
+            </summary>
+        </member>
+        <member name="F:ComparativeUtil.AssembleArguments.MeanLengthOfInsert">
+            <summary>
+            Mean Length of clone library.
+            </summary>
+        </member>
+        <member name="F:ComparativeUtil.AssembleArguments.StandardDeviationOfInsert">
+            <summary>
+            Standard Deviation of Clone Library.
+            </summary>
+        </member>
+        <member name="F:ComparativeUtil.AssembleArguments.Verbose">
+            <summary>
+            Display verbose logging during processing.
+            </summary>
+        </member>
+        <member name="M:ComparativeUtil.AssembleArguments.AssembleSequences">
+            <summary>
+            It assembles the sequences.
+            </summary>
+        </member>
+        <member name="M:ComparativeUtil.AssembleArguments.WriteContigs(System.Collections.Generic.IEnumerable{Bio.ISequence},System.IO.TextWriter)">
+            <summary>
+            It Writes the contigs to the file.
+            </summary>
+            <param name="assembly">IDeNovoAssembly parameter is the result of running De Novo Assembly on a set of two or more sequences. </param>
+            <param name="outputWriter">A TextWriter to which the output will be written to.</param>
+        </member>
+        <member name="M:ComparativeUtil.AssembleArguments.AssemblerStatusChanged(System.Object,Bio.Util.StatusChangedEventArgs)">
+            <summary>
+            Method to handle status changed event.
+            </summary>
+            <param name="sender">The sender</param>
+            <param name="statusEventArgs">Status message.</param>
+        </member>
+        <member name="M:ComparativeUtil.AssembleArguments.ValidateAmbiguousReads(System.Collections.Generic.IEnumerable{Bio.ISequence})">
+            <summary>
+            Checks for ambiguous reads if any, if found ArgumentException.
+            </summary>
+            <param name="reads">Input reads.</param>
+        </member>
+        <member name="T:ComparativeUtil.Program">
+            <summary>
+            Program class.
+            </summary>
+        </member>
+        <member name="M:ComparativeUtil.Program.Main(System.String[])">
+            <summary>
+            Main function of program class.
+            </summary>
+            <param name="args">Arguments to the main function.</param>
+        </member>
+        <member name="M:ComparativeUtil.Program.CatchInnerException(System.Exception)">
+            <summary>
+            Catches Inner Exception Messages.
+            </summary>
+            <param name="ex">The Exception.</param>
+        </member>
+        <member name="M:ComparativeUtil.Program.Assemble(System.String[])">
+            <summary>
+            Assemble function.
+            </summary>
+            <param name="args">Arguments to Assemble.</param>
+        </member>
+        <member name="M:ComparativeUtil.Program.DisplayErrorMessage(System.String)">
+            <summary>
+            Display error message on console.
+            </summary>
+            <param name="message">Error message.</param>
+        </member>
+        <member name="T:ComparativeUtil.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ComparativeUtil.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ComparativeUtil.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:ComparativeUtil.Properties.Resources.AmbiguousReadsNotSupported">
+            <summary>
+              Looks up a localized string similar to Reads containing ambiguous symbols are not supported..
+            </summary>
+        </member>
+        <member name="P:ComparativeUtil.Properties.Resources.AssembleHelp">
+             <summary>
+               Looks up a localized string similar to Usage:	   ComparativeUtil.exe [options] &lt;ReferenceGenome&gt; &lt;Reads&gt;
+            Description: Assembles the given reads using comparative assembly.
+            
+            Options:
+            
+            -scaffold                            Run scaffolding(Step 5) after fourth step.
+                                                 (short form /s)
+            
+            -kmerlength:&lt;int&gt;                          Sets kmer length. (short form /k)
+            
+            -MumLength:&lt;int&gt;                     	     Minimum length of MUM(short form /m)      
+            
+            -help	                             Print the help informa [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:ComparativeUtil.Properties.Resources.ComparativeSplashScreen">
+             <summary>
+               Looks up a localized string similar to Comparative Utility v1.0
+            Copyright (c) 2011, The Outercurve Foundation.
+            .
+             </summary>
+        </member>
+        <member name="P:ComparativeUtil.Properties.Resources.OutPutWrittenToFileSpecified">
+            <summary>
+              Looks up a localized string similar to Output written to the specified file..
+            </summary>
+        </member>
+    </members>
+</doc>

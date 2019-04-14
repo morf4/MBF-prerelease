@@ -19,3 +19,15 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\LayoutRefinementU
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\LayoutRefinementUtil\obj\Debug\LayoutRefinementUtil.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\LayoutRefinementUtil\obj\Debug\LayoutRefinementUtil.exe
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\LayoutRefinementUtil\obj\Debug\LayoutRefinementUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\LayoutRefinementUtil.exe.config
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\LayoutRefinementUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\LayoutRefinementUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\LayoutRefinementUtil.exe.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\LayoutRefinementUtil.exe.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\LayoutRefinementUtil\obj\Debug\LayoutRefinementUtil.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\LayoutRefinementUtil\obj\Debug\LayoutRefinementUtil.Properties.Resources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\LayoutRefinementUtil\obj\Debug\LayoutRefinementUtil.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\LayoutRefinementUtil\obj\Debug\LayoutRefinementUtil.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\LayoutRefinementUtil\obj\Debug\LayoutRefinementUtil.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\LayoutRefinementUtil\obj\Debug\LayoutRefinementUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\LayoutRefinementUtil\obj\Debug\LayoutRefinementUtil.pdb

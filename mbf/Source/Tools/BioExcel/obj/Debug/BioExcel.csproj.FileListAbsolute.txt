@@ -27,3 +27,11 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel\obj\Debu
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel\obj\Debug\BioExcel.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel\obj\Debug\BioExcel.dll
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel\obj\Debug\BioExcel.pdb
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel\obj\Debug\BioExcel.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel\obj\Debug\BiodexExcel.BioRibbon.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel\obj\Debug\BiodexExcel.SelectionHelper.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel\obj\Debug\BiodexExcel.Properties.Resources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel\obj\Debug\BioExcel.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel\obj\Debug\BioExcel.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel\obj\Debug\BioExcel.dll
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel\obj\Debug\BioExcel.pdb

@@ -13,3 +13,12 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\FileFormatConvert
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\FileFormatConverter\obj\x86\Debug\FileFormatConverter.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\FileFormatConverter\obj\x86\Debug\FileFormatConverter.exe
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\FileFormatConverter\obj\x86\Debug\FileFormatConverter.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\FileFormatConverter.exe
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\FileFormatConverter.pdb
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\FileFormatConverter\obj\x86\Debug\FileFormatConverter.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\FileFormatConverter\obj\x86\Debug\FileFormatConverter.Properties.Resources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\FileFormatConverter\obj\x86\Debug\FileFormatConverter.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\FileFormatConverter\obj\x86\Debug\FileFormatConverter.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\FileFormatConverter\obj\x86\Debug\FileFormatConverter.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\FileFormatConverter\obj\x86\Debug\FileFormatConverter.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\FileFormatConverter\obj\x86\Debug\FileFormatConverter.pdb

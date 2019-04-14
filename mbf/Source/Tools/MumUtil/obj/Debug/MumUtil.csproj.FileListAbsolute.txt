@@ -17,3 +17,14 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\MumUtil\obj\Debug
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\MumUtil\obj\Debug\MumUtil.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\MumUtil\obj\Debug\MumUtil.exe
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\MumUtil\obj\Debug\MumUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\MumUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\MumUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\MumUtil.exe.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\MumUtil.exe.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\MumUtil\obj\Debug\MumUtil.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\MumUtil\obj\Debug\MumUtil.Properties.Resources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\MumUtil\obj\Debug\MumUtil.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\MumUtil\obj\Debug\MumUtil.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\MumUtil\obj\Debug\MumUtil.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\MumUtil\obj\Debug\MumUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\MumUtil\obj\Debug\MumUtil.pdb

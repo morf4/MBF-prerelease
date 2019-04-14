@@ -19,3 +19,15 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\PadenaUtil\obj\De
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\PadenaUtil\obj\Debug\PadenaUtil.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\PadenaUtil\obj\Debug\PadenaUtil.exe
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\PadenaUtil\obj\Debug\PadenaUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\PadenaUtil.exe.config
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\PadenaUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\PadenaUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\PadenaUtil.exe.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\PadenaUtil.exe.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\PadenaUtil\obj\Debug\PadenaUtil.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\PadenaUtil\obj\Debug\PadenaUtil.Properties.Resources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\PadenaUtil\obj\Debug\PadenaUtil.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\PadenaUtil\obj\Debug\PadenaUtil.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\PadenaUtil\obj\Debug\PadenaUtil.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\PadenaUtil\obj\Debug\PadenaUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\PadenaUtil\obj\Debug\PadenaUtil.pdb

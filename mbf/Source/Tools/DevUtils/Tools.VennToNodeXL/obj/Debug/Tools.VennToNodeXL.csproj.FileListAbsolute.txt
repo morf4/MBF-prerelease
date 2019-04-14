@@ -17,3 +17,9 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\DevUtils\Tools.Ve
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\DevUtils\Tools.VennToNodeXL\obj\Debug\Tools.VennToNodeXL.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\DevUtils\Tools.VennToNodeXL\obj\Debug\Tools.VennToNodeXL.dll
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\DevUtils\Tools.VennToNodeXL\obj\Debug\Tools.VennToNodeXL.pdb
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\DevUtils\Tools.VennToNodeXL\obj\Debug\Tools.VennToNodeXL.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\DevUtils\Tools.VennToNodeXL\obj\Debug\Tools.VennDiagram.Properties.Resources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\DevUtils\Tools.VennToNodeXL\obj\Debug\Tools.VennToNodeXL.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\DevUtils\Tools.VennToNodeXL\obj\Debug\Tools.VennToNodeXL.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\DevUtils\Tools.VennToNodeXL\obj\Debug\Tools.VennToNodeXL.dll
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\DevUtils\Tools.VennToNodeXL\obj\Debug\Tools.VennToNodeXL.pdb

@@ -12,3 +12,11 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Add-ins\T
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Test.AddIns\obj\Debug\Bio.Test.AddIns.csprojResolveAssemblyReference.cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Test.AddIns\obj\Debug\Bio.Test.AddIns.dll
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Test.AddIns\obj\Debug\Bio.Test.AddIns.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Add-ins\Test\Bio.Test.AddIns.dll
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Add-ins\Test\Bio.Test.AddIns.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Add-ins\Test\Bio.Test.AddIns.dll.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Add-ins\Test\Bio.Test.AddIns.dll.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Test.AddIns\obj\Debug\Bio.Test.AddIns.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Test.AddIns\obj\Debug\Bio.Test.AddIns.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Test.AddIns\obj\Debug\Bio.Test.AddIns.dll
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Test.AddIns\obj\Debug\Bio.Test.AddIns.pdb

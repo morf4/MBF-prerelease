@@ -17,3 +17,9 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Tests\obj\Debug\Bio.
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Tests\obj\Debug\Bio.Tests.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Tests\obj\Debug\Bio.Tests.dll
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Tests\obj\Debug\Bio.Tests.pdb
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Tests\obj\Debug\Bio.Tests.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Tests\obj\Debug\Bio.Tests.Properties.Resource.resources
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Tests\obj\Debug\Bio.Tests.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Tests\obj\Debug\Bio.Tests.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Tests\obj\Debug\Bio.Tests.dll
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Tests\obj\Debug\Bio.Tests.pdb

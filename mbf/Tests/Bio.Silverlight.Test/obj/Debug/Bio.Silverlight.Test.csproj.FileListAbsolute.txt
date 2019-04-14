@@ -8,3 +8,7 @@ C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Silverlight.Test\obj\D
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Silverlight.Test\obj\Debug\Bio.Silverlight.Test.csprojResolveAssemblyReference.cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Silverlight.Test\obj\Debug\Bio.Silverlight.Test.dll
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Silverlight.Test\obj\Debug\Bio.Silverlight.Test.pdb
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Silverlight.Test\obj\Debug\Bio.Silverlight.Test.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Silverlight.Test\obj\Debug\Bio.Silverlight.Test.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Silverlight.Test\obj\Debug\Bio.Silverlight.Test.dll
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Silverlight.Test\obj\Debug\Bio.Silverlight.Test.pdb

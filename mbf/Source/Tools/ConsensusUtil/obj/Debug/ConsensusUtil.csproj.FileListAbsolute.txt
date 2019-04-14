@@ -19,3 +19,15 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ConsensusUtil\obj
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ConsensusUtil\obj\Debug\ConsensusUtil.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ConsensusUtil\obj\Debug\ConsensusUtil.exe
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ConsensusUtil\obj\Debug\ConsensusUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\ConsensusUtil.exe.config
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\ConsensusUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\ConsensusUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\ConsensusUtil.exe.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\ConsensusUtil.exe.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ConsensusUtil\obj\Debug\ConsensusUtil.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ConsensusUtil\obj\Debug\ConsensusUtil.Properties.Resources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ConsensusUtil\obj\Debug\ConsensusUtil.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ConsensusUtil\obj\Debug\ConsensusUtil.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ConsensusUtil\obj\Debug\ConsensusUtil.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ConsensusUtil\obj\Debug\ConsensusUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ConsensusUtil\obj\Debug\ConsensusUtil.pdb

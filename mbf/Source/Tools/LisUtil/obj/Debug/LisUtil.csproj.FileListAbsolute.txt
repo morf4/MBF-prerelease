@@ -19,3 +19,15 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\LisUtil\obj\Debug
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\LisUtil\obj\Debug\LisUtil.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\LisUtil\obj\Debug\LISUtil.exe
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\LisUtil\obj\Debug\LISUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\LISUtil.exe.config
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\LISUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\LISUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\LISUtil.exe.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\LISUtil.exe.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\LisUtil\obj\Debug\LisUtil.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\LisUtil\obj\Debug\LISUtil.Properties.Resources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\LisUtil\obj\Debug\LisUtil.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\LisUtil\obj\Debug\LisUtil.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\LisUtil\obj\Debug\LisUtil.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\LisUtil\obj\Debug\LISUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\LisUtil\obj\Debug\LISUtil.pdb

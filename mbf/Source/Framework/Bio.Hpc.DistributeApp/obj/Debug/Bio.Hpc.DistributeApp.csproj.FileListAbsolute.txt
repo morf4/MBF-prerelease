@@ -16,3 +16,14 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.Hpc.D
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.Hpc.DistributeApp\obj\Debug\Bio.Hpc.DistributeApp.csprojResolveAssemblyReference.cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.Hpc.DistributeApp\obj\Debug\Bio.Hpc.DistributeApp.exe
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.Hpc.DistributeApp\obj\Debug\Bio.Hpc.DistributeApp.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.Hpc.DistributeApp.exe.config
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.Hpc.DistributeApp.XML
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.Hpc.DistributeApp.exe
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.Hpc.DistributeApp.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.Hpc.DistributeApp.exe.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.Hpc.DistributeApp.exe.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.Hpc.DistributeApp\obj\Debug\Bio.Hpc.DistributeApp.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.Hpc.DistributeApp\obj\Debug\Bio.Hpc.DistributeApp.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.Hpc.DistributeApp\obj\Debug\Bio.Hpc.DistributeApp.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.Hpc.DistributeApp\obj\Debug\Bio.Hpc.DistributeApp.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.Hpc.DistributeApp\obj\Debug\Bio.Hpc.DistributeApp.pdb

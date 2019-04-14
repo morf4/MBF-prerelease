@@ -6,3 +6,7 @@ C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Tests\Bio.Silverlight.TestAutoma
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Silverlight.TestAutomation\obj\Debug\Bio.Silverlight.TestAutomation.csprojResolveAssemblyReference.cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Silverlight.TestAutomation\obj\Debug\Bio.Silverlight.TestAutomation.dll
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.Silverlight.TestAutomation\obj\Debug\Bio.Silverlight.TestAutomation.pdb
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Silverlight.TestAutomation\obj\Debug\Bio.Silverlight.TestAutomation.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Silverlight.TestAutomation\obj\Debug\Bio.Silverlight.TestAutomation.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Silverlight.TestAutomation\obj\Debug\Bio.Silverlight.TestAutomation.dll
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.Silverlight.TestAutomation\obj\Debug\Bio.Silverlight.TestAutomation.pdb

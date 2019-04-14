@@ -1,0 +1,902 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2017\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="15.0">
+ <Targets>
+  <Target Name="E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\BioSequenceAssembler.exe">
+   <Modules>
+    <Module Name="biosequenceassembler.exe">
+     <Namespaces>
+      <Namespace Name="SequenceAssembler">
+       <Types>
+        <Type Name="AlignerDialog" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreateTextField(Bio.Algorithms.Alignment.AlignmentInfo,System.Windows.Controls.StackPanel,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="737">The 'this' parameter (or 'Me' in Visual Basic) of 'AlignerDialog.CreateTextField(AlignmentInfo, StackPanel, string)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetAlignmentAttribute(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="763">The 'this' parameter (or 'Me' in Visual Basic) of 'AlignerDialog.GetAlignmentAttribute(string)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetAlignmentInput(System.Windows.Controls.StackPanel,SequenceAssembler.AlignerInputEventArgs,Bio.IAlphabet)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="340">'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)' has a cyclomatic complexity of 38. Rewrite or refactor the method to reduce complexity to 25.</Issue>
+            </Message>
+            <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="340">Consider changing the type of parameter 'stkPanel' in 'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)' from 'StackPanel' to its base type 'Panel'. This method appears to only require base class members in its implementation. Suppress this violation if there is a compelling reason to require the more derived type in the method signature.</Issue>
+            </Message>
+            <Message Id="SequenceAssembler.MessageDialogBox.Show(System.String,System.String,SequenceAssembler.MessageDialogButton)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="493">Method 'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "BREAKLENGTH".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="417">Method 'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "FIXEDSEPARATION".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="379">Method 'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "GAPEXTENSIONCOST".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="360">Method 'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "GAPOPENCOST".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="398">Method 'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "LENGTHOFMUM".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="436">Method 'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "MAXIMUMSEPARATION".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="455">Method 'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "MINIMUMSCORE".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="474">Method 'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "SEPARATIONFACTOR".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="545">Method 'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "SIMILARITYMATRIX".</Issue>
+            </Message>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="511">'uiElement', a variable, is cast to type 'ComboBox' multiple times in method 'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+             <Issue Name="Local" Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="349">'uiElement', a variable, is cast to type 'TextBox' multiple times in method 'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+            </Message>
+            <Message Id="System.Int32.TryParse(System.String,System.Int32@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="TryParse" Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="522">'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)' calls 'int.TryParse(string, out int)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+             <Issue Name="TryParse" Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="523">'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)' calls 'int.TryParse(string, out int)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+            </Message>
+            <Message Id="alphabet" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="340">Parameter 'alphabet' of 'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="345">In externally visible method 'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)', validate parameter 'stkPanel' before using it.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="356">In externally visible method 'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)', validate parameter 'alignerInput' before using it.</Issue>
+            </Message>
+            <Message Id="matchScore" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="340">'matchScore', a variable declared in 'AlignerDialog.GetAlignmentInput(StackPanel, AlignerInputEventArgs, IAlphabet)', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetPamsamInput(System.Windows.Controls.StackPanel,SequenceAssembler.AlignerInputEventArgs,Bio.IAlphabet)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="183">'AlignerDialog.GetPamsamInput(StackPanel, AlignerInputEventArgs, IAlphabet)' has a cyclomatic complexity of 27. Rewrite or refactor the method to reduce complexity to 25.</Issue>
+            </Message>
+            <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="183">Consider changing the type of parameter 'stkPanel' in 'AlignerDialog.GetPamsamInput(StackPanel, AlignerInputEventArgs, IAlphabet)' from 'StackPanel' to its base type 'Panel'. This method appears to only require base class members in its implementation. Suppress this violation if there is a compelling reason to require the more derived type in the method signature.</Issue>
+            </Message>
+            <Message Id="SequenceAssembler.MessageDialogBox.Show(System.String,System.String,SequenceAssembler.MessageDialogButton)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="275">Method 'AlignerDialog.GetPamsamInput(StackPanel, AlignerInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "SIMILARITYMATRIX".</Issue>
+            </Message>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="253">'uiElement', a variable, is cast to type 'ComboBox' multiple times in method 'AlignerDialog.GetPamsamInput(StackPanel, AlignerInputEventArgs, IAlphabet)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+             <Issue Name="Local" Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="193">'uiElement', a variable, is cast to type 'TextBox' multiple times in method 'AlignerDialog.GetPamsamInput(StackPanel, AlignerInputEventArgs, IAlphabet)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="183">The 'this' parameter (or 'Me' in Visual Basic) of 'AlignerDialog.GetPamsamInput(StackPanel, AlignerInputEventArgs, IAlphabet)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="alphabet" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="183">Parameter 'alphabet' of 'AlignerDialog.GetPamsamInput(StackPanel, AlignerInputEventArgs, IAlphabet)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="189">In externally visible method 'AlignerDialog.GetPamsamInput(StackPanel, AlignerInputEventArgs, IAlphabet)', validate parameter 'stkPanel' before using it.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="200">In externally visible method 'AlignerDialog.GetPamsamInput(StackPanel, AlignerInputEventArgs, IAlphabet)', validate parameter 'alignerInput' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ParseValue(System.String,System.Double&amp;)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AlignerDialog.xaml.cs" Line="579">'AlignerDialog.ParseValue(string, out double)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="App" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#OnStartup(System.Windows.StartupEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="App.xaml.cs" Line="23">In externally visible method 'App.OnStartup(StartupEventArgs)', validate parameter 'e' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AssemblerDialog" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.Collections.Generic.IEnumerable`1&lt;System.String&gt;,System.String,System.Collections.Generic.IList`1&lt;Bio.ISequence&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="158">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'AssemblerDialog.AssemblerDialog(IEnumerable&lt;string&gt;, string, IList&lt;ISequence&gt;)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="159">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'AssemblerDialog.AssemblerDialog(IEnumerable&lt;string&gt;, string, IList&lt;ISequence&gt;)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="160">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'AssemblerDialog.AssemblerDialog(IEnumerable&lt;string&gt;, string, IList&lt;ISequence&gt;)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateTextField(Bio.Algorithms.Alignment.AlignmentInfo,System.Windows.Controls.StackPanel,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="914">The 'this' parameter (or 'Me' in Visual Basic) of 'AssemblerDialog.CreateTextField(AlignmentInfo, StackPanel, string)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetAlignmentAttribute(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="940">The 'this' parameter (or 'Me' in Visual Basic) of 'AssemblerDialog.GetAlignmentAttribute(string)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetAlignmentInput(System.Windows.Controls.StackPanel,SequenceAssembler.AssemblyInputEventArgs,Bio.IAlphabet)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="349">'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)' has a cyclomatic complexity of 38. Rewrite or refactor the method to reduce complexity to 25.</Issue>
+            </Message>
+            <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="349">Consider changing the type of parameter 'stkPanel' in 'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)' from 'StackPanel' to its base type 'Panel'. This method appears to only require base class members in its implementation. Suppress this violation if there is a compelling reason to require the more derived type in the method signature.</Issue>
+            </Message>
+            <Message Id="SequenceAssembler.MessageDialogBox.Show(System.String,System.String,SequenceAssembler.MessageDialogButton)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="505">Method 'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "BREAKLENGTH".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="429">Method 'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "FIXEDSEPARATION".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="391">Method 'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "GAPEXTENSIONCOST".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="372">Method 'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "GAPOPENCOST".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="410">Method 'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "LENGTHOFMUM".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="448">Method 'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "MAXIMUMSEPARATION".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="467">Method 'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "MINIMUMSCORE".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="486">Method 'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "SEPARATIONFACTOR".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="556">Method 'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "SIMILARITYMATRIX".</Issue>
+            </Message>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="523">'uiElement', a variable, is cast to type 'ComboBox' multiple times in method 'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+             <Issue Name="Local" Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="361">'uiElement', a variable, is cast to type 'TextBox' multiple times in method 'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+            </Message>
+            <Message Id="System.Int32.TryParse(System.String,System.Int32@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="TryParse" Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="533">'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)' calls 'int.TryParse(string, out int)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+             <Issue Name="TryParse" Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="534">'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)' calls 'int.TryParse(string, out int)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+            </Message>
+            <Message Id="alphabet" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="349">Parameter 'alphabet' of 'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="357">In externally visible method 'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)', validate parameter 'stkPanel' before using it.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="355">In externally visible method 'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)', validate parameter 'assemblyInput' before using it.</Issue>
+            </Message>
+            <Message Id="matchScore" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="349">'matchScore', a variable declared in 'AssemblerDialog.GetAlignmentInput(StackPanel, AssemblyInputEventArgs, IAlphabet)', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetPaDeNAInput(SequenceAssembler.AssemblyInputEventArgs)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="620">In externally visible method 'AssemblerDialog.GetPaDeNAInput(AssemblyInputEventArgs)', validate parameter 'input' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InitializeAlignmentAlgorithms(System.Collections.Generic.IEnumerable`1&lt;System.String&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="587">In externally visible method 'AssemblerDialog.InitializeAlignmentAlgorithms(IEnumerable&lt;string&gt;)', validate parameter 'algorithms' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnLibraryNames_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Single.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="193">Because the behavior of 'float.ToString()' could vary based on the current user's locale settings, replace this call in 'AssemblerDialog.OnLibraryNames_SelectionChanged(object, SelectionChangedEventArgs)' with a call to 'float.ToString(IFormatProvider)'. If the result of 'float.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="195">Because the behavior of 'float.ToString()' could vary based on the current user's locale settings, replace this call in 'AssemblerDialog.OnLibraryNames_SelectionChanged(object, SelectionChangedEventArgs)' with a call to 'float.ToString(IFormatProvider)'. If the result of 'float.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ParseValues()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AssemblerDialog.xaml.cs" Line="730">'AssemblerDialog.ParseValues()' has a cyclomatic complexity of 29. Rewrite or refactor the method to reduce complexity to 25.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AssemblerPane" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddAlignmentsToTree(System.Collections.Generic.IList`1&lt;Bio.Algorithms.Alignment.ISequenceAlignment&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object[])" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="676">Because the behavior of 'string.Format(string, params object[])' could vary based on the current user's locale settings, replace this call in 'AssemblerPane.AddAlignmentsToTree(IList&lt;ISequenceAlignment&gt;)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddContigsToTree(System.Collections.Generic.IEnumerable`1&lt;Bio.Algorithms.Assembly.Contig&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="737">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'AssemblerPane.AddContigsToTree(IEnumerable&lt;Contig&gt;)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BuildConsensusView(SequenceAssembler.AssemblyOutput)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="556">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'AssemblerPane.BuildConsensusView(AssemblyOutput)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DisplaySequenceTreeView(System.Collections.Generic.IEnumerable`1&lt;SequenceAssembler.ParsedFileInfo&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="287">In externally visible method 'AssemblerPane.DisplaySequenceTreeView(IEnumerable&lt;ParsedFileInfo&gt;)', validate parameter 'sequences' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDefaultSM(Bio.ISequence)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="1412">The 'this' parameter (or 'Me' in Visual Basic) of 'AssemblerPane.GetDefaultSM(ISequence)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetSequenceFromTreeViewItem(System.Windows.Controls.TreeViewItem)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="1622">The 'this' parameter (or 'Me' in Visual Basic) of 'AssemblerPane.GetSequenceFromTreeViewItem(TreeViewItem)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InitializeAlignmentAlgorithms(System.Collections.Generic.IEnumerable`1&lt;System.String&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="algorithms" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="437">'algorithms', a parameter declared in 'AssemblerPane.InitializeAlignmentAlgorithms(IEnumerable&lt;string&gt;)', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InitializeSupportedWebServices(System.Collections.Generic.IEnumerable`1&lt;System.String&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="464">In externally visible method 'AssemblerPane.InitializeSupportedWebServices(IEnumerable&lt;string&gt;)', validate parameter 'webServiceNames' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnAlignClick(System.Object,System.Windows.RoutedEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="dialog" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="1440">'dialog', a variable declared in 'AssemblerPane.OnAlignClick(object, RoutedEventArgs)', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnAssembleClick(System.Object,System.Windows.RoutedEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="dialog" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="1366">'dialog', a variable declared in 'AssemblerPane.OnAssembleClick(object, RoutedEventArgs)', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnConsensusTreeSelectedItemChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs`1&lt;System.Object&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="851">'AssemblerPane.OnConsensusTreeSelectedItemChanged(object, RoutedPropertyChangedEventArgs&lt;object&gt;)' has a cyclomatic complexity of 36. Rewrite or refactor the method to reduce complexity to 25.</Issue>
+            </Message>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="855">'sender', a parameter, is cast to type 'TreeViewItem' multiple times in method 'AssemblerPane.OnConsensusTreeSelectedItemChanged(object, RoutedPropertyChangedEventArgs&lt;object&gt;)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnCustomViewLoaded(System.Object,System.Windows.RoutedEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="833">'AssemblerPane.OnCustomViewLoaded(object, RoutedEventArgs)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnExecuteServiceBtnClick(System.Object,System.Windows.RoutedEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="dialog" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="1764">'dialog', a variable declared in 'AssemblerPane.OnExecuteServiceBtnClick(object, RoutedEventArgs)', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RemoveSequenceTreeItem(System.Windows.Controls.TreeViewItem)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="1079">'parent', a variable, is cast to type 'TreeViewItem' multiple times in method 'AssemblerPane.RemoveSequenceTreeItem(TreeViewItem)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SaveSequences(System.Collections.Generic.ICollection`1&lt;Bio.ISequence&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="801">In method 'AssemblerPane.SaveSequences(ICollection&lt;ISequence&gt;)', call System.IDisposable.Dispose on object 'saveDialog' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetSequenceDisplayID(Bio.ISequence,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="355">'sequence', a parameter, is cast to type 'QualitativeSequence' multiple times in method 'AssemblerPane.SetSequenceDisplayID(ISequence, string)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+             <Issue Name="Parameter" Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="351">'sequence', a parameter, is cast to type 'Sequence' multiple times in method 'AssemblerPane.SetSequenceDisplayID(ISequence, string)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="AssemblerPane.xaml.cs" Line="348">The 'this' parameter (or 'Me' in Visual Basic) of 'AssemblerPane.SetSequenceDisplayID(ISequence, string)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="BlastDialog" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Windows.Controls.TextBox.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="BlastDialog .xaml.cs" Line="357">Method 'BlastDialog.BlastDialog(string)' passes a literal string as parameter 'value' of a call to 'TextBox.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "2".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="BlastDialog .xaml.cs" Line="356">Method 'BlastDialog.BlastDialog(string)' passes a literal string as parameter 'value' of a call to 'TextBox.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "5".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddConfigurationParameter(Bio.Web.ConfigParameters,System.Windows.Controls.StackPanel)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="BlastDialog .xaml.cs" Line="691">The 'this' parameter (or 'Me' in Visual Basic) of 'BlastDialog.AddConfigurationParameter(ConfigParameters, StackPanel)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ChangeDBListbox(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="BlastDialog .xaml.cs" Line="1007">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'BlastDialog.ChangeDBListbox(string)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="BlastDialog .xaml.cs" Line="1008">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'BlastDialog.ChangeDBListbox(string)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="BlastDialog .xaml.cs" Line="1009">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'BlastDialog.ChangeDBListbox(string)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CheckNAddGapCostField(Bio.Web.Blast.BlastParameters&amp;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="SequenceAssembler.MessageDialogBox.Show(System.String,System.String,SequenceAssembler.MessageDialogButton)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="BlastDialog .xaml.cs" Line="736">Method 'BlastDialog.CheckNAddGapCostField(ref BlastParameters)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "GapCosts".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="BlastDialog .xaml.cs" Line="742">Method 'BlastDialog.CheckNAddGapCostField(ref BlastParameters)' passes a literal string as parameter 'message' of a call to 'MessageDialogBox.Show(string, string, MessageDialogButton)'. Retrieve the following string(s) from a resource table instead: "GapCosts".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateCheckBox(System.String,System.Windows.Controls.StackPanel)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="BlastDialog .xaml.cs" Line="1054">The 'this' parameter (or 'Me' in Visual Basic) of 'BlastDialog.CreateCheckBox(string, StackPanel)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateComboFromBioHPC(System.String,System.Windows.Controls.StackPanel)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="BlastDialog .xaml.cs" Line="1085">In method 'BlastDialog.CreateComboFromBioHPC(string, StackPanel)', call System.IDisposable.Dispose on object 'mysvc' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="BlastDialog .xaml.cs" Line="1072">The 'this' parameter (or 'Me' in Visual Basic) of 'BlastDialog.CreateComboFromBioHPC(string, StackPanel)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateTextField(System.String,System.Windows.Controls.StackPanel)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="BlastDialog .xaml.cs" Line="561">The 'this' parameter (or 'Me' in Visual Basic) of 'BlastDialog.CreateTextField(string, StackPanel)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetBioHPCDatabases()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="email" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="BlastDialog .xaml.cs" Line="949">'BlastDialog.GetBioHPCDatabases()' declares a variable, 'email', of type 'string', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="password" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="BlastDialog .xaml.cs" Line="950">'BlastDialog.GetBioHPCDatabases()' declares a variable, 'password', of type 'string', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="BlastHeader" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(Bio.Web.Blast.BlastXmlMetadata)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Windows.Controls.TextBlock.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="BlastHeader.xaml.cs" Line="33">Method 'BlastHeader.BlastHeader(BlastXmlMetadata)' passes a literal string as parameter 'value' of a call to 'TextBlock.Text.set(string)'. Retrieve the following string(s) from a resource table instead: " ".</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="BlastHeader.xaml.cs" Line="30">In externally visible method 'BlastHeader.BlastHeader(BlastXmlMetadata)', validate parameter 'metadata' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="BlastPane" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DoSort(System.Collections.IEnumerable,System.String,System.ComponentModel.ListSortDirection)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="BlastPane.xaml.cs" Line="315">The 'this' parameter (or 'Me' in Visual Basic) of 'BlastPane.DoSort(IEnumerable, string, ListSortDirection)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ConsensusCustomView" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetColorFromString(System.Boolean,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="ConsensusCustomView.xaml.cs" Line="422">The 'this' parameter (or 'Me' in Visual Basic) of 'ConsensusCustomView.GetColorFromString(bool, string)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnConsensusCustomViewLayoutUpdated(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="ConsensusCustomView.xaml.cs" Line="378">Modify 'ConsensusCustomView.OnConsensusCustomViewLayoutUpdated(object, EventArgs)' to catch a more specific exception than 'object' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#rangeEnd" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ConsensusCustomView.rangeEnd' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadColorScheme()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="ConsensusCustomView.xaml.cs" Line="521">The 'this' parameter (or 'Me' in Visual Basic) of 'ConsensusCustomView.ReadColorScheme()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SelectedSequences" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="ConsensusCustomView.xaml.cs" Line="169">Change 'ConsensusCustomView.SelectedSequences' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FileMenu" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#RemoveFileInfo(System.IO.FileInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="FileMenu.xaml.cs" Line="156">In externally visible method 'FileMenu.RemoveFileInfo(FileInfo)', validate parameter 'info' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="OpenFileDialog" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.Collections.ObjectModel.Collection`1&lt;System.String&gt;,System.Collections.ObjectModel.Collection`1&lt;System.IO.FileSystemInfo&gt;,System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="AvoidExcessiveClassCoupling" Category="Microsoft.Maintainability" CheckId="CA1506" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="Breaking">
+             <Issue Name="Method" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="OpenFileDialog .xaml.cs" Line="78">'OpenFileDialog.OpenFileDialog(Collection&lt;string&gt;, Collection&lt;FileSystemInfo&gt;, bool)' is coupled with 31 different types from 14 different namespaces. Rewrite or refactor the method to decrease its class coupling, or consider moving the method to one of the other types it is tightly coupled with. A class coupling above 40 indicates poor maintainability, a class coupling between 40 and 30 indicates moderate maintainability, and a class coupling below 30 indicates good maintainability.</Issue>
+            </Message>
+            <Message TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="OpenFileDialog .xaml.cs" Line="78">Replace method 'OpenFileDialog.OpenFileDialog(Collection&lt;string&gt;, Collection&lt;FileSystemInfo&gt;, bool)' with an overload that supplies all default arguments.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RangeSlider" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#SetRange(System.Int64)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Decimal.ToString(System.IFormatProvider)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="UICultureString" Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="RangeSlider.xaml.cs" Line="113">'RangeSlider.SetRange(long)' passes 'CultureInfo.CurrentUICulture' as the 'IFormatProvider' parameter to 'decimal.ToString(IFormatProvider)'. This property returns a culture that is inappropriate for formatting methods. If the result of 'decimal.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int64.ToString(System.IFormatProvider)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Name="UICultureString" Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="RangeSlider.xaml.cs" Line="112">'RangeSlider.SetRange(long)' passes 'CultureInfo.CurrentUICulture' as the 'IFormatProvider' parameter to 'long.ToString(IFormatProvider)'. This property returns a culture that is inappropriate for formatting methods. If the result of 'long.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SequenceAssembly" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Windows.MessageBox.Show(System.String,System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="SequenceAssembly.xaml.cs" Line="87">Method 'SequenceAssembly.SequenceAssembly()' passes a literal string as parameter 'caption' of a call to 'MessageBox.Show(string, string)'. Retrieve the following string(s) from a resource table instead: "Add-In Failure".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#chosenColorScheme" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'SequenceAssembly.chosenColorScheme' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#colorLookUpTable" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'SequenceAssembly.colorLookUpTable' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#colorSchemeInfo" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;ColorSchemeInfo&gt;' in 'SequenceAssembly.colorSchemeInfo' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'SequenceAssembly.colorSchemeInfo' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SequenceLine" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(Bio.ISequence,SequenceAssembler.SequencesPanel)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="SequenceLine.xaml.cs" Line="144">In externally visible method 'SequenceLine.SequenceLine(ISequence, SequencesPanel)', validate parameter 'sequence' before using it.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="SequenceLine.xaml.cs" Line="142">In externally visible method 'SequenceLine.SequenceLine(ISequence, SequencesPanel)', validate parameter 'parent' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#IsComplemented" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'SequenceLine.IsComplemented' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#IsReversed" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'SequenceLine.IsReversed' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MeasureOverride(System.Windows.Size)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Char.ToUpper(System.Char)" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="SequenceLine.xaml.cs" Line="235">Because the behavior of 'char.ToUpper(char)' could vary based on the current user's locale settings, replace this call in 'SequenceLine.MeasureOverride(Size)' with a call to 'char.ToUpper(char, CultureInfo)'. If the result of 'char.ToUpper(char, CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="SequenceLine.xaml.cs" Line="219">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'SequenceLine.MeasureOverride(Size)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SilverMapController" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetSerializedData(System.IO.Stream)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler" File="SilverMapController.xaml.cs" Line="126">'SilverMapController.GetSerializedData(Stream)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="SequenceAssembler.Dialog">
+       <Types>
+        <Type Name="AboutScreen" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetDllVersion(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="AboutScreen.xaml.cs" Line="31">The 'this' parameter (or 'Me' in Visual Basic) of 'AboutScreen.GetDllVersion(string)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FileTypeAssociationDialog" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AssociateFileTypeWithSA(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.ToUpper" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="FileTypeAssociationDialog.xaml.cs" Line="138">Because the behavior of 'string.ToUpper()' could vary based on the current user's locale settings, replace this call in 'FileTypeAssociationDialog.AssociateFileTypeWithSA(string)' with a call to 'string.ToUpper(CultureInfo)'. If the result of 'string.ToUpper(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#IsExtnAssociatedWithSA(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.ToUpper" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="FileTypeAssociationDialog.xaml.cs" Line="227">Because the behavior of 'string.ToUpper()' could vary based on the current user's locale settings, replace this call in 'FileTypeAssociationDialog.IsExtnAssociatedWithSA(string)' with a call to 'string.ToUpper(CultureInfo)'. If the result of 'string.ToUpper(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="FileTypeAssociationDialog.xaml.cs" Line="228">Because the behavior of 'string.ToUpper()' could vary based on the current user's locale settings, replace this call in 'FileTypeAssociationDialog.IsExtnAssociatedWithSA(string)' with a call to 'string.ToUpper(CultureInfo)'. If the result of 'string.ToUpper(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnbtnOkClicked(System.Object,System.Windows.RoutedEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="FileTypeAssociationDialog.xaml.cs" Line="293">Modify 'FileTypeAssociationDialog.OnbtnOkClicked(object, RoutedEventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UnAssociateFileTypeWithSA(System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.ToUpper" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2019-04-14 17:22:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="FileTypeAssociationDialog.xaml.cs" Line="191">Because the behavior of 'string.ToUpper()' could vary based on the current user's locale settings, replace this call in 'FileTypeAssociationDialog.UnAssociateFileTypeWithSA(string)' with a call to 'string.ToUpper(CultureInfo)'. If the result of 'string.ToUpper(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioSequenceAssembler\Dialog" File="FileTypeAssociationDialog.xaml.cs" Line="192">Because the behavior of 'string.ToUpper()' could vary based on the current user's locale settings, replace this call in 'FileTypeAssociationDialog.UnAssociateFileTypeWithSA(string)' with a call to 'string.ToUpper(CultureInfo)'. If the result of 'string.ToUpper(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidExcessiveClassCoupling" Category="Microsoft.Maintainability" CheckId="CA1506">
+   <Name>Avoid excessive class coupling</Name>
+   <Description>Types and methods with a high degree of class coupling can be difficult to maintain.</Description>
+   <Resolution Name="Method">{0} is coupled with {1} different types from {2} different namespaces. Rewrite or refactor the method to decrease its class coupling, or consider moving the method to one of the other types it is tightly coupled with. A class coupling above {3} indicates poor maintainability, a class coupling between {3} and {4} indicates moderate maintainability, and a class coupling below {4} indicates good maintainability.</Resolution>
+   <Resolution Name="Type">{0} is coupled with {1} different types from {2} different namespaces. Rewrite or refactor this class's methods to decrease its class coupling, or consider moving some of the class's methods to some of the other types it is tightly coupled with. A class coupling above {3} indicates poor maintainability, a class coupling between {3} and {4} indicates moderate maintainability, and a class coupling below {4} indicates good maintainability.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb397994.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502">
+   <Name>Avoid excessive complexity</Name>
+   <Description>Method implementations that are exceedingly complex increase the challenge of understanding and maintaining code.</Description>
+   <Resolution Name="Default">{0} has a cyclomatic complexity of {1}. Rewrite or refactor the method to reduce complexity to {2}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182212.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>Avoid unused private fields</Name>
+   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245042.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227">
+   <Name>Collection properties should be read only</Name>
+   <Description>Properties that return collections should be read-only so that users cannot entirely replace the backing store. Users can still modify the contents of the collection by calling relevant methods on the collection. Note that the XmlSerializer class has special support for deserializing read-only collections. See the XmlSerializer overview for more information.</Description>
+   <Resolution Name="Default">Change {0} to be read-only by removing the property setter.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182327.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011">
+   <Name>Consider passing base types as parameters</Name>
+   <Description>Using base types as parameters to methods improves re-use of these methods if you only use methods &amp; properties from the parameter's base class. E.g. use Stream instead of FileStream as a parameter when only calling Stream.Read(), this makes the method work on all kind of streams instead of just File streams.</Description>
+   <Resolution Name="Default">Consider changing the type of parameter {0} in {1} from {2} to its base type {3}. This method appears to only require base class members in its implementation. Suppress this violation if there is a compelling reason to require the more derived type in the method signature.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/3hk32yyz.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Error</MessageLevel>
+   <File Name="designrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026">
+   <Name>Default parameters should not be used</Name>
+   <Description>Some programming languages do not support default parameters. Replace default parameters with method overloads that supply the default argument.</Description>
+   <Resolution Name="Default">Replace method {0} with an overload that supplies all default arguments.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182135.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="designrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>Dispose objects before losing scope</Name>
+   <Description>If a disposable object is not explicitly disposed before all references to it are out of scope, the object will be disposed at some indeterminate time when the garbage collector runs the finalizer of the object. Because an exceptional event might occur that will prevent the finalizer of the object from running, the object should be explicitly disposed instead.</Description>
+   <Resolution Name="ExceptionEdge">In method {0}, object {1} is not disposed along all exception paths. Call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Resolution Name="NonExceptionEdge">In method {0}, call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>Do not pass literals as localized parameters</Name>
+   <Description>Literal strings that are embedded in source code are difficult to localize. Avoid passing literal strings as arguments in circumstances where a localized string is generally expected.</Description>
+   <Resolution Name="KnownValue">Method {0} passes a literal string as parameter '{1}' of a call to {2}. Retrieve the following string(s) from a resource table instead: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800">
+   <Name>Do not cast unnecessarily</Name>
+   <Description>Avoid duplicate casts where possible, since there is a cost associated with them.</Description>
+   <Resolution Name="Local">{0}, a variable, is cast to type {1} multiple times in method {2}. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant {3} instruction.</Resolution>
+   <Resolution Name="Parameter">{0}, a parameter, is cast to type {1} multiple times in method {2}. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant {3} instruction.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182271.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>Do not catch general exception types</Name>
+   <Description>You should not catch Exception or SystemException. Catching generic exception types can hide run-time problems from the library user, and can complicate debugging. You should catch only those exceptions that you can handle gracefully.</Description>
+   <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182137.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+   <Name>Do not declare visible instance fields</Name>
+   <Description>Instance fields that are visible outside of the type that declares them, limit your ability to change the implementation details for those data items. Use properties instead. They do not compromise usability or performance and they do provide flexibility in that they conceal the implementation details of the underlying data.</Description>
+   <Resolution Name="Default">Because field {0} is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182141.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+   <Name>Do not expose generic lists</Name>
+   <Description>Do not expose List&lt;T&gt; in object models. Use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt; instead. List&lt;T&gt; is meant to be used from implementation, not in object model API. List&lt;T&gt; is optimized for performance at the cost of long term versioning. For example, if you return List&lt;T&gt; to the client code, you will not ever be able to receive notifications when client code modifies the collection.</Description>
+   <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182142.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806">
+   <Name>Do not ignore method results</Name>
+   <Description>The result of methods that return new instances of strings should be assigned to a variable and subsequently used. If the result of a method that creates a new object, such as String.ToLower(), is not assigned to a variable, the call is wasted.</Description>
+   <Resolution Name="TryParse">{0} calls {1} but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182273.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245046.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211">
+   <Name>Non-constant fields should not be visible</Name>
+   <Description>Static fields should be constant unless you carefully manage access to the field using locks. Using static variables without making them thread safe can compromise execution state. This rule applies to managed code libraries. If the analyzed assembly is an application, it is usually safe to exclude violations of this rule.</Description>
+   <Resolution Name="Default">Consider making {0} non-public or a constant.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182353.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>Remove unused locals</Name>
+   <Description>Remove locals that are not used or are only assigned to in method implementations.</Description>
+   <Resolution Name="Default">{0} declares a variable, {1}, of type {2}, which is never used or is only assigned to. Use this variable or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182278.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+   <Name>Review unused parameters</Name>
+   <Description>Review parameters in non-virtual methods that are not used in the method body to ensure no correctness exists around failure to access them. Unused parameters incur maintenance and performance costs. Sometimes a violation of this rule can point to an implementation bug in the method (i.e. the parameter should actually have been used in the method body). Exclude warnings of this rule if the parameter has to exist because of backward compatibility.</Description>
+   <Resolution Name="Default">Parameter {0} of {1} is never used. Remove the parameter or use it in the method body.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182268.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304">
+   <Name>Specify CultureInfo</Name>
+   <Description>If an overload exists that takes a CultureInfo argument, it should always be called in favor of an overload that does not. The CultureInfo type contains culture-specific information required for performing numeric and string operations, such as casing, formatting, and string comparisons. In scenarios where conversion and parsing behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182189.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternate">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be based on input from the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify {4}.</Resolution>
+   <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   <Resolution Name="UICultureString">{0} passes {1} as the 'IFormatProvider' parameter to {2}. This property returns a culture that is inappropriate for formatting methods. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Validate arguments of public methods</Name>
+   <Description>All reference arguments passed to externally visible methods should be checked against null (Nothing in VB). If appropriate, throw a System.ArgumentNullException when the argument is null.</Description>
+   <Resolution Name="Default">In externally visible method {0}, validate parameter '{1}' before using it.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500">
+   <Name>Variable names should not match field names</Name>
+   <Description>Instance field and variable names should not be identical within the same scope.</Description>
+   <Resolution Name="Local">{0}, a variable declared in {1}, has the same name as an instance field on the type. Change the name of one of these items.</Resolution>
+   <Resolution Name="Parameter">{0}, a parameter declared in {1}, has the same name as an instance field on the type. Change the name of one of these items.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182216.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="15.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

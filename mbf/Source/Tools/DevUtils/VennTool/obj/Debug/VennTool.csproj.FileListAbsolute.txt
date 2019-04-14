@@ -14,3 +14,7 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\VennTool.
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\DevUtils\VennTool\obj\Debug\VennTool.csprojResolveAssemblyReference.cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\DevUtils\VennTool\obj\Debug\VennTool.exe
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\DevUtils\VennTool\obj\Debug\VennTool.pdb
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\DevUtils\VennTool\obj\Debug\VennTool.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\DevUtils\VennTool\obj\Debug\VennTool.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\DevUtils\VennTool\obj\Debug\VennTool.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\DevUtils\VennTool\obj\Debug\VennTool.pdb

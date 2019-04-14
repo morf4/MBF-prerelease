@@ -19,3 +19,15 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.WebServic
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.dll
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.WebServiceHandlers.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.WebServiceHandlers.dll
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.WebServiceHandlers.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.WebServiceHandlers.dll.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.WebServiceHandlers.dll.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.Properties.Resources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.dll
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Bio.WebServiceHandlers\obj\Debug\Bio.WebServiceHandlers.pdb

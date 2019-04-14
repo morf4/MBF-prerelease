@@ -19,3 +19,15 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.P
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.Pamsam\obj\Debug\Bio.Pamsam.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.Pamsam\obj\Debug\Bio.Pamsam.dll
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.Pamsam\obj\Debug\Bio.Pamsam.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.Pamsam.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.Pamsam.dll
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.Pamsam.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.Pamsam.dll.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.Pamsam.dll.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Add-ins\Bio.Pamsam\obj\Debug\Bio.Pamsam.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Add-ins\Bio.Pamsam\obj\Debug\Bio.Algorithms.Alignment.MultipleSequenceAlignment.Resource.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Add-ins\Bio.Pamsam\obj\Debug\Bio.Pamsam.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Add-ins\Bio.Pamsam\obj\Debug\Bio.Pamsam.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Add-ins\Bio.Pamsam\obj\Debug\Bio.Pamsam.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Add-ins\Bio.Pamsam\obj\Debug\Bio.Pamsam.dll
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Add-ins\Bio.Pamsam\obj\Debug\Bio.Pamsam.pdb

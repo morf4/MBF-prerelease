@@ -17,3 +17,14 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.C
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Comparative.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Comparative.dll
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Comparative.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.Comparative.dll
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.Comparative.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.Comparative.dll.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.Comparative.dll.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Comparative.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Algorithms.Assembly.Comparative.Properties.Resources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Comparative.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Comparative.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Comparative.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Comparative.dll
+E:\Workspace\Github\morf4\archive\mbf\Source\Framework\Add-ins\Bio.Comparative\obj\Debug\Bio.Comparative.pdb

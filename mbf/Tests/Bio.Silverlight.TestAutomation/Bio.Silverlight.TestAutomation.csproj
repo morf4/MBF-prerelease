@@ -169,12 +169,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Source\Framework\Bio.Silverlight\Bio.Silverlight.csproj">
-      <Project>{5F239EA0-9370-4E10-9465-2F805BF25A70}</Project>
-      <Name>Bio.Silverlight</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="..\Bio.TestAutomation\TestData\TestUtils\00_Bonobo_DEL_Chr1.bed">
       <Link>TestData\TestUtils\00_Bonobo_DEL_Chr1.bed</Link>
     </None>

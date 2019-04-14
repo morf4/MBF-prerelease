@@ -77,3 +77,30 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualiz
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common.dll
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common.pdb
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ColumnMap.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\AboutDialog.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\AssemblyInputDialog.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\BlastDialog.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\InputSequenceItem.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\MaxColumnsDialog.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\BedWizardDialog.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\Resources\ResourceDictionary.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\Resources\styles.baml
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\OfficeColorPicker.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ColumnMap.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\AboutDialog.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\AssemblyInputDialog.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\BlastDialog.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ColorConfiguration.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ColorScheme.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\ExportSelectionDialog.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\InputSelectionDialog.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\InputSequenceItem.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\MaxColumnsDialog.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\DialogBox\BedWizardDialog.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common_MarkupCompile.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common_MarkupCompile.lref
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common.dll
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\BioExcel.Visualizations.Common\obj\Debug\BioExcel.Visualizations.Common.pdb

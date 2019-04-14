@@ -19,3 +19,14 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\RepeatResolutionU
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\RepeatResolutionUtil\obj\Debug\RepeatResolutionUtil.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\RepeatResolutionUtil\obj\Debug\RepeatResolutionUtil.exe
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\RepeatResolutionUtil\obj\Debug\RepeatResolutionUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\RepeatResolutionUtil.exe.config
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\RepeatResolutionUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\RepeatResolutionUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\RepeatResolutionUtil.exe.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\RepeatResolutionUtil.exe.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\RepeatResolutionUtil\obj\Debug\RepeatResolutionUtil.Properties.Resources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\RepeatResolutionUtil\obj\Debug\RepeatResolutionUtil.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\RepeatResolutionUtil\obj\Debug\RepeatResolutionUtil.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\RepeatResolutionUtil\obj\Debug\RepeatResolutionUtil.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\RepeatResolutionUtil\obj\Debug\RepeatResolutionUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\RepeatResolutionUtil\obj\Debug\RepeatResolutionUtil.pdb

@@ -17,3 +17,13 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\SamUtil\obj\Debug
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\SamUtil\obj\Debug\SamUtil.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\SamUtil\obj\Debug\SAMUtils.exe
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\SamUtil\obj\Debug\SAMUtils.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\SAMUtils.exe
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\SAMUtils.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\SAMUtils.exe.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\SAMUtils.exe.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\SamUtil\obj\Debug\SamUtil.Properties.Resources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\SamUtil\obj\Debug\SamUtil.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\SamUtil\obj\Debug\SamUtil.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\SamUtil\obj\Debug\SamUtil.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\SamUtil\obj\Debug\SAMUtils.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\SamUtil\obj\Debug\SAMUtils.pdb

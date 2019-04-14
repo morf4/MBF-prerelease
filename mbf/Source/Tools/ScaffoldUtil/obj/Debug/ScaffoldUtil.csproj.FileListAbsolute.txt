@@ -19,3 +19,15 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ScaffoldUtil\obj\
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.exe
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\ScaffoldUtil.exe.config
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\ScaffoldUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\ScaffoldUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\ScaffoldUtil.exe.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\ScaffoldUtil.exe.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.Properties.Resources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ScaffoldUtil\obj\Debug\ScaffoldUtil.pdb

@@ -11,3 +11,7 @@ C:\Users\Jonathan_Moore\Downloads\bio-70528\bio\Source\Tools\SampleClusterApp\ob
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\SampleClusterApp\obj\Debug\SampleClusterApp.csprojResolveAssemblyReference.cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\SampleClusterApp\obj\Debug\SampleClusterApp.exe
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\SampleClusterApp\obj\Debug\SampleClusterApp.pdb
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\SampleClusterApp\obj\Debug\SampleClusterApp.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\SampleClusterApp\obj\Debug\SampleClusterApp.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\SampleClusterApp\obj\Debug\SampleClusterApp.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\SampleClusterApp\obj\Debug\SampleClusterApp.pdb

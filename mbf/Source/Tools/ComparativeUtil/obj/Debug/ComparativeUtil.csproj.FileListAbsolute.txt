@@ -21,3 +21,16 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ComparativeUtil\o
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.csproj.GenerateResource.Cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.exe
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\ComparativeUtil.exe.config
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\ComparativeUtil.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\ComparativeUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\ComparativeUtil.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\ComparativeUtil.exe.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\ComparativeUtil.exe.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.Properties.Resources.resources
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.csproj.GenerateResource.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.csproj.CopyComplete
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.exe
+E:\Workspace\Github\morf4\archive\mbf\Source\Tools\ComparativeUtil\obj\Debug\ComparativeUtil.pdb

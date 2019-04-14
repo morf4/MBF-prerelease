@@ -1,0 +1,4196 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bio.WebServiceHandlers</name>
+    </assembly>
+    <members>
+        <member name="T:Bio.Web.Blast.AzureBlastHandler">
+            <summary>
+            This class implements IBlastService interface and defines all the atomic
+            operation required by the interface. Each method necessarily 
+            invokes/instantiates an atomic operation on the server (Azure Blast server).
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.AzureBlastHandler.RETRYINTERVAL">
+            <summary>
+            Default interval of time in seconds to check the status of job
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.AzureBlastHandler.NOOFRETRIES">
+            <summary>
+            Default number of retries to be made to check the status
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.AzureBlastHandler.STATUSRUNNING">
+            <summary>
+            Job Status is running
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.AzureBlastHandler.STATUSSUCCEEDED">
+            <summary>
+            Job status is completed successfully
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.AzureBlastHandler.STATUSFAILED">
+            <summary>
+            Job status is failed
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.AzureBlastHandler.OPTIONMVALUE">
+            <summary>
+            Sets the output format expected from Azure Blast
+            7 - Xml
+            8 - Html
+            Expect the xml output
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.AzureBlastHandler.PARTITIONVALUE">
+            <summary>
+            Number of partitions
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.AzureBlastHandler.PARAMETERDATABASE">
+            <summary>
+            Database parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.AzureBlastHandler.PARAMETERPROGRAM">
+            <summary>
+            Program parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.AzureBlastHandler.PARAMETERFORMATTYPE">
+            <summary>
+            Output format type parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.AzureBlastHandler.blastClient">
+            <summary>
+            Azure blast client object
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.AzureBlastHandler.blastParser">
+            <summary>
+            Parser object that can parse the Blast Output
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.AzureBlastHandler.workerThread">
+            <summary>
+            Background worker thread that tracks the status of job and notifies
+            user on completion.
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.AzureBlastHandler.configuration">
+            <summary>
+            Settings for web access, such as user-agent string and 
+            proxy configuration
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.AzureBlastHandler.RetryInterval">
+            <summary>
+            Gets or sets the number of seconds between retries when a service request is pending. (This
+            specifies the first interval, and subsequent retries occur at increasing multiples.)
+            The caller can override the default by setting ConfigurationParameters.RetryInterval.
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.AzureBlastHandler.RetryCount">
+            <summary>
+            Gets or sets the number of times to retry when a service request is pending. The caller
+            can override the default value by setting ConfigurationParameters.RetryCount.
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.#ctor(Bio.Web.Blast.IBlastParser,Bio.Web.ConfigParameters)">
+            <summary>
+            Initializes a new instance of the AzureBlastHandler class. 
+            </summary>
+            <param name="parser">Parser to parse the Blast output</param>
+            <param name="configurations">Configuration Parameters</param>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.#ctor(Bio.Web.ConfigParameters)">
+            <summary>
+            Initializes a new instance of the AzureBlastHandler class. 
+            </summary>
+            <param name="configurations">Configuration Parameters</param>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.#ctor">
+            <summary>
+            Initializes a new instance of the AzureBlastHandler class. 
+            </summary>
+        </member>
+        <member name="E:Bio.Web.Blast.AzureBlastHandler.RequestCompleted">
+            <summary>
+            This event is raised when Blast search is complete. It could be either a success or failure.
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.AzureBlastHandler.Configuration">
+            <summary>
+            Gets or sets settings for web access, such as user-agent string and 
+            proxy configuration
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.AzureBlastHandler.Description">
+            <summary>
+            Gets user-friendly implementation description
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.AzureBlastHandler.Name">
+            <summary>
+            Gets user-friendly implementation name
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.AzureBlastHandler.Parser">
+            <summary>
+            Gets an instance of object that can parse the Blast Output
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.SubmitRequest(Bio.ISequence,Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Submit the search request with the user supplied configuration parameters 
+            and sequence. Implementation should make use of the Bio.IO formatters 
+            to convert the sequence into the web interface compliant sequence format.
+            This method performs parameter validation and throw Exception on invalid input.
+            </summary>
+            <remarks>An exception is thrown if the request does not succeed.</remarks>
+            <param name="sequence">The sequence to search with</param>
+            <param name="parameters">Blast input parameters</param>
+            <returns>Request Identifier</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.SubmitRequest(System.Collections.Generic.IList{Bio.ISequence},Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Submit the search request with the user supplied configuration parameters and sequence
+            Implementation should make use of the Bio.IO formatters to convert the sequence into 
+            the web interface compliant sequence format
+            </summary>
+            <remarks>An exception is thrown if the request does not succeed.</remarks>
+            <param name="sequences">List of sequence to search with</param>
+            <param name="parameters">Blast input parameters</param>
+            <returns>Request Identifier</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.GetRequestStatus(System.String)">
+            <summary>
+            Return the status of a submitted job.
+            </summary>
+            <param name="requestIdentifier">Identifier for the request of interest.</param>
+            <returns>The status of the request.</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.GetResult(System.String,Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Gets the search results for the pertinent request identifier.
+            Implementation should have dedicated parsers to format the received results into Bio
+            </summary>
+            <remarks>An exception is thrown if the request does not succeed.</remarks>
+            <param name="requestIdentifier">Identifier for the request of interest.</param>
+            <param name="parameters">Blast input parameters</param>
+            <returns>The search results</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.FetchResultsSync(System.String,Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Fetch the search results synchronously for the pertinent request identifier.
+            This is a synchronous method and will not return until the results are 
+            available.
+            Implementation should have dedicated parsers to format the received results into
+            Bio
+            </summary>
+            <remarks>
+            An exception is thrown if the request does not succeed.
+            </remarks>
+            <param name="requestIdentifier">Identifier for the request of interest</param>
+            <param name="parameters">Blast input parameters</param>
+            <returns>The search results</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.CancelRequest(System.String)">
+            <summary>
+            Cancels the submitted job.
+            </summary>
+            <param name="requestIdentifier">Identifier for the request of interest.</param>
+            <returns>Is the job cancelled.</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.GetRequestParameter(Bio.ISequence,Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Get the blast service request object with all the request parameter set
+            </summary>
+            <param name="sequence">Input sequece</param>
+            <param name="parameters">Blast parameters</param>
+            <returns>Blast service request object</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.ProcessRequestThread(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            <summary>
+            Process the request. This method takes care of executing the rest of the steps
+            to complete the blast search request in a background thread. Which involves
+            1. Submit the job to server
+            2. Ping the service with the request identifier to get the status of request.
+            3. Repeat step 1, at "RetryInterval" for "RetryCount" till a "success"/"failure" 
+                status.
+            4. If the status is a "failure" raise an completed event to notify the user 
+                with appropriate details.
+            5. If the status "success". Get the output of search from server in xml format.
+            6. Parse the xml and the framework object model.
+            7. Raise the completed event and notify user with the output.
+            </summary>
+            <param name="sender">Client request Azure Blast search</param>
+            <param name="e">Thread event argument</param>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.CompletedRequestThread(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+            <summary>
+            This method is invoked when request status is completed
+            </summary>
+            <param name="sender">Invoker of the event</param>
+            <param name="e">Event arguments</param>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.ValidateParameters(Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Check the currently set parameters for validity
+            </summary>
+            <param name="parameters">Blast input parameters</param>
+            <returns>Validation result</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.InitializeConfiguration">
+            <summary>
+            Initialize the configuration properties
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.InitializeBlastClient">
+            <summary>
+            Initialize Azure Blast client
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.Dispose">
+            <summary>
+            If the AzureBlastHandler was opened by this object, dispose it.
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.AzureBlastHandler.Dispose(System.Boolean)">
+            <summary>
+            Dispose the managed resource
+            </summary>
+            <param name="disposing">If disposing equals true, dispose all resources</param>
+        </member>
+        <member name="T:Bio.Web.Blast.BioHPCBlastHandler">
+            <summary>
+            This class implements IBlastService interface and defines all the atomic
+            operation required by the interface. Each method necessarily 
+            invokes/instantiates an atomic operation on the server (BioHPC Blast server).
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.MetadataDatabasesDna">
+            <summary>
+            DNA Databases meta data type
+            (Gets the list of databases)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.MetadataDatabasesProt">
+            <summary>
+            Protein Databases meta data type
+            (Gets the list of databases)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.MetadataFilter">
+            <summary>
+            Filters meta data type
+            (Gets the list of filters)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.MetadataMatrices">
+            <summary>
+            Matrices meta data type
+            (Gets the list of matrices)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.MetadataPrograms">
+            <summary>
+            Programs meta data type
+            (Gets the list of programs)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.MetadataFormats">
+            <summary>
+            Output Formats meta data type
+            (Gets the list of xml formats)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.RETRYINTERVAL">
+            <summary>
+            Default interval of time in seconds to check the status of job
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.NOOFRETRIES">
+            <summary>
+            Default number of retries to be made to check the status - jobs may be longer try more times
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.STATUSRUNNING">
+            <summary>
+            Job Status is running
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.STATUSFINISHED">
+            <summary>
+            Job status is completed successfully
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.STATUSFAILED">
+            <summary>
+            Job status is failed
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.STATUSQUEUED">
+            <summary>
+            Job status is Queued
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.STATUSSUBMITTING">
+            <summary>
+            Job status is Submitting
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.PARAMETERDATABASE">
+            <summary>
+            Database parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.PARAMETERPROGRAM">
+            <summary>
+            Program parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.PARAMETERFORMATTYPE">
+            <summary>
+            Output format type parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.PARAMETERFILTER">
+            <summary>
+            Low complexity filter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.PARAMETERALIGNMENTS">
+            <summary>
+            Maximum number of hits to be returned
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.PARAMETERMATRIXNAME">
+            <summary>
+            Scoring matrix
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.PARAMETEREXPECT">
+            <summary>
+            E-value for BLAST search
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.PARAMETERMINQUERYLENGTH">
+            <summary>
+            Minimum length of the query to be considered
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.PARAMETEREMAIL">
+            <summary>
+            Whether or not to send e-mail notifications about job ("yes" or "no")
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.PARAMETEREMAILNOTIFY">
+            <summary>
+            Whether or not to send e-mail notifications about job ("yes" or "no")
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.PARAMETERJOBNAME">
+            <summary>
+            Default name of the BioHPC BLAST job
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.MsgError">
+            <summary>
+            String in BioHPC web service output used to detect an error condition
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.blastClient">
+            <summary>
+            BioHPC blast client object
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.blastParser">
+            <summary>
+            Parser object that can parse the Blast Output
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.workerThread">
+            <summary>
+            Background worker thread that tracks the status of job and notifies
+            user on completion.
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.configuration">
+            <summary>
+            Settings for web access, such as user-agent string and 
+            proxy configuration
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.dnaDatabases">
+            <summary>
+            Names of DNA databases available to the user - will be filled up by SubmitRequest
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.protDatabases">
+            <summary>
+            Names of protein databases available to the user - will be filled up by SubmitRequest
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.#ctor(Bio.Web.Blast.IBlastParser,Bio.Web.ConfigParameters)">
+            <summary>
+            Initializes a new instance of the BioHPCBlastHandler class. 
+            </summary>
+            <param name="parser">Parser to parse the Blast output</param>
+            <param name="configurations">Configuration Parameters</param>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.#ctor(Bio.Web.ConfigParameters)">
+            <summary>
+            Initializes a new instance of the BioHPCBlastHandler class. 
+            </summary>
+            <param name="configurations">Configuration Parameters</param>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.#ctor">
+            <summary>
+            Initializes a new instance of the BioHPCBlastHandler class. 
+            </summary>
+        </member>
+        <member name="E:Bio.Web.Blast.BioHPCBlastHandler.RequestCompleted">
+            <summary>
+            This event is raised when Blast search is complete. It could be either a success or failure.
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.BioHPCBlastHandler.Configuration">
+            <summary>
+            Gets or sets settings for web access, such as user-agent string and 
+            proxy configuration
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.BioHPCBlastHandler.Description">
+            <summary>
+            Gets user-friendly implementation description
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.BioHPCBlastHandler.Name">
+            <summary>
+            Gets user-friendly implementation name
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.BioHPCBlastHandler.Parser">
+            <summary>
+            Gets an instance of object that can parse the Blast Output
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.BioHPCBlastHandler.RetryInterval">
+            <summary>
+            Gets or sets the number of seconds between retries when a service request is pending. (This
+            specifies the first interval, and subsequent retries occur at increasing multiples.)
+            The caller can override the default by setting ConfigurationParameters.RetryInterval.
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.BioHPCBlastHandler.RetryCount">
+            <summary>
+            Gets or sets the number of times to retry when a service request is pending. The caller
+            can override the default value by setting ConfigurationParameters.RetryCount.
+            </summary>
+        </member>
+        <member name="T:Bio.Web.Blast.BioHPCBlastHandler.JobInfo">
+            <summary>
+            BioHPC job credentials
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.JobInfo.Jobid">
+            <summary>
+            ID of the BioHPC job
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.BioHPCBlastHandler.JobInfo.Cntrl">
+            <summary>
+            job control number
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.GetRequestStatus(System.String)">
+            <summary>
+            Return the status of a submitted job.
+            </summary>
+            <param name="requestIdentifier">Identifier for the request of interest.</param>
+            <returns>The status of the request.</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.SubmitRequest(Bio.ISequence,Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Submit the search request with the user supplied configuration parameters 
+            and sequence. Implementation should make use of the Bio.IO formatters 
+            to convert the sequence into the web interface compliant sequence format.
+            This method performs parameter validation and throw Exception on invalid input.
+            </summary>
+            <remarks>An exception is thrown if the request does not succeed.</remarks>
+            <param name="sequence">The sequence to search with</param>
+            <param name="parameters">Blast input parameters</param>
+            <returns>Unique Search ID generated by Bio</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.SubmitRequest(System.Collections.Generic.IList{Bio.ISequence},Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Submit the search request with the user supplied configuration parameters and sequence list.
+            Implementation should make use of the Bio.IO formatters to convert the sequence into 
+            the web interface compliant sequence format
+            </summary>
+            <remarks>An exception is thrown if the request does not succeed.</remarks>
+            <param name="sequences">List of sequence to search with</param>
+            <param name="parameters">Blast input parameters</param>
+            <returns>Unique Search ID generated by Bio</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.GetResult(System.String,Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Gets the search results for the pertinent request identifier.
+            Implementation should have dedicated parsers to format the received results into Bio framework
+            </summary>
+            <remarks>An exception is thrown if the request does not succeed.</remarks>
+            <param name="requestIdentifier">Identifier for the request of interest.</param>
+            <param name="parameters">not needed - included only for compatibility with the interface</param>
+            <returns>The search results</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.FetchResultsSync(System.String,Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Fetch the search results synchronously for the pertinent request identifier.
+            This is a synchronous method and will not return until the results are 
+            available.
+            Implementation should have dedicated parsers to format the received results into
+            Bio
+            </summary>
+            <remarks>
+            An exception is thrown if the request does not succeed.
+            </remarks>
+            <param name="requestIdentifier">Identifier for the request of interest</param>
+            <param name="parameters">Blast input parameters</param>
+            <returns>The search results</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.CancelRequest(System.String)">
+            <summary>
+            Cancels the submitted job.
+            </summary>
+            <param name="requestIdentifier">Identifier for the request of interest.</param>
+            <returns>Is the job cancelled.</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.GetServiceMetadata(System.String)">
+            <summary>
+            Get metadata of various sorts exposed by the service.
+            </summary>
+            <param name="kind">The kind of metadata to fetch.</param>
+            <returns>A list of strings.</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.ProcessRequestThread(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            <summary>
+            Process the request. This method takes care of executing the rest of the steps
+            to complete the blast search request in a background thread. Which involves
+            1. Ping the service with the request identifier to get the status of request.
+            2. Repeat step 1, at "RetryInterval" for "RetryCount" till a "success"/"failure" 
+                status.
+            3. If the status is a "failure" raise an completed event to notify the user 
+                with appropriate details.
+            4. If the status "success". Get the output of search from server in xml format.
+            5. Parse the xml and the framework object model.
+            6. Raise the completed event and notify user with the output.
+            </summary>
+            <param name="sender">Client request BioHPC Blast search</param>
+            <param name="e">Thread event argument</param>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.CompletedRequestThread(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+            <summary>
+            This method is invoked when request status is completed
+            </summary>
+            <param name="sender">Invoker of the event</param>
+            <param name="e">Event arguments</param>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.ConvertRequestId(System.String)">
+            <summary>
+            Convert a single, "_"-delimited BioHPC BLAST job identifier string to jobid and cntrl
+            </summary>
+            <param name="requestId">single, "_"-delimited BioHPC BLAST job identifier</param>
+            <returns>result.jobid, result.cntrl</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.IsProgramDna(Bio.Web.BioHPC.BLASTprogram)">
+            <summary>
+            Check if the selected BLAST program works with DNA or protein databases
+            </summary>
+            <param name="prgm">BLAST program</param>
+            <returns>true if the program is DNA-based; false othertwise</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.IsDbstringDNA(System.String)">
+            <summary>
+            Check if the "|"-delimited string consists of DNA database names
+            </summary>
+            <param name="dbstring">"|"-delimited string</param>
+            <returns>true if all databases in dbstring are DNA, false otherwise</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.IsDbstringProt(System.String)">
+            <summary>
+            Check if the "|"-delimited string consists of protein database names
+            </summary>
+            <param name="dbstring">"|"-delimited string</param>
+            <returns>true if all databases in dbstring are protein, false otherwise</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.ValidateParameters(Bio.Web.Blast.BlastParameters,Bio.Web.BioHPC.AppInputData)">
+            <summary>
+            Check the currently set parameters for validity
+            </summary>
+            <param name="parameters">Blast input parameters</param>
+            <param name="pars">BLAST parameters in the BioHPC service format</param>
+            <returns>Validation result</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.InitializeConfiguration">
+            <summary>
+            Initialize the configuration properties
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.InitializeBlastClient">
+            <summary>
+            Initialize BioHPC Blast client
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.Dispose">
+            <summary>
+            If the BioHPCBlastHandler was opened by this object, dispose it.
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.BioHPCBlastHandler.Dispose(System.Boolean)">
+            <summary>
+            Dispose the managed resource
+            </summary>
+            <param name="disposing">If disposing equals true, dispose all resources</param>
+        </member>
+        <member name="T:Bio.Web.Blast.EbiWuBlastHandler">
+            <summary>
+            This class implements IBlastService interface and defines all the atomic
+            operation required by the interface. Each method necessarily 
+            invokes/instantiates an atomic operation on the server (Ebi Wu server).
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.DefaultRetryInterval">
+            <summary>
+            Default interval of time in seconds to check the status of job
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.DefaultNoOfRetries">
+            <summary>
+            Default number of retries to be made to check the status
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.StatusPending">
+            <summary>
+            Job status is Queued
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.StatusRunning">
+            <summary>
+            Job status is Running
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.StatusDone">
+            <summary>
+            Job Status is Completed successfully
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.ParameterDatabase">
+            <summary>
+            Database parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.ParameterProgram">
+            <summary>
+            Program parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.ParameterSequenceType">
+            <summary>
+            Sequence Type parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.ParameterAlignmentView">
+            <summary>
+            Alignment View Parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.ParameterKeyAlignmentView">
+            <summary>
+            Alignment View Parameter Key
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.ParameterEmail">
+            <summary>
+            EMAIL parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.ParameterFilter">
+            <summary>
+            FILTER parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.ParameterAlignments">
+            <summary>
+            Number of alignments to return parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.ParameterMatrixName">
+            <summary>
+            Similarity Matrix name parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.ParameterExpect">
+            <summary>
+            Expect value parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.SequenceType">
+            <summary>
+            Type of input provided to blast service
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.AppXmlYes">
+            <summary>
+            Xml output type
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.MetadataDatabases">
+            <summary>
+            Databases meta data type
+            (Gets the list of databases)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.MetadataFilter">
+            <summary>
+            Filters meta data type
+            (Gets the list of filters)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.MetadataMatrices">
+            <summary>
+            Matrices meta data type
+            (Gets the list of matrices)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.MetadataPrograms">
+            <summary>
+            Programs meta data type
+            (Gets the list of programs)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.MetadataSensitivity">
+            <summary>
+            Sensitivity meta data type
+            (Gets the list of sensitivity)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.MetadataSort">
+            <summary>
+            Sort meta data type
+            (Gets the list of sort supported)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.MetadataStatistics">
+            <summary>
+            Stats meta data type
+            (Gets the list of Statistics)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.MetadataXmlFormats">
+            <summary>
+            XmlFormats meta data type
+            (Gets the list of xml formats)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.blastClient">
+            <summary>
+            WSWUB blast client object
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.blastParser">
+            <summary>
+            Parser object that can parse the Blast Output
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.workerThread">
+            <summary>
+            Background worker thread that tracks the status of job and notifies
+            user on completion.
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.configuration">
+            <summary>
+            Settings for web access, such as user-agent string and 
+            proxy configuration
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.RetryInterval">
+            <summary>
+            Gets or sets the number of seconds between retries when a service request is pending. (This
+            specifies the first interval, and subsequent retries occur at increasing multiples.)
+            The caller can override the default by setting ConfigurationParameters.RetryInterval.
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.EbiWuBlastHandler.RetryCount">
+            <summary>
+            Gets or sets the number of times to retry when a service request is pending. The caller
+            can override the default value by setting ConfigurationParameters.RetryCount.
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.#ctor(Bio.Web.Blast.IBlastParser,Bio.Web.ConfigParameters)">
+            <summary>
+            Initializes a new instance of the EbiWuBlastHandler class.
+            </summary>
+            <param name="parser">Parser to parse the Blast output</param>
+            <param name="configurations">Configuration Parameters</param>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.#ctor(Bio.Web.ConfigParameters)">
+            <summary>
+            Initializes a new instance of the EbiWuBlastHandler class.
+            </summary>
+            <param name="configurations">Configuration Parameters</param>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.#ctor">
+            <summary>
+            Initializes a new instance of the EbiWuBlastHandler class.
+            </summary>
+        </member>
+        <member name="E:Bio.Web.Blast.EbiWuBlastHandler.RequestCompleted">
+            <summary>
+            This event is raised when Blast search is complete. It could be either a success or failure.
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.EbiWuBlastHandler.Configuration">
+            <summary>
+            Gets or sets settings for web access, such as user-agent string and 
+            proxy configuration
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.EbiWuBlastHandler.Name">
+            <summary>
+            Gets user-friendly implementation name
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.EbiWuBlastHandler.Description">
+            <summary>
+            Gets user-friendly implementation description
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.EbiWuBlastHandler.Parser">
+            <summary>
+            Gets an instance of object that can parse the Blast Output
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.SubmitRequest(Bio.ISequence,Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Submit the search request with the user supplied configuration parameters 
+            and sequence. Implementation should make use of the Bio.IO formatters 
+            to convert the sequence into the web interface compliant sequence format.
+            This method performs parameter validation and throw Exception on invalid input.
+            </summary>
+            <remarks>An exception is thrown if the request does not succeed.</remarks>
+            <param name="sequence">The sequence to search with</param>
+            <param name="parameters">Blast input parameters</param>
+            <returns>Request Identifier</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.SubmitRequest(System.Collections.Generic.IList{Bio.ISequence},Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Submit the search request with the user supplied configuration parameters and sequence
+            Implementation should make use of the Bio.IO formatters to convert the sequence into 
+            the web interface compliant sequence format
+            </summary>
+            <remarks>An exception is thrown if the request does not succeed.</remarks>
+            <param name="sequences">List of sequence to search with</param>
+            <param name="parameters">Blast input parameters</param>
+            <returns>Request Identifier</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.GetRequestStatus(System.String)">
+            <summary>
+            Return the status of a submitted job.
+            </summary>
+            <param name="requestIdentifier">Identifier for the request of interest.</param>
+            <returns>The status of the request.</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.GetResult(System.String,Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Gets the search results for the pertinent request identifier.
+            Implementation should have dedicated parsers to format the received results into Bio
+            </summary>
+            <remarks>An exception is thrown if the request does not succeed.</remarks>
+            <param name="requestIdentifier">Identifier for the request of interest.</param>
+            <param name="parameters">Blast input parameters</param>
+            <returns>The search results</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.FetchResultsSync(System.String,Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Fetch the search results synchronously for the pertinent request identifier.
+            This is a synchronous method and will not return until the results are 
+            available.
+            Implementation should have dedicated parsers to format the received results into
+            Bio
+            </summary>
+            <remarks>
+            An exception is thrown if the request does not succeed.
+            </remarks>
+            <param name="requestIdentifier">Identifier for the request of interest</param>
+            <param name="parameters">Blast input parameters</param>
+            <returns>The search results</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.CancelRequest(System.String)">
+            <summary>
+            Cancels the submitted job.
+            </summary>
+            <param name="requestIdentifier">Identifier for the request of interest.</param>
+            <returns>Is the job cancelled.</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.GetServiceMetadata(System.String)">
+            <summary>
+            Get metadata of various sorts exposed by the service.
+            </summary>
+            <param name="kind">The kind of metadata to fetch.</param>
+            <returns>A list of strings.</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.GetRequestParameter(Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Get the blast service request object with all the request parameter set
+            </summary>
+            <param name="parameters">Blast parameters</param>
+            <returns>Blast service request object</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.ProcessRequestThread(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            <summary>
+            Process the request. This method takes care of executing the rest of the steps
+            to complete the blast search request in a background thread. Which involves
+            1. Submit the job to server
+            2. Ping the service with the request identifier to get the status of request.
+            3. Repeat step 1, at "RetryInterval" for "RetryCount" till a "success"/"failure" 
+                status.
+            4. If the status is a "failure" raise an completed event to notify the user 
+                with appropriate details.
+            5. If the status "success". Get the output of search from server in xml format.
+            6. Parse the xml and the framework object model.
+            7. Raise the completed event and notify user with the output.
+            </summary>
+            <param name="sender">Client request EBIWU Blast search</param>
+            <param name="argument">Thread event argument</param>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.CompletedRequestThread(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+            <summary>
+            This method is invoked when request status is completed
+            </summary>
+            <param name="sender">Invoker of the event</param>
+            <param name="eventArgument">Event arguments</param>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.ValidateParameters(Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Check the currently set parameters for validity
+            </summary>
+            <param name="parameters">Blast input parameters</param>
+            <returns>Validation result</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.InitializeConfiguration">
+            <summary>
+            Initialize the configuration properties
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.InitializeBlastClient">
+            <summary>
+            Initialize EBIWU Blast client
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.Dispose">
+            <summary>
+            If the EbiWuBlastHandler was opened by this object, dispose it.
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.EbiWuBlastHandler.Dispose(System.Boolean)">
+            <summary>
+            Dispose the managed resource
+            </summary>
+            <param name="disposing">If disposing equals true, dispose all resources</param>
+        </member>
+        <member name="T:Bio.Web.Blast.JDispatcherService">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.Blast.JDispatcherService.runCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.Blast.JDispatcherService.getStatusCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.Blast.JDispatcherService.getResultTypesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.Blast.JDispatcherService.getResultCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.Blast.JDispatcherService.getParametersCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.Blast.JDispatcherService.getParameterDetailsCompleted">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.run(System.String,System.String,Bio.Web.Blast.InputParameters)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.Beginrun(System.String,System.String,Bio.Web.Blast.InputParameters,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.Endrun(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.runAsync(System.String,System.String,Bio.Web.Blast.InputParameters)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.runAsync(System.String,System.String,Bio.Web.Blast.InputParameters,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.getStatus(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.BegingetStatus(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.EndgetStatus(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.getStatusAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.getStatusAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.getResultTypes(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.BegingetResultTypes(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.EndgetResultTypes(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.getResultTypesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.getResultTypesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.getResult(System.String,System.String,Bio.Web.Blast.wsRawOutputParameter[])">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.BegingetResult(System.String,System.String,Bio.Web.Blast.wsRawOutputParameter[],System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.EndgetResult(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.getResultAsync(System.String,System.String,Bio.Web.Blast.wsRawOutputParameter[])">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.getResultAsync(System.String,System.String,Bio.Web.Blast.wsRawOutputParameter[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.getParameters">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.BegingetParameters(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.EndgetParameters(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.getParametersAsync">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.getParametersAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.getParameterDetails(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.BegingetParameterDetails(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.EndgetParameterDetails(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.getParameterDetailsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.getParameterDetailsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.Blast.JDispatcherService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.InputParameters">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.program">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.exp">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.alignments">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.alignmentsSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.scores">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.scoresSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.align">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.alignSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.matrix">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.stats">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.sensitivity">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.topcombon">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.viewfilter">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.viewfilterSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.filter">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.strand">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.sort">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.stype">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.sequence">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.InputParameters.database">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.wsProperty">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsProperty.key">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsProperty.value">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.wsParameterValue">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsParameterValue.label">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsParameterValue.value">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsParameterValue.defaultValue">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsParameterValue.properties">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.wsParameterDetails">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsParameterDetails.name">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsParameterDetails.description">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsParameterDetails.type">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsParameterDetails.values">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.wsRawOutputParameter">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsRawOutputParameter.name">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsRawOutputParameter.value">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.wsResultType">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsResultType.description">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsResultType.fileSuffix">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsResultType.identifier">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsResultType.label">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.wsResultType.mediaType">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.runCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.runCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.runCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.getStatusCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.getStatusCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.getStatusCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.getResultTypesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.getResultTypesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.getResultTypesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.getResultCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.getResultCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.getResultCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.getParametersCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.getParametersCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.getParametersCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.getParameterDetailsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.getParameterDetailsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.Blast.getParameterDetailsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.Blast.NCBIBlastHandler">
+            <summary>
+            This class implements IBlastService interface and defines all the atomic
+            operation required by the interface. NCBIQBlast will implement the client 
+            side functionality required to perform Blast Search Requests against 
+            the the NCBI QBlast system using their Blast URL APIs. It will need to 
+            use HTTP encoded requests to talk to the NCBI web-server.
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.RETRYINTERVAL">
+            <summary>
+            Default interval of time in seconds to check the status of job
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.NOOFRETRIES">
+            <summary>
+            Default number of retries to be made to check the status
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.STATUSWAITING">
+            <summary>
+            Job Status is running
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.STATUSREADY">
+            <summary>
+            Job status is completed successfully
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.PARAMETERDATABASE">
+            <summary>
+            Database parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.PARAMETERPROGRAM">
+            <summary>
+            Program parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.PARAMETERQUERY">
+            <summary>
+            QUERY parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.PARAMETERFILTER">
+            <summary>
+            FILTER parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.PARAMETERGENETICCODE">
+            <summary>
+            GENETIC CODE parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.PARAMETERCMD">
+            <summary>
+            Command type parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.PARAMETERRID">
+            <summary>
+            Request Identifier type parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.PARAMETEREMAIL">
+            <summary>
+            Email type parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.PARAMETERSTRAND">
+            <summary>
+            STRAND type parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.PARAMETERSENSITIVITY">
+            <summary>
+            SENSITIVITY type parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.PARAMETERFORMATTYPE">
+            <summary>
+            Output format type parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.PARAMETERQUERYFROM">
+            <summary>
+            Start of subsequence (one offset)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.PARAMETERQUERYTO">
+            <summary>
+            End of subsequence (one offset)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.PARAMETERCOMMAND">
+            <summary>
+            Command parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.PARAMETERJOBID">
+            <summary>
+            Request Identifier parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.PARAMETERFORMAT">
+            <summary>
+            Format type parameter
+            (expected fromat type parameter)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.COMMANDPUT">
+            <summary>
+            Put value for Command parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.COMMANDGET">
+            <summary>
+            Get value for Command parameter
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.FORMATXML">
+            <summary>
+            Get value for format type parameter
+            (XML output request)
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.blastParser">
+            <summary>
+            Parser object that can parse the Blast Output
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.workerThread">
+            <summary>
+            Background worker thread that tracks the status of job and notifies
+            user on completion.
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.configuration">
+            <summary>
+            Settings for web access, such as user-agent string and 
+            proxy configuration
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.RetryInterval">
+            <summary>
+            Gets or sets the number of seconds between retries when a service request is pending. (This
+            specifies the first interval, and subsequent retries occur at increasing multiples.)
+            The caller can override the default by setting ConfigurationParameters.RetryInterval.
+            </summary>
+        </member>
+        <member name="F:Bio.Web.Blast.NCBIBlastHandler.RetryCount">
+            <summary>
+            Gets or sets the number of times to retry when a service request is pending. The caller
+            can override the default value by setting ConfigurationParameters.RetryCount.
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.#ctor(Bio.Web.Blast.IBlastParser,Bio.Web.ConfigParameters)">
+            <summary>
+            Initializes a new instance of the NCBIBlastHandler class. 
+            </summary>
+            <param name="parser">Parser to parse the Blast output</param>
+            <param name="configurations">Configuration Parameters</param>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.#ctor(Bio.Web.ConfigParameters)">
+            <summary>
+            Initializes a new instance of the NCBIBlastHandler class. 
+            </summary>
+            <param name="configurations">Configuration Parameters</param>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.#ctor">
+            <summary>
+            Initializes a new instance of the NCBIBlastHandler class. 
+            </summary>
+        </member>
+        <member name="E:Bio.Web.Blast.NCBIBlastHandler.RequestCompleted">
+            <summary>
+            This event is raised when Blast search is complete. It could be either a success or failure.
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.NCBIBlastHandler.Configuration">
+            <summary>
+            Gets or sets settings for web access, such as user-agent string and 
+            proxy configuration
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.NCBIBlastHandler.Description">
+            <summary>
+            Gets user-friendly implementation description
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.NCBIBlastHandler.Name">
+            <summary>
+            Gets user-friendly implementation name
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.NCBIBlastHandler.Parser">
+            <summary>
+            Gets an instance of object that can parse the Blast Output
+            </summary>
+        </member>
+        <member name="P:Bio.Web.Blast.NCBIBlastHandler.ServiceUri">
+            <summary>
+            Get the base URI to use for requests to the service. By default, 
+            this is the BaseUri property, but caller can override by specifying
+            a different URI in the ConfigurationParameters structure.
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.SubmitRequest(System.Collections.Generic.IList{Bio.ISequence},Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Submit the search request with the user supplied configuration parameters and sequence
+            Implementation should make use of the Bio.IO formatters to convert the sequence into 
+            the web interface compliant sequence format
+            </summary>
+            <remarks>An exception is thrown if the request does not succeed.</remarks>
+            <param name="sequences">List of sequence to search with</param>
+            <param name="parameters">Blast input parameters</param>
+            <returns>Request Identifier</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.SubmitRequest(Bio.ISequence,Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Submit the search request with the user supplied configuration parameters 
+            and sequence. Implementation should make use of the Bio.IO formatters 
+            to convert the sequence into the web interface compliant sequence format.
+            This method performs parameter validation and throw Exception on invalid input.
+            </summary>
+            <remarks>An exception is thrown if the request does not succeed.</remarks>
+            <param name="sequence">The sequence to search with</param>
+            <param name="parameters">Blast input parameters</param>
+            <returns>Request Identifier</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.GetRequestStatus(System.String)">
+            <summary>
+            Return the status of a submitted job.
+            </summary>
+            <param name="requestIdentifier">Identifier for the request of interest.</param>
+            <returns>The status of the request.</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.GetResult(System.String,Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Gets the search results for the pertinent request identifier.
+            Implementation should have dedicated parsers to format the received results into Bio
+            </summary>
+            <remarks>An exception is thrown if the request does not succeed.</remarks>
+            <param name="requestIdentifier">Identifier for the request of interest.</param>
+            <param name="parameters">Blast input parameters</param>
+            <returns>The search results</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.FetchResultsSync(System.String,Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Fetch the search results synchronously for the pertinent request identifier.
+            This is a synchronous method and will not return until the results are 
+            available.
+            Implementation should have dedicated parsers to format the received results into
+            Bio
+            </summary>
+            <remarks>
+            An exception is thrown if the request does not succeed.
+            </remarks>
+            <param name="requestIdentifier">Identifier for the request of interest</param>
+            <param name="parameters">Blast input parameters</param>
+            <returns>The search results</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.CancelRequest(System.String)">
+            <summary>
+            Cancels the submitted job.
+            </summary>
+            <param name="requestIdentifier">Identifier for the request of interest.</param>
+            <returns>Is the job cancelled.</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.ExtractInfoSection(System.String)">
+            <summary>
+            Find the QBlastInfoBegin section where the request ID is stored
+            </summary>
+            <param name="response">Web response string</param>
+            <returns>Information section string</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.ExtractBlastErrorSection(System.String)">
+            <summary>
+            Look for a blast error message in the response. Try to be robust
+            with respect to possible changes in formatting, etc.
+            </summary>
+            <param name="response">Web response string</param>
+            <returns>Error section string</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.ExtractError(System.String)">
+            <summary>
+            Error message is contained in list element with id msgR
+            Here is the html structure
+            <ul id="msgR" class="msg">
+                <li class="error">
+                    <div class="error msInf">
+                        {Error message}
+                    </div>
+                </li>
+            </ul>
+            </summary>
+            <param name="response">Response string</param>
+            <returns>Error message</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.ProcessRequestThread(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            <summary>
+            Process the request. This method takes care of executing the rest of the steps
+            to complete the blast search request in a background thread. Which involves
+            1. Submit the job to server
+            2. Ping the service with the request identifier to get the status of request.
+            3. Repeat step 1, at "RetryInterval" for "RetryCount" till a "success"/"failure" 
+                status.
+            4. If the status is a "failure" raise an completed event to notify the user 
+                with appropriate details.
+            5. If the status "success". Get the output of search from server in xml format.
+            6. Parse the xml and the framework object model.
+            7. Raise the completed event and notify user with the output.
+            </summary>
+            <param name="sender">Client request NCBI Blast search</param>
+            <param name="argument">Thread event argument</param>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.CompletedRequestThread(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+            <summary>
+            This method is invoked when request status is completed
+            </summary>
+            <param name="sender">Invoker of the event</param>
+            <param name="argument">Event arguments</param>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.ValidateParameters(Bio.Web.Blast.BlastParameters)">
+            <summary>
+            Check the currently set parameters for validity
+            </summary>
+            <param name="parameters">Blast input parameters</param>
+            <returns>Validation result</returns>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.InitializeConfiguration">
+            <summary>
+            Initialize the configuration properties
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.Dispose">
+            <summary>
+            If the NCBIBlastHandler was opened by this object, dispose it.
+            </summary>
+        </member>
+        <member name="M:Bio.Web.Blast.NCBIBlastHandler.Dispose(System.Boolean)">
+            <summary>
+            Dispose the managed resource
+            </summary>
+            <param name="disposing">If disposing equals true, dispose all resources</param>
+        </member>
+        <member name="T:Bio.Web.BioHPC.BioHPCWebService">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.BioHPC.BioHPCWebService.HelloWorldCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.BioHPC.BioHPCWebService.GetJobInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.BioHPC.BioHPCWebService.CreateJobCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.BioHPC.BioHPCWebService.SubmitJobCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.BioHPC.BioHPCWebService.InitializeApplicationParamsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.BioHPC.BioHPCWebService.InitializeInputParamsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.BioHPC.BioHPCWebService.GetOutputAsStringCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.BioHPC.BioHPCWebService.UploadFileChunkCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.BioHPC.BioHPCWebService.DownloadFileChunk0Completed">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.BioHPC.BioHPCWebService.DownloadFileChunkCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.BioHPC.BioHPCWebService.QueryFileLengthCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.BioHPC.BioHPCWebService.RequestOutFileNamesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.BioHPC.BioHPCWebService.CancelJobCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.BioHPC.BioHPCWebService.ListMyJobsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bio.Web.BioHPC.BioHPCWebService.GetBlastDatabasesCompleted">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.HelloWorld">
+            <summary>
+            Test the service
+            </summary>
+            <returns>Greating from BioHPC</returns>
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.BeginHelloWorld(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.EndHelloWorld(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.HelloWorldAsync">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.HelloWorldAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.GetJobInfo(System.String,System.String)">
+            <summary>
+            Provides informatiojn about the job.
+            </summary>
+            <param name="jobid">ID of the job</param>
+            <param name="cntrl">Control number</param>
+            <returns>A "|"-delimited string containing the following fields:
+            jobID, control number, application name, job name, cluster,
+            email, job status, submission date, start date,
+            end date (for running jobs - anticipated), timeout (in minutes);</returns>
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.BeginGetJobInfo(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.EndGetJobInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.GetJobInfoAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.GetJobInfoAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.CreateJob(Bio.Web.BioHPC.tAppId,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Allocate a new job on BioHPC server.
+            </summary>
+            <param name="appID">Application to run</param>
+            <param name="jobname">Name of the job</param>
+            <param name="nodes">Number of processors to allocate (null or empty string 
+            will allocate default number of processors</param>
+            <param name="email">E-mail address of the submitted (valid address is required)</param>
+            <param name="password">Password(for registered users only; otherwise - supply empty string)</param>
+            <param name="cluster">Requested cluster ("Auto" for automatic assignment)</param>
+            <returns>Array of strings with the following elements: [0] - output from job creation,
+            [1] - job ID of the created job, [2] - control number of the created job, [3] - cluster allocated to the job.
+            In case of error, element [0] contains string "ERROR" and explanation.</returns>
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.BeginCreateJob(Bio.Web.BioHPC.tAppId,System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.EndCreateJob(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.CreateJobAsync(Bio.Web.BioHPC.tAppId,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.CreateJobAsync(Bio.Web.BioHPC.tAppId,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.SubmitJob(System.String,System.String,Bio.Web.BioHPC.AppInputData)">
+            <summary>
+             Submits job allocated earlier by CreateJob
+            </summary>
+            <param name="jobid">ID of the job (as returned by CreateJob)</param>
+            <param name="cntrl">Control number (as returned by CreateJob)</param>
+            <param name="pars">Structure with job parameters</param>
+            <returns>Report from job submission. In case of error, the report contains string "ERROR".</returns>
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.BeginSubmitJob(System.String,System.String,Bio.Web.BioHPC.AppInputData,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.EndSubmitJob(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.SubmitJobAsync(System.String,System.String,Bio.Web.BioHPC.AppInputData)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.SubmitJobAsync(System.String,System.String,Bio.Web.BioHPC.AppInputData,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.InitializeApplicationParams(Bio.Web.BioHPC.tAppId,System.String)">
+            <summary>
+            Initializes input parameters to defaults for application appId,
+            </summary>
+            <param name="appId">Application</param>
+            <param name="jobname">Name of the job</param>
+            <returns>Initialized input parameter structure</returns>
+            <remarks>The field InputFileName contains the name of the input file the server expects.</remarks>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.BeginInitializeApplicationParams(Bio.Web.BioHPC.tAppId,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.EndInitializeApplicationParams(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.InitializeApplicationParamsAsync(Bio.Web.BioHPC.tAppId,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.InitializeApplicationParamsAsync(Bio.Web.BioHPC.tAppId,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.InitializeInputParams(System.String,System.String)">
+            <summary>
+            Initializes input parameters to defaults for a job with known jobID and control number.
+            </summary>
+            <remarks>The field InputFileName in the initialized input structure 
+            contains the name of the input file the server expects.</remarks>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.BeginInitializeInputParams(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.EndInitializeInputParams(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.InitializeInputParamsAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.InitializeInputParamsAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.GetOutputAsString(System.String,System.String)">
+            <summary>
+            Get the main output file of the job as string
+            </summary>
+            <param name="jobid">job ID</param>
+            <param name="cntrl">control number</param>
+            <returns></returns>
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.BeginGetOutputAsString(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.EndGetOutputAsString(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.GetOutputAsStringAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.GetOutputAsStringAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.UploadFileChunk(System.String,System.String,System.Byte[],System.String,System.Boolean)">
+            <summary>
+            Uploads a chunk of an input file to the newly allocated job's directory on BioHPC server.
+            </summary>
+            <param name="jobid">job ID</param>
+            <param name="cntrl">control number</param>
+            <param name="f">array of bytes to be transferred</param>
+            <param name="fileName">name of the remote file to append data to</param>
+            <param name="newfile">if true, a new file will be created on server, otherwise the data will be appended to the existing file</param>
+            <returns>"OK" or an error message</returns>
+            <remarks>Will exit with error if the job has already been submitted.</remarks>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.BeginUploadFileChunk(System.String,System.String,System.Byte[],System.String,System.Boolean,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.EndUploadFileChunk(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.UploadFileChunkAsync(System.String,System.String,System.Byte[],System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.UploadFileChunkAsync(System.String,System.String,System.Byte[],System.String,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.DownloadFileChunk0(System.String)">
+            <summary>Obsolete test function</summary>
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.BeginDownloadFileChunk0(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.EndDownloadFileChunk0(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.DownloadFileChunk0Async(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.DownloadFileChunk0Async(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.DownloadFileChunk(System.String,System.String,System.String,System.Int64,System.Int64)">
+            <summary>
+            Retrieves a chunk of an output file from job's directory on BioHPC server to local byte array.
+            </summary>
+            <param name="jobid">job ID</param>
+            <param name="cntrl">control number</param>
+            <param name="FName">name of the remote file (without path)</param>
+            <param name="curpos">position in the remote file to start transfer from</param>
+            <param name="nb2tran">number of bytes to transfer</param>
+            <returns>byte array containing the file chunk; null on error</returns>
+            <remarks>If the number of bytes from curpos to the end of the file is less than nb2tran, all remaining bytes will be returned.</remarks>
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.BeginDownloadFileChunk(System.String,System.String,System.String,System.Int64,System.Int64,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.EndDownloadFileChunk(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.DownloadFileChunkAsync(System.String,System.String,System.String,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.DownloadFileChunkAsync(System.String,System.String,System.String,System.Int64,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.QueryFileLength(System.String,System.String,System.String)">
+            <summary>
+            Get the lenght of the job's output file (in bytes)
+            </summary>
+            <param name="jobid">job ID</param>
+            <param name="cntrl">control number</param>
+            <param name="FName">Name of the file</param>
+            <returns>length of the file in bytes</returns>
+            <remarks>0 (zero) returned if file empty or does not exist</remarks>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.BeginQueryFileLength(System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.EndQueryFileLength(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.QueryFileLengthAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.QueryFileLengthAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.RequestOutFileNames(System.String,System.String)">
+            <summary>
+            Get the names of the job's output files
+            </summary>
+            <param name="jobid">job ID</param>
+            <param name="cntrl">control number</param>
+            <returns>Names of the output files (collected in structure OutFileNames)</returns>
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.BeginRequestOutFileNames(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.EndRequestOutFileNames(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.RequestOutFileNamesAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.RequestOutFileNamesAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.CancelJob(System.String,System.String)">
+            <summary>Cancels a job</summary>
+            <param name="jobid">job ID</param>
+            <param name="cntrl">control number</param>
+            <returns>report from the operation</returns>
+            <remarks>On error, the report contains string "ERROR".</remarks>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.BeginCancelJob(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.EndCancelJob(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.CancelJobAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.CancelJobAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.ListMyJobs(System.String,System.String,System.Int32,Bio.Web.BioHPC.tAppId,System.String,System.String)">
+            <summary>
+            Obtain a list of a registered user's jobs
+            </summary>
+            <param name="email">E-mail address</param>
+            <param name="password">Password</param>
+            <param name="topjobs">Number of most recent jobs to display</param>
+            <param name="appid">Application</param>
+            <param name="ssubdate">Submitted after this date</param>
+            <param name="esubdate">Submitted before this date</param>
+            <returns>"\n"-delimited string with each record corresponding to one job and formatted
+            as in output from GetJobInfo; the first record contains info about the number of jobs found.</returns>
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.BeginListMyJobs(System.String,System.String,System.Int32,Bio.Web.BioHPC.tAppId,System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.EndListMyJobs(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.ListMyJobsAsync(System.String,System.String,System.Int32,Bio.Web.BioHPC.tAppId,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.ListMyJobsAsync(System.String,System.String,System.Int32,Bio.Web.BioHPC.tAppId,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.GetBlastDatabases(System.String,System.String,System.String)">
+            <summary>
+            Get array of names of BLAST databases available to the user
+            </summary>
+            <param name="email">E-mail address</param>
+            <param name="password">Password (for registered users only)</param>
+            <param name="dtype">"n" for DNA, "p" for protein databases</param>
+            <remarks>If password is empty, databases available to guest users will be returned.</remarks>
+            <returns></returns>
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.BeginGetBlastDatabases(System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.EndGetBlastDatabases(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.GetBlastDatabasesAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.GetBlastDatabasesAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCWebService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.tAppId">
+            <summary>Enumeration representing applications in BioHPC</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.unknown">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.DBREG">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.ANY">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.P_BLAST">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.P_HMMER">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.P_IPRSCAN">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.LOOPP">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.RepeatFinder">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.MDIV">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.GenomeSeqAlign">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.URMS">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.PathogenTracker">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.iDeCAL">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.PPDB">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.P_CLUSTALW">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.MODELLER">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.MKPRF">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.MrBayes">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.MOIL">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.MKPRF_Mixed">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.RetrieveSeq">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.DNAML">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.IM">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.InStruct">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.rproj">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.t_coffee">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.parentage">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.Structure">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.migrate">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.DYRESM">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.plink">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.blastdb">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.cleanJOBS">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.IMa">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.StructuRama">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.tess">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.sfs">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.msvar">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.beast">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.omegamap">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.gbmrkv">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.best">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.slim">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.clumpp">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.stretcher">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.HlaCompletion">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.CreateEpitome">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.EpitopePrediction">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.HlaAssignment">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.PhyloD">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.FalseDiscoveryRate">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.ELAND">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.IMa2">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.lamarc">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.BayeScan">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.Colony">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.blat">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.tAppId.MCMCcoal">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.AppInputData">
+            <summary>Input parameters of an BioHPC job - individual fields are data structures for various applications</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AppInputData.sfs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AppInputData.mdiv">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AppInputData.tcoffee">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AppInputData.tess">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AppInputData.blast">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AppInputData.hmmer">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AppInputData.iprscan">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AppInputData.createepitome">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AppInputData.clustalw">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AppInputData.epipred">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AppInputData.ima2">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AppInputData.lamarc">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AppInputData.BayeScan">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AppInputData.Colony">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AppInputData.MCMCcoal">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.sfsInputData">
+            <summary>Input data structure for SFS_CODE</summary>
+            <remarks>See program web page for explanation</remarks>
+        </member>
+        <member name="P:Bio.Web.BioHPC.sfsInputData.Npop">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.sfsInputData.Nrep">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.sfsInputData.Niter">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.sfsInputData.options">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.sfsInputData.email_notify">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.OutFileNames">
+            <summary>Names of various output file names a job can produce</summary>
+            <remarks>The exact meaning of various types of files depends on the application</remarks>
+        </member>
+        <member name="P:Bio.Web.BioHPC.OutFileNames.input">
+            <summary>Input file</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.OutFileNames.log">
+            <summary>A log file - usually stdout from an application</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.OutFileNames.output1">
+            <summary>The "main" output file</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.OutFileNames.output2">
+            <summary>Secondary output file</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.OutFileNames.outfinal">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.OutFileNames.htm">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.OutFileNames.outfinalzip">
+            <summary>A zip archive of a job containing all relevant files</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.OutFileNames.unknown">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.OutFileNames.special">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.OutFileNames.outlist">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.MCMCcoalInputData">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.MCMCcoalInputData.inputsource">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.MCMCcoalInputData.run_type">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.MCMCcoalInputData.email_notify">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.MCMCcoalInputData.jobname">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.MCMCcoalInputData.InputFile">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.MCMCcoalInputData.OutputFile">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.MCMCcoalInputData.ControlFile">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.MCMCcoalInputData.HeredityFile">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.MCMCcoalInputData.LocusRateFile">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.ColonyInputData">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ColonyInputData.inputsource">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ColonyInputData.email_notify">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ColonyInputData.jobname">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ColonyInputData.InputFile">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ColonyInputData.OutputFile">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.BayeScanInputData">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.inputsource">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.run_type">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.email_notify">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.jobname">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.InputFile">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.m_n">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.m_thin">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.m_burn">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.m_nbp">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.m_pilot">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.m_lb_fis">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.m_hb_fis">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.m_beta_fis">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.m_m_fis">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.m_sd_fis">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.have_beta">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.have_mean">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.have_sd">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.m_out_pilot">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BayeScanInputData.m_out_allele">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.lamarcInputData">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.lamarcInputData.inputsource">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.lamarcInputData.run_type">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.lamarcInputData.email_notify">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.lamarcInputData.jobname">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.lamarcInputData.InputFile">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.lamarcInputData.OutputFile">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.lamarcInputData.InputSummaryFile">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.IMa2InputData">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IMa2InputData.inputsource">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IMa2InputData.run_type">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IMa2InputData.email_notify">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IMa2InputData.jobname">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IMa2InputData.InputFile">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IMa2InputData.OutputFile">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IMa2InputData.optionsOther">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IMa2InputData.optionsM">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IMa2InputData.optionsL">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IMa2InputData.tifname">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IMa2InputData.tifname_ext">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IMa2InputData.prior_name">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IMa2InputData.mcf_name">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IMa2InputData.nested_name">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.EpipredInputData">
+            <summary>Input data structure for Epitope Prediciton</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.EpipredInputData.inputsource">
+            <summary>Source of the input</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.EpipredInputData.inputstring">
+            <summary>If inputsource is "Paste", this string should contain the input</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.EpipredInputData.useHasHeader">
+            <summary>True if the inout contains a header line</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.EpipredInputData.useMerLength">
+            <summary>If true, mer length has to be specified</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.EpipredInputData.MerLength">
+            <summary>Mer lenghth selection</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.EpipredInputData.useWithinD">
+            <summary>Limits the scan for epitopes to mers such that at least one edge 
+            of the mer is withing D amino acids of the center of the peptide given for scanning.  
+            If the input peptide has even length, we use left of center for center.</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.EpipredInputData.WithinD">
+            <summary>Radius D referred to in option useWithinD</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.EpipredInputData.useHLASet">
+            <summary>Specifies whether or not to use an HLA set</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.EpipredInputData.HLASet">
+            <summary>Which HLA set to use</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.EpipredInputData.useModelOnly">
+            <summary>If given then uses the model's probability even if a peptide is on a source list.
+            Otherwise, peptides on a source list are given a probability of 1.0.  
+            (The "source list" is the list of epitopes and HLAs used to train the model).</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.EpipredInputData.useShowBy">
+            <summary>Enforce format of the maximum probability prediction(s).</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.EpipredInputData.ShowBy">
+            <summary>Format of the maximum probability prediction(s).</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.EpipredInputData.useLANLIED03062007">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.EpipredInputData.email_notify">
+            <summary>Whether or not to send e-mail notifications about the job</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.EpipredInputData.InputFile">
+            <summary>If inputsource is Upload", the name of the input file expected on server side.</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.EppMerLength">
+            <summary>Possible mer lengths in Epitope Prediciton application</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.EppMerLength.scan">
+            <summary>Scan over mers of varoous lengths</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.EppMerLength.l_8">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.EppMerLength.l_9">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.EppMerLength.l_10">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.EppMerLength.l_11">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.EppMerLength.given">
+            <summary>No scanning; the whole input peptide is scored. </summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.EppHLASet">
+            <summary>How to select HLAs for scanning. 
+            Among the hlas considered, the best will be reported.</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.EppHLASet.singleton">
+            <summary>use the hla from the input file</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.EppHLASet.supertype">
+            <summary>use the  supertype from the file, scanning all its hlas</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.EppHLASet.all">
+            <summary>scan all know hlas</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.EppShowBy">
+            <summary>How to report maximum probability predictions</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.EppShowBy.all">
+            <summary>Report for each input line</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.EppShowBy.hla">
+            <summary>Report for each input line and hla</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.EppShowBy.length">
+            <summary>Report for each input line and peptide length</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.EppShowBy.hlaAndLength">
+            <summary>Report for each input line and hla and peptide length</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.EppShowBy.doNotGroup">
+            <summary>Report every predicition for each input line</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.ClwStrGapPenalty">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwStrGapPenalty.helix">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwStrGapPenalty.strand">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwStrGapPenalty.loop">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwStrGapPenalty.terminal">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwStrGapPenalty.HelixInsidePosition">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwStrGapPenalty.HelixOutsidePosition">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwStrGapPenalty.StrandInsidePosition">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwStrGapPenalty.StrandOutsidePosition">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.ClwStrAlignment">
+            <summary>Parameters of structure alignment in ClustalW</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwStrAlignment.Use1stProfile">
+            <summary>whether or not to use the first profile</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwStrAlignment.Use2ndProfile">
+            <summary>whether or not to use the second profile</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwStrAlignment.StrAlnGap">
+            <summary>Gap penalty parameters for structure alignment</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.ClwProfileParams">
+            <summary>File names for the profiles used by ClustalW</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwProfileParams.Profile1">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwProfileParams.SecFile1">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwProfileParams.Profile2">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwProfileParams.SecFile2">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.ClwTreeParams">
+            <summary>Tree parameters used by ClustalW</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwTreeParams.kimura">
+            <summary>whether or not to use Kimura correction</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwTreeParams.bootstrap">
+            <summary>Number of bootstrap steps</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwTreeParams.label">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwTreeParams.outtreeformat">
+            <summary>Output format of the tree</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.ClwLabel">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwLabel.Default">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwLabel.Node">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwLabel.Branch">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.ClwOutTreeFormat">
+            <summary>tree output formats in ClustalW</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwOutTreeFormat.ClustalW">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwOutTreeFormat.Philip">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwOutTreeFormat.Nexus">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.ClwGapPenalty">
+            <summary>Gap penalty parameters in CLustalW</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwGapPenalty.opening">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwGapPenalty.extension">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwGapPenalty.separation">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwGapPenalty.ends">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ClwGapPenalty.hydrophylic">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.clustalwInputData">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.clustalwInputData.inputsource">
+            <summary>How the main input (FASTA file with sequences to be aligned) is provided</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.clustalwInputData.inputstring">
+            <summary>String containing the zsequences (in FASAT format) to be aligned. 
+            Relevant if inputsource is set to paste. </summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.clustalwInputData.isDNA">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.clustalwInputData.action">
+            <summary>action to be executed by ClustalW</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.clustalwInputData.outputformat">
+            <summary>format of the output from ClustalW</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.clustalwInputData.resultorder">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.clustalwInputData.proteinmatrix">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.clustalwInputData.dnamatrix">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.clustalwInputData.gappenalty">
+            <summary>Gap penalty parameteres (non-structural alignment)</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.clustalwInputData.treeparams">
+            <summary>Tree parameters (relevant if selected action is "tree"
+            )</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.clustalwInputData.profileparams">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.clustalwInputData.structalopts">
+            <summary>Options ofr structre alignment</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.clustalwInputData.InputFile">
+            <summary>Name of the input file (with sequences ot be aligned) as expected on the server</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.clustalwInputData.email_notify">
+            <summary>whether or not to send e-mail notifications about the job</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.ClwActions">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwActions.align">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwActions.profile">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwActions.tree">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwActions.bootstrap">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.ClwOutFormat">
+            <summary>output format for alignment produced by ClustalW</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwOutFormat.ClustalW">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwOutFormat.CGC">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwOutFormat.CDE">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwOutFormat.phillip">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwOutFormat.pir">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwOutFormat.nexus">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.ClwResultOrder">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwResultOrder.DEFAULT">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwResultOrder.INPUT">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwResultOrder.ALIGNED">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.ClwProteinMatrix">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwProteinMatrix.BLOSUM">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwProteinMatrix.PAM">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwProteinMatrix.GONNET">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwProteinMatrix.ID">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.ClwDNAMatrix">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwDNAMatrix.IOB">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.ClwDNAMatrix.ClustalW">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.CreateEpitomeInputData">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.CreateEpitomeInputData.inputsource">
+            <summary>Upload inout file or paste in</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.CreateEpitomeInputData.stoplength">
+            <summary>See program description</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.CreateEpitomeInputData.email_notify">
+            <summary>Whether or not to send job notification e-mails</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.CreateEpitomeInputData.inputstring">
+            <summary>If inoutsource is "paste", put the inout string here</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.CreateEpitomeInputData.InputFile">
+            <summary>The name of the input file the server expexts as input 
+            (relevnt if inputsource is set to "upload")</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.QuerySrcType">
+            <summary>Specifies how the input is provided</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.QuerySrcType.upload">
+            <summary>Upload file</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.QuerySrcType.copy">
+            <summary>Copy from a location on BioHPC server (local drive or ftp server)</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.QuerySrcType.paste">
+            <summary>Paste input as string</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.IprscanRunparams">
+            <summary>Run parameters for InterProScan</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanRunparams.intimeout1seq">
+            <summary>Initial timeout for processing of one sequence</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanRunparams.timeoutfactor">
+            <summary>Obtain 1-sequence timeout dynamically by multiplying the 
+            average or maximum processing time by this factor</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanRunparams.t4factor">
+            <summary>Obtain 1-sequence timeout dynamically by multiplying this 
+            time by timeoutfactor</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanRunparams.keeptimeout">
+            <summary>Keep the initial 1-sequence timeout - do NOT adjust dynamically</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanRunparams.keeptifaverage">
+            <summary>If dynamically adjusted 1-sequence timeout is set as multiple of
+            average 1-sequence execution time, constrain it to be  longer or equal
+            to the initial timeout.</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanRunparams.email_notify">
+            <summary>Whether or not to send e-mail notifications about the job</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.Time4Fctr">
+            <summary>1-task execution time to base the 1-task timeout on (for parallel applications)</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Time4Fctr.average">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Time4Fctr.maximum">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.AdvancedOptins">
+            <summary>Advanced options of InterProScan</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AdvancedOptins.iprlookup">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AdvancedOptins.goterms">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.AdvancedOptins.nocrc">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.IprscanApps">
+            <summary>Scanning applications available to run within InterProScan</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanApps.blastprodom">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanApps.coils">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanApps.gene3d">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanApps.hmmpanther">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanApps.hmmpir">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanApps.hmmpfam">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanApps.hmmsmart">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanApps.hmmtigr">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanApps.fprintscan">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanApps.patternscan">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanApps.profilescan">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanApps.superfamily">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanApps.seg">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.IprscanOptions">
+            <summary>Options to InterProScan search</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanOptions.minquerylength">
+            <summary>Minumum length of a query sequence to be considered</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanOptions.format">
+            <summary>Output format selection</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanOptions.codon">
+            <summary>Codon table (for DNA queries)</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanOptions.applications">
+            <summary>Scanning applications to run</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanOptions.seqtype">
+            <summary>Query type. If set to "DNA", a 6-frame translation will be performed
+            before executing the IprScan search.</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanOptions.advopt">
+            <summary>Advanced options</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.IOutputFormat">
+            <summary>Requested InterProScan output format</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.IOutputFormat.Text">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.IOutputFormat.Raw">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.IOutputFormat.XML">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.IOutputFormat.HTML">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.IOutputFormat.ebixml">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.Codon">
+            <summary>Possible selections of the codon table used by InterProScan
+            when the query is a DNA sequence.</summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_0">
+            <summary>Standard</summary>
+            <remarks />
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_1">
+            <summary>Standard with alternative initiation codons</summary>
+            <remarks />
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_2">
+            <summary>Vertebrate Mitochodrial</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_3">
+            <summary>Yeast Mitochondrial</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_4">
+            <summary>Mold, Protozoan, Coelenterate Mitochondrial, Myco/Spiroplasma</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_5">
+            <summary>Invertebrate Mitochondrial</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_6">
+            <summary>Ciliate Macronuclear and Dasycladacean</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_9">
+            <summary>Echinoderm Mitochondrial</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_10">
+            <summary>Euplotid Nuclear</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_11">
+            <summary>Bacterial</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_12">
+            <summary>Alternative Yeast Nuclear</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_13">
+            <summary>Ascidian Mitochondrial</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_14">
+            <summary> Flatworm Mitochondrial</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_15">
+            <summary> Blepharisma Macronuclear</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_16">
+            <summary>Chlorophycean Mitochondrial</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_21">
+            <summary>Trematode Mitochondrial</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_22">
+            <summary>Scenedesmus obliquus</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Codon.c_23">
+            <summary>Thraustochytrium Mitochondrial</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.SequenceType">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.SequenceType.Protein">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.SequenceType.DNA">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.IprscanInputData">
+            <summary>Input data structure for InterProScan</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanInputData.querysource">
+            <summary>How to pass the sequence to the server</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanInputData.options">
+            <summary>Options to InterProScan</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanInputData.runparams">
+            <summary>Additional, BioHPC-specific options to InterProScan</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanInputData.InputFileName">
+            <summary>Name of the inout file the server will expect if querysource is seto "upload"</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.IprscanInputData.query">
+            <summary>Query string (in FASTA format) - used if querysource is se tio "paste"</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.HMMERRunparams">
+            <summary>Additional parameters of HMMER run</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.HMMERRunparams.intimeout1seq">
+            <summary>Initial timeout for processing of a single sequence</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.HMMERRunparams.timeoutfactor">
+            <summary>Set 1-sequence timeout dynamically as "timeoutfactor" times ther average or 
+            the maximum 1-sequence processing time. </summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.HMMERRunparams.t4factor">
+            <summary>Set 1-sequence timeout dynamically as "timeoutfactor" times ther average or 
+            the maximum 1-sequence processing time. </summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.HMMERRunparams.keeptimeout">
+            <summary>Keep 1-sequence timeout always eqault to the initial value (do not adjust dynamically)</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.HMMERRunparams.email_notify">
+            <summary>Whether or not to send e-mail notifications about the job</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.HMMEROptions">
+            <summary>Options used by hmmpfam executable of HMMER</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.HMMEROptions.ecut">
+            <summary>Cutoff e-value</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.HMMEROptions.maxtargets">
+            <summary>Maximum number of hist to report (per query sequence)</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.HMMEROptions.extraoptions">
+            <summary>Extra HMMER options</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.HMMEROptions.format">
+            <summary>Requested format of HMMER output</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.HMMEROutputFormat">
+            <summary>Requested HMMER output format</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.HMMEROutputFormat.CBSU">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.HMMEROutputFormat.RAW">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.HMMERInputData">
+            <summary>Input data for a HMMER run</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.HMMERInputData.querysource">
+            <summary>How the query is passed on to the server</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.HMMERInputData.options">
+            <summary>HMMER options to use</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.HMMERInputData.runparams">
+            <summary>Other parameters of a HMMER run (for use by experts only - otherwise please use default)</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.HMMERInputData.database">
+            <summary>HMMER profile database to use</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.HMMERInputData.InputFileName">
+            Name of rthe input file the server expacts if querysource is set to "upload"
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.HMMERInputData.query">
+            <summary>String with query (in FASTA format) if querysource is set to "paste"</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.HMMERDatabase">
+            <summary>Selection of HMMER profile database to use</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.HMMERDatabase.Pfam_ls">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.HMMERDatabase.Pfam_fs">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.BLASTDatabase">
+            <summary>Describes the database to be used in a BLAST search</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTDatabase.database">
+            <summary>A "|"-delimited string containing names of databases to be used</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTDatabase.dbfilename">
+            <summary>If user's own database is to be used, this is the name of the fasta file containing this database</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTDatabase.formatoT">
+            <summary>whether or not to format the database with -o T option</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.BLASTRunparams">
+            <summary>Some other, BioHPC-specific parameters of a BLAST job. For experts only.</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTRunparams.blocksize">
+            <summary>How many sequences to send to a worker process at ne time</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTRunparams.intimeout1seq">
+            <summary>Initial timeout for 1-sequence search</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTRunparams.timeoutfactor">
+            <summary>Singel-sequence timeout will be dynamically adjusted as this multiple of the maximum encountered or average run time.</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTRunparams.t4factor">
+            <summary>When adjusting timeout dynamically, use the average or maximum encountered running time.</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTRunparams.keeptimeout">
+            <summary>Keep the initial timeout throughout the job</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTRunparams.email_notify">
+            <summary>Sent e-mail notifications about the job</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.BLASTOptions">
+            <summary>BLAST options (mostly those passed on to blastall)</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTOptions.ecut">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTOptions.maxtargets">
+            <summary>Maximum number of hits to report (per query sequence per databases scanned)</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTOptions.minquerylength">
+            <summary>Query sequences shorter than this will be ignored</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTOptions.lcompfilter">
+            <summary>Low complexity filter to apply</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTOptions.extraoptions">
+            <summary>String with extra BLAST options (not covered in this class)</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTOptions.format">
+            <summary>Requested output format</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTOptions.percent_id">
+            <summary>Requested persent identity (relevant for megablast only)</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTOptions.matrix">
+            <summary>Similarity matrix for protein BLAST</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTOptions.iterative">
+            <summary>Is tis run iterative (not really implemented yet)</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.LowCompFilter">
+            <summary>Low complexity filter to use in a BLAST run</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.LowCompFilter.Yes">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.LowCompFilter.No">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.LowCompFilter.SeedsOnly">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.OutputFormat">
+            <summary>Requested BLAST output format</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.OutputFormat.m8">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.OutputFormat.m0">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.OutputFormat.CBSUStandard">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.OutputFormat.CBSUStandard2">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.OutputFormat.CBSU_m8">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.OutputFormat.CBSU_m8_extended">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.OutputFormat.m1">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.OutputFormat.m2">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.OutputFormat.m3">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.OutputFormat.m4">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.OutputFormat.m5">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.OutputFormat.m6">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.OutputFormat.XML">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.OutputFormat.HTML">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.Matrix">
+            <summary>Amino acid similarity matrix</summary>
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Matrix.PAM30">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Matrix.PAM70">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Matrix.BLOSUM80">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Matrix.BLOSUM62">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.Matrix.BLOSUM45">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.BLASTInputData">
+            <summary>Describes input to a BLAST job</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTInputData.querysource">
+            <summary>How the query is provided (uploaded, copied from a location on BioHPC server, or as a string)</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTInputData.program">
+            <summary>BLAST program to use</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTInputData.options">
+            <summary>BLAST options (mostly of blastall)</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTInputData.runparams">
+            <summary>Other parameters of a BLAST run</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTInputData.database">
+            <summary>BLAST database specification</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTInputData.InputFileName">
+            <summary>Server-side name of the query file to use while uploading input</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.BLASTInputData.query">
+            <summary>String containing query in FASTA format - used only ifquerysource is "paste"</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.BLASTprogram">
+            <remarks>Selection of BLAST program</remarks>
+        </member>
+        <member name="F:Bio.Web.BioHPC.BLASTprogram.blastn">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.BLASTprogram.blastp">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.BLASTprogram.blastx">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.BLASTprogram.tblastn">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.BLASTprogram.tblastx">
+            <remarks/>
+        </member>
+        <member name="F:Bio.Web.BioHPC.BLASTprogram.megablast">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.tessInputData">
+            <summary>Input data structure for TESS</summary>
+            <remarks>See program description for explanation</remarks>
+        </member>
+        <member name="P:Bio.Web.BioHPC.tessInputData.withadmixture">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.tessInputData.repeats">
+            <summary>How many times to repeat the run
+            (with the same input and different random number seeds)</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.tessInputData.options">
+            <summary>user-supplied TESS options</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.tessInputData.email_notify">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.tcoffeeInputData">
+            <summary>Input structure for TCOFFEE</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.tcoffeeInputData.align_on_existing">
+            <summary>"true" is alignment on existing alignment is to be made, 
+            "false" if a new alignment is reequested</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.tcoffeeInputData.sequence_type_auto">
+            <summary>Whether or not to automatically detect sequence type</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.tcoffeeInputData.sequence_type_DNA">
+            <summary>"true" if sequence type is DNA</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.tcoffeeInputData.query">
+            <summary>String with sequences to be aligned</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.tcoffeeInputData.existing_alignment">
+            <summary>Existing alignment (if "align_on_existing" is "true")</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.tcoffeeInputData.realign_everything">
+            <summary>Realign all sequences, including the ones from the existing alignment (if present)</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.tcoffeeInputData.add_options">
+            <summary>String containing any additional user options accepted by T_COFFEE</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.tcoffeeInputData.email_notify">
+            <summary>Whether or not to send e-mail notifications about the job</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.mdivInputData">
+            <summary>Input data structure for MDIV</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.mdivInputData.model">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.mdivInputData.seed">
+            <summary>Random number seed to use</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.mdivInputData.numrep">
+            <summary>Number of Monte Carlo steps to perform</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.mdivInputData.burnintime">
+            <summary>Number of bur-in steps to perform before collecting sample</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.mdivInputData.Mmax">
+            <summary>Maximum scaled migration rate</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.mdivInputData.Tmax">
+            <summary>Maximum Theta parameter</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.mdivInputData.Qmax">
+            <summary>Maximum time from divergence</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.mdivInputData.InputFileName">
+            <summary>Input file name expected by the server</summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.mdivInputData.runreps">
+            <summary> How many times to repeat the run (with same input and parameters
+            but different random number seeds) </summary>
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.mdivInputData.email_notify">
+            <summary>Whether or not to send e-mail notifications about the job</summary>
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.HelloWorldCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.HelloWorldCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.HelloWorldCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.GetJobInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.GetJobInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.GetJobInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.CreateJobCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.CreateJobCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.CreateJobCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.SubmitJobCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.SubmitJobCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.SubmitJobCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.InitializeApplicationParamsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.InitializeApplicationParamsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.InitializeApplicationParamsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.InitializeInputParamsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.InitializeInputParamsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.InitializeInputParamsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.GetOutputAsStringCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.GetOutputAsStringCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.GetOutputAsStringCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.UploadFileChunkCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.UploadFileChunkCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.UploadFileChunkCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.DownloadFileChunk0CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.DownloadFileChunk0CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.DownloadFileChunk0CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.DownloadFileChunkCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.DownloadFileChunkCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.DownloadFileChunkCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.QueryFileLengthCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.QueryFileLengthCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.QueryFileLengthCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.RequestOutFileNamesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.RequestOutFileNamesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.RequestOutFileNamesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.CancelJobCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.CancelJobCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.CancelJobCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.ListMyJobsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.ListMyJobsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.ListMyJobsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.GetBlastDatabasesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.GetBlastDatabasesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bio.Web.BioHPC.GetBlastDatabasesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bio.Web.BioHPC.BioHPCClient">
+            <summary>
+            A class of wrapper functions utilizing the "atomic" methods
+            exported by the BioHPC web service. Currently contains the file staging methods.
+            </summary>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCClient.#ctor">
+            <summary>
+            Initializes a new instance of the BioHPCClient class
+            </summary>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCClient.DownloadFile(System.String,System.String,System.String,System.String)">
+            <summary>
+            Download a job's output file
+            </summary>
+            <param name="jobid">BioHPC ID of the job</param>
+            <param name="cntrl">control number</param>
+            <param name="fname">Name of the file to download (as returned by RequestOutFileName, for example)</param>
+            <param name="outdir">Output directory - the user has to have write permissions there</param>
+            <returns>Report from the download operation.</returns>
+        </member>
+        <member name="M:Bio.Web.BioHPC.BioHPCClient.UploadFile(System.String,System.String,System.String,System.String)">
+            <summary>
+            Uploads an input file to the job's directory on the BioHPC server
+            </summary>
+            <param name="jobid">job ID (as obtained from CreateNewJob)</param>
+            <param name="cntrl">conrol number (as obtained from CreateNewJob)</param>
+            <param name="filename">Path (on local machine) to the file to be uploaded</param>
+            <param name="strFile">Name the file should have on the server (for example, as given by the InputFileName field of the
+            input data structure initialized by InitializeInputParameters).</param>
+            <returns>Report from the upload operation.</returns>
+        </member>
+        <member name="T:Bio.WebServiceHandlers.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.AZURE_BLAST_DESCRIPTION">
+            <summary>
+              Looks up a localized string similar to Azure Blast hosted by Cloud Computing.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.AZURE_BLAST_INVALID_URI">
+            <summary>
+              Looks up a localized string similar to Azure Blast service URI is invalid..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.AZURE_BLAST_NAME">
+            <summary>
+              Looks up a localized string similar to Azure BLAST.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.AZURE_BLAST_NULL_CONFIGURATION">
+            <summary>
+              Looks up a localized string similar to Configuration is not set..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.BIOHPC_BLAST_DESCRIPTION">
+            <summary>
+              Looks up a localized string similar to BLAST service hosted at BioHPC installation at CBSU (cbsuapps.tc.cornell.edu).
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.BIOHPC_BLAST_NAME">
+            <summary>
+              Looks up a localized string similar to BLAST @ BioHPC.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.BIOHPCJOBNOTCREATED">
+            <summary>
+              Looks up a localized string similar to BioHPC job could not be created. Error: {0}.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.BIOHPCJOBNOTSUBMITTED">
+            <summary>
+              Looks up a localized string similar to BioHPC job {0} could not be submitted. Error: {1}.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.BIOHPCNODNADB">
+            <summary>
+              Looks up a localized string similar to Some of the requested BioHPC databases are not DNA or are not available.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.BIOHPCNOPROTDB">
+            <summary>
+              Looks up a localized string similar to Some of the requested databases are not protein or are not available.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.BIOHPCNOSEQUENCE">
+            <summary>
+              Looks up a localized string similar to BioHPC Blast: no sequences to process.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.BIOHPCREQIDBAD">
+            <summary>
+              Looks up a localized string similar to BioHPC Blast: no sequences to process.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.BIOHPCREQIDEMPTY">
+            <summary>
+              Looks up a localized string similar to BioHPC Blast: requestIdentifier null or empty.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.BIOHPCSERVERABSENT">
+            <summary>
+              Looks up a localized string similar to BioHPC server could not be contacted to create a job..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.BLASTREQUESTFAILED">
+            <summary>
+              Looks up a localized string similar to Failed on request &apos;{0}&apos; (status {1}, &apos;{2}&apos;)..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.BLASTRETRIESEXCEEDED">
+            <summary>
+              Looks up a localized string similar to Number of retries exceeded, giving up on request &apos;{0}&apos; (status {1}, &apos;{2}&apos;)..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.DEFAULTNCBIBLASTSERVICEURI">
+            <summary>
+              Looks up a localized string similar to http://www.ncbi.nlm.nih.gov/blast/Blast.cgi.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.EBIWUBLAST_DESCRIPTION">
+            <summary>
+              Looks up a localized string similar to The WU-BLAST Web Service hosted by EBI (www.ebi.ac.uk).
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.EBIWUBLAST_NAME">
+            <summary>
+              Looks up a localized string similar to EBI WU-BLAST.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.EBIWURESULTTYPEFAILED">
+            <summary>
+              Looks up a localized string similar to Failed to get resultTypes..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.EMPTYRESPONSE">
+            <summary>
+              Looks up a localized string similar to Service response was empty. Request: {0}..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.HTTPSUBMITFAILED">
+            <summary>
+              Looks up a localized string similar to SubmitHttpRequest failed. Status: {0}..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.INVALIDBLASTFILTER">
+            <summary>
+              Looks up a localized string similar to Invalid filter setting: &apos;{0}&apos;. Valid values are : {1}.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.INVALIDGENETICCODE">
+            <summary>
+              Looks up a localized string similar to The GeneticCode value is not allowed. Valid values: 1..16, 21, or 22..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.INVALIDNCBISTATUS">
+            <summary>
+              Looks up a localized string similar to Got HTML status, expected XML. Status: {0}..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.NCBIQBLAST_DESCRIPTION">
+            <summary>
+              Looks up a localized string similar to The QBLAST Web Service hosted by NCBI (www.ncbi.nlm.nih.gov).
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.NCBIQBLAST_NAME">
+            <summary>
+              Looks up a localized string similar to NCBI QBLAST.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.OWNERVALUE">
+            <summary>
+              Looks up a localized string similar to MBF Client.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.PARAMETERDATABASEREQUIRED">
+            <summary>
+              Looks up a localized string similar to The Database parameter is required..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.PARAMETEREMAILREQUIRED">
+            <summary>
+              Looks up a localized string similar to The Email parameter is required..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.PARAMETERFORMATTYPENOTALLOWED">
+            <summary>
+              Looks up a localized string similar to The FormatType parameter cannot be set by the user..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.PARAMETERPROGRAMREQUIRED">
+            <summary>
+              Looks up a localized string similar to The Program parameter is required..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.PARAMETERQUERYTOINVALID">
+            <summary>
+              Looks up a localized string similar to Invalid QueryTo value.
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.PARAMETERSEQUENCEEMPTY">
+            <summary>
+              Looks up a localized string similar to The Query parameter (or a sequence argument) is required..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.PARAMETERSEQUENCEREQUIRED">
+            <summary>
+              Looks up a localized string similar to The Query parameter (or a sequence argument) is required..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.PARAMETERSEQUENCETYPEREQUIRED">
+            <summary>
+              Looks up a localized string similar to The Sequence Type parameter is required..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.PARAMETERUNKNOWNAZURE">
+            <summary>
+              Looks up a localized string similar to Parameter \&quot;{0}\&quot; is not valid for Azure-BLAST..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.PARAMETERUNKNOWNEBIWU">
+            <summary>
+              Looks up a localized string similar to Parameter \&quot;{0}\&quot; is not valid for EBIWU BLAST..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.PARAMETERUNKNOWNNCBI">
+            <summary>
+              Looks up a localized string similar to Parameter \&quot;{0}\&quot; is not valid for NCBI QBLAST..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.PARAMETRUNKNOWNBIOHPC">
+            <summary>
+              Looks up a localized string similar to Parameter \&quot;{0}\&quot; is not valid for BioHPC QBLAST..
+            </summary>
+        </member>
+        <member name="P:Bio.WebServiceHandlers.Properties.Resources.RIDEXTRACTFAILED">
+            <summary>
+              Looks up a localized string similar to Failed to extract a requestIdentifier. Error: {0}..
+            </summary>
+        </member>
+        <member name="T:Microsoft.CCF.BlastDemo.BlastSerivceRequest">
+            <summary>
+            Empty summary tags added to all public methods and properties to 
+            avoid compile time warnings (or) errors
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.BlastSerivceRequest.ExtensionData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.BlastSerivceRequest.DatabaseName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.BlastSerivceRequest.InputBlob">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.BlastSerivceRequest.InputContaienr">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.BlastSerivceRequest.InputContent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.BlastSerivceRequest.OptionM">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.BlastSerivceRequest.Owner">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.BlastSerivceRequest.ParitionNumber">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.BlastSerivceRequest.ProgramName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.BlastSerivceRequest.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Microsoft.CCF.BlastDemo.JobStatusResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.JobStatusResponse.ExtensionData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.JobStatusResponse.DateCompleted">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.JobStatusResponse.DateCreated">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.JobStatusResponse.DateStarted">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.JobStatusResponse.Progress">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.JobStatusResponse.Status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.JobStatusResponse.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Microsoft.CCF.BlastDemo.BlastFault">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.BlastFault.ExtensionData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.BlastFault.Detail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Microsoft.CCF.BlastDemo.BlastFault.ProblemType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:IBlastService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:IBlastService.SubmitJob(Microsoft.CCF.BlastDemo.BlastSerivceRequest)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IBlastService.QueryJobStatus(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="jobId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IBlastService.GetJobResult(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="jobId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IBlastService.KillJob(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="jobId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:IBlastServiceChannel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BlastServiceClient">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlastServiceClient.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BlastServiceClient.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="endpointConfigurationName"></param>
+        </member>
+        <member name="M:BlastServiceClient.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="endpointConfigurationName"></param>
+            <param name="remoteAddress"></param>
+        </member>
+        <member name="M:BlastServiceClient.#ctor(System.String,System.ServiceModel.EndpointAddress)">
+            <summary>
+            
+            </summary>
+            <param name="endpointConfigurationName"></param>
+            <param name="remoteAddress"></param>
+        </member>
+        <member name="M:BlastServiceClient.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)">
+            <summary>
+            
+            </summary>
+            <param name="binding"></param>
+            <param name="remoteAddress"></param>
+        </member>
+        <member name="M:BlastServiceClient.SubmitJob(Microsoft.CCF.BlastDemo.BlastSerivceRequest)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlastServiceClient.QueryJobStatus(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="jobId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlastServiceClient.GetJobResult(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="jobId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlastServiceClient.KillJob(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="jobId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

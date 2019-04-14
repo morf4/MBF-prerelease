@@ -14,3 +14,11 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TestU
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.TestUtils\obj\Debug\Bio.TestUtils.csprojResolveAssemblyReference.cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.TestUtils\obj\Debug\Bio.TestUtils.dll
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.TestUtils\obj\Debug\Bio.TestUtils.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\TestData\TestUtils\Testcases.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.TestUtils.dll
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.TestUtils.pdb
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.TestUtils.dll.CodeAnalysisLog.xml
+E:\Workspace\Github\morf4\archive\mbf\Build\Binaries\Debug\Bio.TestUtils.dll.lastcodeanalysissucceeded
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.TestUtils\obj\Debug\Bio.TestUtils.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.TestUtils\obj\Debug\Bio.TestUtils.dll
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.TestUtils\obj\Debug\Bio.TestUtils.pdb

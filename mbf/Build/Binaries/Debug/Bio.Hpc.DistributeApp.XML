@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bio.Hpc.DistributeApp</name>
+    </assembly>
+    <members>
+        <member name="T:Bio.Hpc.DistributeApp.Distribute">
+            <summary>
+            class Distribute
+            </summary>
+        </member>
+        <member name="P:Bio.Hpc.DistributeApp.Distribute.Distributable">
+            <summary>
+            The object you wish to distribute.
+            </summary>
+        </member>
+        <member name="P:Bio.Hpc.DistributeApp.Distribute.Distributor">
+            <summary>
+            How to distribute the object.
+            </summary>
+        </member>
+        <member name="M:Bio.Hpc.DistributeApp.Distribute.Run">
+            <summary>
+            Run method
+            </summary>
+        </member>
+        <member name="M:Bio.Hpc.DistributeApp.Distribute.Main(System.String[])">
+            <summary>
+            main method
+            </summary>
+            <param name="args">arguments</param>
+        </member>
+    </members>
+</doc>

@@ -164,3 +164,7 @@ G:\[SOURCE]\base\applications\desktop\bio\net bio\Build\Binaries\Debug\Bio.TestC
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.TestConsole\obj\Debug\Bio.TestConsole.csprojResolveAssemblyReference.cache
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.TestConsole\obj\Debug\Bio.TestConsole.dll
 G:\[SOURCE]\base\applications\desktop\bio\net bio\Tests\Bio.TestConsole\obj\Debug\Bio.TestConsole.pdb
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.TestConsole\obj\Debug\Bio.TestConsole.csprojAssemblyReference.cache
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.TestConsole\obj\Debug\Bio.TestConsole.csproj.CoreCompileInputs.cache
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.TestConsole\obj\Debug\Bio.TestConsole.dll
+E:\Workspace\Github\morf4\archive\mbf\Tests\Bio.TestConsole\obj\Debug\Bio.TestConsole.pdb
